@@ -1,0 +1,147 @@
+[
+  {
+    "date": "2026-01-16",
+    "stockpile_m2": 49400.000000045526,
+    "stockpile_ha": 4.940000000004552,
+    "stockpile_fraction": 0.034305555555555554,
+    "all_classes": {
+      "water": {
+        "pixel_count": 4493,
+        "area_m2": 449300.0000004141,
+        "area_hectares": 44.93000000004141
+      },
+      "vegetation": {
+        "pixel_count": 189,
+        "area_m2": 18900.00000001742,
+        "area_hectares": 1.8900000000017418
+      },
+      "stockpile": {
+        "pixel_count": 494,
+        "area_m2": 49400.000000045526,
+        "area_hectares": 4.940000000004552
+      },
+      "ground": {
+        "pixel_count": 9224,
+        "area_m2": 922400.0000008501,
+        "area_hectares": 92.240000000085
+      },
+      "stockpile_fraction": 0.034305555555555554
+    }
+  },
+  {
+    "date": "2026-01-19",
+    "stockpile_m2": 61100.00000005631,
+    "stockpile_ha": 6.1100000000056305,
+    "stockpile_fraction": 0.042430555555555555,
+    "all_classes": {
+      "water": {
+        "pixel_count": 5732,
+        "area_m2": 573200.0000005283,
+        "area_hectares": 57.32000000005283
+      },
+      "vegetation": {
+        "pixel_count": 177,
+        "area_m2": 17700.000000016313,
+        "area_hectares": 1.7700000000016314
+      },
+      "stockpile": {
+        "pixel_count": 611,
+        "area_m2": 61100.00000005631,
+        "area_hectares": 6.1100000000056305
+      },
+      "ground": {
+        "pixel_count": 7880,
+        "area_m2": 788000.0000007262,
+        "area_hectares": 78.80000000007261
+      },
+      "stockpile_fraction": 0.042430555555555555
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "stockpile_m2": 52800.00000004866,
+    "stockpile_ha": 5.280000000004867,
+    "stockpile_fraction": 0.03666666666666667,
+    "all_classes": {
+      "water": {
+        "pixel_count": 5734,
+        "area_m2": 573400.0000005284,
+        "area_hectares": 57.34000000005284
+      },
+      "vegetation": {
+        "pixel_count": 162,
+        "area_m2": 16200.00000001493,
+        "area_hectares": 1.6200000000014931
+      },
+      "stockpile": {
+        "pixel_count": 528,
+        "area_m2": 52800.00000004866,
+        "area_hectares": 5.280000000004867
+      },
+      "ground": {
+        "pixel_count": 7976,
+        "area_m2": 797600.000000735,
+        "area_hectares": 79.7600000000735
+      },
+      "stockpile_fraction": 0.03666666666666667
+    }
+  },
+  {
+    "date": "2026-01-24",
+    "stockpile_m2": 50100.00000004617,
+    "stockpile_ha": 5.010000000004617,
+    "stockpile_fraction": 0.034791666666666665,
+    "all_classes": {
+      "water": {
+        "pixel_count": 4503,
+        "area_m2": 450300.00000041496,
+        "area_hectares": 45.0300000000415
+      },
+      "vegetation": {
+        "pixel_count": 154,
+        "area_m2": 15400.000000014192,
+        "area_hectares": 1.5400000000014191
+      },
+      "stockpile": {
+        "pixel_count": 501,
+        "area_m2": 50100.00000004617,
+        "area_hectares": 5.010000000004617
+      },
+      "ground": {
+        "pixel_count": 9242,
+        "area_m2": 924200.0000008517,
+        "area_hectares": 92.42000000008517
+      },
+      "stockpile_fraction": 0.034791666666666665
+    }
+  },
+  {
+    "date": "2026-03-27",
+    "stockpile_m2": 158500.00000014607,
+    "stockpile_ha": 15.850000000014607,
+    "stockpile_fraction": 0.11006944444444444,
+    "all_classes": {
+      "water": {
+        "pixel_count": 6004,
+        "area_m2": 600400.0000005533,
+        "area_hectares": 60.04000000005533
+      },
+      "vegetation": {
+        "pixel_count": 215,
+        "area_m2": 21500.000000019812,
+        "area_hectares": 2.1500000000019814
+      },
+      "stockpile": {
+        "pixel_count": 1585,
+        "area_m2": 158500.00000014607,
+        "area_hectares": 15.850000000014607
+      },
+      "ground": {
+        "pixel_count": 6596,
+        "area_m2": 659600.0000006079,
+        "area_hectares": 65.96000000006079
+      },
+      "stockpile_fraction": 0.11006944444444444
+    }
+  }
+]

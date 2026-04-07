@@ -71,9 +71,9 @@ THRESHOLDS = {
     "lumber": {
         "water_ndwi": 0.1,
         "veg_ndvi": 0.35,
-        "stockpile_bsi_min": -0.1,
-        "stockpile_brightness_min": 0.08,
-        "stockpile_brightness_max": 0.35,
+        "stockpile_bsi_min": 0.03,
+        "stockpile_brightness_min": 0.175,
+        "stockpile_brightness_max": 0.25,
     },
     "containers": {
         "water_ndwi": 0.1,
