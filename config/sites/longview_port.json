@@ -1,0 +1,10 @@
+{
+    "site_id": "longview_port",
+    "name": "Port of Longview — Lumber Export Terminal",
+    "commodity": "lumber",
+    "latitude": 46.1065,
+    "longitude": -122.9543,
+    "buffer_meters": 600,
+    "description": "Largest log and lumber export facility on the Columbia River. Handles ~3 million metric tons annually. Log rafts visible in river, stacked lumber on terminal.",
+    "notes": "Look for log rafts in water adjacent to terminal, stacked dimensional lumber on paved areas, and raw logs in sorting yards."
+}

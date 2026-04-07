@@ -1,0 +1,29 @@
+[project]
+name = "sentinel-stockpile"
+version = "0.1.0"
+description = "Open-source satellite change detection for commodity stockpile monitoring"
+channels = ["conda-forge"]
+platforms = ["win-64", "linux-64", "osx-arm64"]
+
+[dependencies]
+python = ">=3.11"
+numpy = ">=1.26"
+rasterio = ">=1.3"
+geopandas = ">=0.14"
+shapely = ">=2.0"
+matplotlib = ">=3.8"
+pystac-client = ">=0.7"
+planetary-computer = ">=1.0"
+stackstac = ">=0.5"
+xarray = ">=2024.1"
+dask = ">=2024.1"
+pyproj = ">=3.6"
+click = ">=8.1"
+rich = ">=13.0"
+
+[tasks]
+fetch = "python src/fetch_imagery.py"
+detect = "python src/classify.py"
+measure = "python src/measure.py"
+report = "python src/report.py"
+pipeline = "python src/pipeline.py"

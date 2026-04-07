@@ -1,0 +1,24 @@
+# pixi
+.pixi/
+pixi.lock
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Output data (large rasters)
+output/*/imagery/
+output/*/classified/*_indices/
+
+# Keep reports and time series
+!output/*/reports/
+!output/*/time_series.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

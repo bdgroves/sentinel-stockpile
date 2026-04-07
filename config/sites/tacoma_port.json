@@ -1,0 +1,10 @@
+{
+    "site_id": "tacoma_port",
+    "name": "Port of Tacoma — Container Terminal",
+    "commodity": "containers",
+    "latitude": 47.2690,
+    "longitude": -122.4130,
+    "buffer_meters": 800,
+    "description": "Major container terminal in the Tacoma Tideflats. Handles import/export containers with clear stacking patterns visible from satellite.",
+    "notes": "Container stacks appear as regular rectangular grids with high brightness. Empty areas show as dark pavement."
+}
