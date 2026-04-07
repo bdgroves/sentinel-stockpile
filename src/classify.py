@@ -82,6 +82,13 @@ THRESHOLDS = {
         "stockpile_brightness_min": 0.10,
         "stockpile_brightness_max": 0.50,
     },
+    "wind_components": {
+        "water_ndwi": 0.1,
+        "veg_ndvi": 0.35,
+        "stockpile_bsi_min": -0.05,
+        "stockpile_brightness_min": 0.22,
+        "stockpile_brightness_max": 0.50,
+    },
 }
 
 # Classification codes

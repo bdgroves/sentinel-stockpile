@@ -1,0 +1,10 @@
+{
+    "site_id": "vancouver_wind",
+    "name": "Port of Vancouver WA - Wind Energy Staging",
+    "commodity": "wind_components",
+    "latitude": 45.6260,
+    "longitude": -122.6800,
+    "buffer_meters": 800,
+    "description": "West Coast hub for wind turbine component imports. Terminals 2 and 5 serve as laydown space for blades (up to 76m/250ft), nacelles, tower sections, and hubs. Components arrive by ship from China and Europe, stage here, then truck out via I-84 through the Columbia River Gorge to wind farms across the interior West.",
+    "notes": "Wind blades are 50-80m long, very bright white fiberglass — multiple pixels each at 10m. Tower sections are cylindrical steel, bright metallic. Nacelles are large blocky shapes. Look for long parallel white lines (blade rows) on open pavement. Arrivals are seasonal — spring through fall, quiet in winter. Subaru auto imports also use this port (regular grid patterns, different from blade rows)."
+}
