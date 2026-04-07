@@ -1,5 +1,733 @@
 [
   {
+    "date": "2025-04-14",
+    "stockpile_m2": 228300.0000002104,
+    "stockpile_ha": 22.830000000021037,
+    "stockpile_fraction": 0.15854166666666666,
+    "all_classes": {
+      "water": {
+        "pixel_count": 5611,
+        "area_m2": 561100.0000005171,
+        "area_hectares": 56.11000000005171
+      },
+      "vegetation": {
+        "pixel_count": 210,
+        "area_m2": 21000.000000019354,
+        "area_hectares": 2.1000000000019354
+      },
+      "stockpile": {
+        "pixel_count": 2283,
+        "area_m2": 228300.0000002104,
+        "area_hectares": 22.830000000021037
+      },
+      "ground": {
+        "pixel_count": 6296,
+        "area_m2": 629600.0000005802,
+        "area_hectares": 62.960000000058024
+      },
+      "stockpile_fraction": 0.15854166666666666
+    }
+  },
+  {
+    "date": "2025-04-16",
+    "stockpile_m2": 187900.00000017317,
+    "stockpile_ha": 18.790000000017315,
+    "stockpile_fraction": 0.1304861111111111,
+    "all_classes": {
+      "water": {
+        "pixel_count": 5698,
+        "area_m2": 569800.0000005251,
+        "area_hectares": 56.98000000005251
+      },
+      "vegetation": {
+        "pixel_count": 221,
+        "area_m2": 22100.000000020365,
+        "area_hectares": 2.2100000000020366
+      },
+      "stockpile": {
+        "pixel_count": 1879,
+        "area_m2": 187900.00000017317,
+        "area_hectares": 18.790000000017315
+      },
+      "ground": {
+        "pixel_count": 6602,
+        "area_m2": 660200.0000006084,
+        "area_hectares": 66.02000000006083
+      },
+      "stockpile_fraction": 0.1304861111111111
+    }
+  },
+  {
+    "date": "2025-04-23",
+    "stockpile_m2": 202500.0000001866,
+    "stockpile_ha": 20.250000000018662,
+    "stockpile_fraction": 0.140625,
+    "all_classes": {
+      "water": {
+        "pixel_count": 103,
+        "area_m2": 10300.000000009491,
+        "area_hectares": 1.030000000000949
+      },
+      "vegetation": {
+        "pixel_count": 244,
+        "area_m2": 24400.000000022486,
+        "area_hectares": 2.440000000002249
+      },
+      "stockpile": {
+        "pixel_count": 2025,
+        "area_m2": 202500.0000001866,
+        "area_hectares": 20.250000000018662
+      },
+      "ground": {
+        "pixel_count": 12028,
+        "area_m2": 1202800.0000011085,
+        "area_hectares": 120.28000000011085
+      },
+      "stockpile_fraction": 0.140625
+    }
+  },
+  {
+    "date": "2025-05-01",
+    "stockpile_m2": 228300.0000002104,
+    "stockpile_ha": 22.830000000021037,
+    "stockpile_fraction": 0.15854166666666666,
+    "all_classes": {
+      "vegetation": {
+        "pixel_count": 240,
+        "area_m2": 24000.00000002212,
+        "area_hectares": 2.400000000002212
+      },
+      "stockpile": {
+        "pixel_count": 2283,
+        "area_m2": 228300.0000002104,
+        "area_hectares": 22.830000000021037
+      },
+      "ground": {
+        "pixel_count": 11877,
+        "area_m2": 1187700.0000010945,
+        "area_hectares": 118.77000000010945
+      },
+      "stockpile_fraction": 0.15854166666666666
+    }
+  },
+  {
+    "date": "2025-05-24",
+    "stockpile_m2": 229100.00000021112,
+    "stockpile_ha": 22.91000000002111,
+    "stockpile_fraction": 0.15909722222222222,
+    "all_classes": {
+      "vegetation": {
+        "pixel_count": 221,
+        "area_m2": 22100.000000020365,
+        "area_hectares": 2.2100000000020366
+      },
+      "stockpile": {
+        "pixel_count": 2291,
+        "area_m2": 229100.00000021112,
+        "area_hectares": 22.91000000002111
+      },
+      "ground": {
+        "pixel_count": 11888,
+        "area_m2": 1188800.0000010955,
+        "area_hectares": 118.88000000010955
+      },
+      "stockpile_fraction": 0.15909722222222222
+    }
+  },
+  {
+    "date": "2025-06-02",
+    "stockpile_m2": 291500.0000002686,
+    "stockpile_ha": 29.150000000026864,
+    "stockpile_fraction": 0.20243055555555556,
+    "all_classes": {
+      "vegetation": {
+        "pixel_count": 168,
+        "area_m2": 16800.000000015483,
+        "area_hectares": 1.6800000000015483
+      },
+      "stockpile": {
+        "pixel_count": 2915,
+        "area_m2": 291500.0000002686,
+        "area_hectares": 29.150000000026864
+      },
+      "ground": {
+        "pixel_count": 11317,
+        "area_m2": 1131700.0000010428,
+        "area_hectares": 113.17000000010428
+      },
+      "stockpile_fraction": 0.20243055555555556
+    }
+  },
+  {
+    "date": "2025-06-03",
+    "stockpile_m2": 272600.0000002512,
+    "stockpile_ha": 27.260000000025123,
+    "stockpile_fraction": 0.18930555555555556,
+    "all_classes": {
+      "vegetation": {
+        "pixel_count": 159,
+        "area_m2": 15900.000000014654,
+        "area_hectares": 1.5900000000014654
+      },
+      "stockpile": {
+        "pixel_count": 2726,
+        "area_m2": 272600.0000002512,
+        "area_hectares": 27.260000000025123
+      },
+      "ground": {
+        "pixel_count": 11515,
+        "area_m2": 1151500.0000010612,
+        "area_hectares": 115.15000000010612
+      },
+      "stockpile_fraction": 0.18930555555555556
+    }
+  },
+  {
+    "date": "2025-06-05",
+    "stockpile_m2": 258700.00000023842,
+    "stockpile_ha": 25.870000000023843,
+    "stockpile_fraction": 0.17965277777777777,
+    "all_classes": {
+      "water": {
+        "pixel_count": 5,
+        "area_m2": 500.0000000004608,
+        "area_hectares": 0.05000000000004608
+      },
+      "vegetation": {
+        "pixel_count": 164,
+        "area_m2": 16400.000000015112,
+        "area_hectares": 1.6400000000015111
+      },
+      "stockpile": {
+        "pixel_count": 2587,
+        "area_m2": 258700.00000023842,
+        "area_hectares": 25.870000000023843
+      },
+      "ground": {
+        "pixel_count": 11644,
+        "area_m2": 1164400.0000010731,
+        "area_hectares": 116.44000000010732
+      },
+      "stockpile_fraction": 0.17965277777777777
+    }
+  },
+  {
+    "date": "2025-06-08",
+    "stockpile_m2": 329600.0000003037,
+    "stockpile_ha": 32.96000000003037,
+    "stockpile_fraction": 0.2288888888888889,
+    "all_classes": {
+      "water": {
+        "pixel_count": 6,
+        "area_m2": 600.000000000553,
+        "area_hectares": 0.060000000000055294
+      },
+      "vegetation": {
+        "pixel_count": 92,
+        "area_m2": 9200.000000008478,
+        "area_hectares": 0.9200000000008478
+      },
+      "stockpile": {
+        "pixel_count": 3296,
+        "area_m2": 329600.0000003037,
+        "area_hectares": 32.96000000003037
+      },
+      "ground": {
+        "pixel_count": 11006,
+        "area_m2": 1100600.0000010142,
+        "area_hectares": 110.06000000010143
+      },
+      "stockpile_fraction": 0.2288888888888889
+    }
+  },
+  {
+    "date": "2025-06-10",
+    "stockpile_m2": 273800.00000025233,
+    "stockpile_ha": 27.380000000025234,
+    "stockpile_fraction": 0.19013888888888889,
+    "all_classes": {
+      "vegetation": {
+        "pixel_count": 87,
+        "area_m2": 8700.000000008018,
+        "area_hectares": 0.8700000000008018
+      },
+      "stockpile": {
+        "pixel_count": 2738,
+        "area_m2": 273800.00000025233,
+        "area_hectares": 27.380000000025234
+      },
+      "ground": {
+        "pixel_count": 11575,
+        "area_m2": 1157500.0000010668,
+        "area_hectares": 115.75000000010668
+      },
+      "stockpile_fraction": 0.19013888888888889
+    }
+  },
+  {
+    "date": "2025-06-15",
+    "stockpile_m2": 262500.0000002419,
+    "stockpile_ha": 26.25000000002419,
+    "stockpile_fraction": 0.18229166666666666,
+    "all_classes": {
+      "water": {
+        "pixel_count": 114,
+        "area_m2": 11400.000000010506,
+        "area_hectares": 1.1400000000010506
+      },
+      "vegetation": {
+        "pixel_count": 115,
+        "area_m2": 11500.000000010597,
+        "area_hectares": 1.1500000000010597
+      },
+      "stockpile": {
+        "pixel_count": 2625,
+        "area_m2": 262500.0000002419,
+        "area_hectares": 26.25000000002419
+      },
+      "ground": {
+        "pixel_count": 11546,
+        "area_m2": 1154600.000001064,
+        "area_hectares": 115.4600000001064
+      },
+      "stockpile_fraction": 0.18229166666666666
+    }
+  },
+  {
+    "date": "2025-06-30",
+    "stockpile_m2": 386300.000000356,
+    "stockpile_ha": 38.6300000000356,
+    "stockpile_fraction": 0.2682638888888889,
+    "all_classes": {
+      "water": {
+        "pixel_count": 2,
+        "area_m2": 200.00000000018431,
+        "area_hectares": 0.02000000000001843
+      },
+      "vegetation": {
+        "pixel_count": 71,
+        "area_m2": 7100.000000006543,
+        "area_hectares": 0.7100000000006543
+      },
+      "stockpile": {
+        "pixel_count": 3863,
+        "area_m2": 386300.000000356,
+        "area_hectares": 38.6300000000356
+      },
+      "ground": {
+        "pixel_count": 10464,
+        "area_m2": 1046400.0000009644,
+        "area_hectares": 104.64000000009644
+      },
+      "stockpile_fraction": 0.2682638888888889
+    }
+  },
+  {
+    "date": "2025-07-03",
+    "stockpile_m2": 351200.00000032363,
+    "stockpile_ha": 35.12000000003236,
+    "stockpile_fraction": 0.24388888888888888,
+    "all_classes": {
+      "water": {
+        "pixel_count": 1,
+        "area_m2": 100.00000000009216,
+        "area_hectares": 0.010000000000009215
+      },
+      "vegetation": {
+        "pixel_count": 62,
+        "area_m2": 6200.000000005713,
+        "area_hectares": 0.6200000000005713
+      },
+      "stockpile": {
+        "pixel_count": 3512,
+        "area_m2": 351200.00000032363,
+        "area_hectares": 35.12000000003236
+      },
+      "ground": {
+        "pixel_count": 10825,
+        "area_m2": 1082500.0000009977,
+        "area_hectares": 108.25000000009977
+      },
+      "stockpile_fraction": 0.24388888888888888
+    }
+  },
+  {
+    "date": "2025-07-05",
+    "stockpile_m2": 391400.0000003607,
+    "stockpile_ha": 39.140000000036075,
+    "stockpile_fraction": 0.2718055555555556,
+    "all_classes": {
+      "water": {
+        "pixel_count": 1,
+        "area_m2": 100.00000000009216,
+        "area_hectares": 0.010000000000009215
+      },
+      "vegetation": {
+        "pixel_count": 68,
+        "area_m2": 6800.000000006266,
+        "area_hectares": 0.6800000000006267
+      },
+      "stockpile": {
+        "pixel_count": 3914,
+        "area_m2": 391400.0000003607,
+        "area_hectares": 39.140000000036075
+      },
+      "ground": {
+        "pixel_count": 10417,
+        "area_m2": 1041700.00000096,
+        "area_hectares": 104.170000000096
+      },
+      "stockpile_fraction": 0.2718055555555556
+    }
+  },
+  {
+    "date": "2025-07-08",
+    "stockpile_m2": 342400.00000031554,
+    "stockpile_ha": 34.24000000003156,
+    "stockpile_fraction": 0.23777777777777778,
+    "all_classes": {
+      "water": {
+        "pixel_count": 1,
+        "area_m2": 100.00000000009216,
+        "area_hectares": 0.010000000000009215
+      },
+      "vegetation": {
+        "pixel_count": 54,
+        "area_m2": 5400.000000004977,
+        "area_hectares": 0.5400000000004976
+      },
+      "stockpile": {
+        "pixel_count": 3424,
+        "area_m2": 342400.00000031554,
+        "area_hectares": 34.24000000003156
+      },
+      "ground": {
+        "pixel_count": 10921,
+        "area_m2": 1092100.0000010065,
+        "area_hectares": 109.21000000010065
+      },
+      "stockpile_fraction": 0.23777777777777778
+    }
+  },
+  {
+    "date": "2025-07-12",
+    "stockpile_m2": 456200.00000042043,
+    "stockpile_ha": 45.62000000004204,
+    "stockpile_fraction": 0.31680555555555556,
+    "all_classes": {
+      "water": {
+        "pixel_count": 22,
+        "area_m2": 2200.0000000020273,
+        "area_hectares": 0.22000000000020273
+      },
+      "vegetation": {
+        "pixel_count": 58,
+        "area_m2": 5800.000000005345,
+        "area_hectares": 0.5800000000005345
+      },
+      "stockpile": {
+        "pixel_count": 4562,
+        "area_m2": 456200.00000042043,
+        "area_hectares": 45.62000000004204
+      },
+      "ground": {
+        "pixel_count": 9758,
+        "area_m2": 975800.0000008993,
+        "area_hectares": 97.58000000008992
+      },
+      "stockpile_fraction": 0.31680555555555556
+    }
+  },
+  {
+    "date": "2025-07-13",
+    "stockpile_m2": 461100.0000004249,
+    "stockpile_ha": 46.11000000004249,
+    "stockpile_fraction": 0.3202083333333333,
+    "all_classes": {
+      "water": {
+        "pixel_count": 2,
+        "area_m2": 200.00000000018431,
+        "area_hectares": 0.02000000000001843
+      },
+      "vegetation": {
+        "pixel_count": 47,
+        "area_m2": 4700.000000004331,
+        "area_hectares": 0.4700000000004331
+      },
+      "stockpile": {
+        "pixel_count": 4611,
+        "area_m2": 461100.0000004249,
+        "area_hectares": 46.11000000004249
+      },
+      "ground": {
+        "pixel_count": 9740,
+        "area_m2": 974000.0000008976,
+        "area_hectares": 97.40000000008976
+      },
+      "stockpile_fraction": 0.3202083333333333
+    }
+  },
+  {
+    "date": "2025-07-15",
+    "stockpile_m2": 370300.0000003413,
+    "stockpile_ha": 37.03000000003413,
+    "stockpile_fraction": 0.2571527777777778,
+    "all_classes": {
+      "water": {
+        "pixel_count": 10,
+        "area_m2": 1000.0000000009215,
+        "area_hectares": 0.10000000000009215
+      },
+      "vegetation": {
+        "pixel_count": 56,
+        "area_m2": 5600.0000000051605,
+        "area_hectares": 0.5600000000005161
+      },
+      "stockpile": {
+        "pixel_count": 3703,
+        "area_m2": 370300.0000003413,
+        "area_hectares": 37.03000000003413
+      },
+      "ground": {
+        "pixel_count": 10631,
+        "area_m2": 1063100.0000009798,
+        "area_hectares": 106.31000000009797
+      },
+      "stockpile_fraction": 0.2571527777777778
+    }
+  },
+  {
+    "date": "2025-07-23",
+    "stockpile_m2": 466700.0000004301,
+    "stockpile_ha": 46.67000000004301,
+    "stockpile_fraction": 0.3240972222222222,
+    "all_classes": {
+      "vegetation": {
+        "pixel_count": 44,
+        "area_m2": 4400.0000000040545,
+        "area_hectares": 0.44000000000040546
+      },
+      "stockpile": {
+        "pixel_count": 4667,
+        "area_m2": 466700.0000004301,
+        "area_hectares": 46.67000000004301
+      },
+      "ground": {
+        "pixel_count": 9689,
+        "area_m2": 968900.0000008929,
+        "area_hectares": 96.89000000008929
+      },
+      "stockpile_fraction": 0.3240972222222222
+    }
+  },
+  {
+    "date": "2025-07-28",
+    "stockpile_m2": 367600.00000033877,
+    "stockpile_ha": 36.76000000003388,
+    "stockpile_fraction": 0.25527777777777777,
+    "all_classes": {
+      "vegetation": {
+        "pixel_count": 44,
+        "area_m2": 4400.0000000040545,
+        "area_hectares": 0.44000000000040546
+      },
+      "stockpile": {
+        "pixel_count": 3676,
+        "area_m2": 367600.00000033877,
+        "area_hectares": 36.76000000003388
+      },
+      "ground": {
+        "pixel_count": 10680,
+        "area_m2": 1068000.0000009842,
+        "area_hectares": 106.80000000009842
+      },
+      "stockpile_fraction": 0.25527777777777777
+    }
+  },
+  {
+    "date": "2025-07-30",
+    "stockpile_m2": 467800.0000004311,
+    "stockpile_ha": 46.78000000004311,
+    "stockpile_fraction": 0.3248611111111111,
+    "all_classes": {
+      "vegetation": {
+        "pixel_count": 57,
+        "area_m2": 5700.000000005253,
+        "area_hectares": 0.5700000000005253
+      },
+      "stockpile": {
+        "pixel_count": 4678,
+        "area_m2": 467800.0000004311,
+        "area_hectares": 46.78000000004311
+      },
+      "ground": {
+        "pixel_count": 9665,
+        "area_m2": 966500.0000008907,
+        "area_hectares": 96.65000000008907
+      },
+      "stockpile_fraction": 0.3248611111111111
+    }
+  },
+  {
+    "date": "2025-08-12",
+    "stockpile_m2": 394200.0000003633,
+    "stockpile_ha": 39.420000000036325,
+    "stockpile_fraction": 0.27375,
+    "all_classes": {
+      "water": {
+        "pixel_count": 6,
+        "area_m2": 600.000000000553,
+        "area_hectares": 0.060000000000055294
+      },
+      "vegetation": {
+        "pixel_count": 42,
+        "area_m2": 4200.000000003871,
+        "area_hectares": 0.42000000000038706
+      },
+      "stockpile": {
+        "pixel_count": 3942,
+        "area_m2": 394200.0000003633,
+        "area_hectares": 39.420000000036325
+      },
+      "ground": {
+        "pixel_count": 10410,
+        "area_m2": 1041000.0000009594,
+        "area_hectares": 104.10000000009593
+      },
+      "stockpile_fraction": 0.27375
+    }
+  },
+  {
+    "date": "2025-08-21",
+    "stockpile_m2": 335100.0000003088,
+    "stockpile_ha": 33.51000000003088,
+    "stockpile_fraction": 0.23270833333333332,
+    "all_classes": {
+      "vegetation": {
+        "pixel_count": 48,
+        "area_m2": 4800.000000004424,
+        "area_hectares": 0.48000000000044235
+      },
+      "stockpile": {
+        "pixel_count": 3351,
+        "area_m2": 335100.0000003088,
+        "area_hectares": 33.51000000003088
+      },
+      "ground": {
+        "pixel_count": 11001,
+        "area_m2": 1100100.0000010137,
+        "area_hectares": 110.01000000010137
+      },
+      "stockpile_fraction": 0.23270833333333332
+    }
+  },
+  {
+    "date": "2025-08-22",
+    "stockpile_m2": 362900.00000033446,
+    "stockpile_ha": 36.290000000033444,
+    "stockpile_fraction": 0.25201388888888887,
+    "all_classes": {
+      "water": {
+        "pixel_count": 8,
+        "area_m2": 800.0000000007373,
+        "area_hectares": 0.08000000000007372
+      },
+      "vegetation": {
+        "pixel_count": 37,
+        "area_m2": 3700.0000000034097,
+        "area_hectares": 0.37000000000034095
+      },
+      "stockpile": {
+        "pixel_count": 3629,
+        "area_m2": 362900.00000033446,
+        "area_hectares": 36.290000000033444
+      },
+      "ground": {
+        "pixel_count": 10726,
+        "area_m2": 1072600.0000009884,
+        "area_hectares": 107.26000000009884
+      },
+      "stockpile_fraction": 0.25201388888888887
+    }
+  },
+  {
+    "date": "2025-09-13",
+    "stockpile_m2": 355300.0000003274,
+    "stockpile_ha": 35.53000000003274,
+    "stockpile_fraction": 0.2467361111111111,
+    "all_classes": {
+      "water": {
+        "pixel_count": 1,
+        "area_m2": 100.00000000009216,
+        "area_hectares": 0.010000000000009215
+      },
+      "vegetation": {
+        "pixel_count": 29,
+        "area_m2": 2900.0000000026726,
+        "area_hectares": 0.29000000000026727
+      },
+      "stockpile": {
+        "pixel_count": 3553,
+        "area_m2": 355300.0000003274,
+        "area_hectares": 35.53000000003274
+      },
+      "ground": {
+        "pixel_count": 10817,
+        "area_m2": 1081700.000000997,
+        "area_hectares": 108.1700000000997
+      },
+      "stockpile_fraction": 0.2467361111111111
+    }
+  },
+  {
+    "date": "2025-09-16",
+    "stockpile_m2": 242600.00000022358,
+    "stockpile_ha": 24.26000000002236,
+    "stockpile_fraction": 0.16847222222222222,
+    "all_classes": {
+      "vegetation": {
+        "pixel_count": 25,
+        "area_m2": 2500.0000000023038,
+        "area_hectares": 0.25000000000023037
+      },
+      "stockpile": {
+        "pixel_count": 2426,
+        "area_m2": 242600.00000022358,
+        "area_hectares": 24.26000000002236
+      },
+      "ground": {
+        "pixel_count": 11949,
+        "area_m2": 1194900.0000011013,
+        "area_hectares": 119.49000000011013
+      },
+      "stockpile_fraction": 0.16847222222222222
+    }
+  },
+  {
+    "date": "2025-09-18",
+    "stockpile_m2": 217600.00000020053,
+    "stockpile_ha": 21.760000000020053,
+    "stockpile_fraction": 0.1511111111111111,
+    "all_classes": {
+      "vegetation": {
+        "pixel_count": 15,
+        "area_m2": 1500.0000000013824,
+        "area_hectares": 0.15000000000013824
+      },
+      "stockpile": {
+        "pixel_count": 2176,
+        "area_m2": 217600.00000020053,
+        "area_hectares": 21.760000000020053
+      },
+      "ground": {
+        "pixel_count": 12209,
+        "area_m2": 1220900.000001125,
+        "area_hectares": 122.09000000011251
+      },
+      "stockpile_fraction": 0.1511111111111111
+    }
+  },
+  {
     "date": "2026-01-16",
     "stockpile_m2": 49400.000000045526,
     "stockpile_ha": 4.940000000004552,
