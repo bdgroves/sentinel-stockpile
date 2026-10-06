@@ -1,29 +1,26 @@
 [workspace]
 name = "sentinel-stockpile"
-version = "0.1.0"
-description = "Open-source satellite change detection for commodity stockpile monitoring"
+version = "2.0.0"
+description = "Commodity stockpiles measured from Sentinel-2: the economy you can see from space"
 channels = ["conda-forge"]
 platforms = ["win-64", "linux-64", "osx-arm64"]
 
 [dependencies]
-python = ">=3.11"
+python = ">=3.11,<3.13"
 numpy = ">=1.26"
+scipy = ">=1.12"
 rasterio = ">=1.3"
-geopandas = ">=0.14"
 shapely = ">=2.0"
+pyproj = ">=3.6"
+pillow = ">=10.0"
 matplotlib = ">=3.8"
 pystac-client = ">=0.7"
 planetary-computer = ">=1.0"
-stackstac = ">=0.5"
-xarray = ">=2024.1"
-dask = ">=2024.1"
-pyproj = ">=3.6"
-click = ">=8.1"
-rich = ">=13.0"
 
 [tasks]
-fetch = "python src/fetch_imagery.py"
-detect = "python src/classify.py"
-measure = "python src/measure.py"
-report = "python src/report.py"
-pipeline = "python src/pipeline.py"
+update  = "python -m stockpile update"     # pixi run update --site vancouver_wind
+rebuild = "python -m stockpile rebuild"    # reclassify cached scenes
+publish = "python -m stockpile publish"
+sites   = "python -m stockpile sites"
+stacks  = "git fetch origin stacks && mkdir -p stacks && git archive FETCH_HEAD -o stacks.tar && tar -xf stacks.tar -C stacks && rm stacks.tar"
+serve   = "python -m http.server 8000 -d docs"

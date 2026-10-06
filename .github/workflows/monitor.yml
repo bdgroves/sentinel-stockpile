@@ -1,0 +1,147 @@
+name: Stockpile monitor
+
+# Twice a week: for every site in sites/, fetch any new Sentinel-2 scenes,
+# rebuild its time series and dashboard data, then commit everything once.
+# Band stacks are cached on the single-commit `stacks` branch, so reclassifying
+# never re-downloads imagery.
+#
+# Backfill:  Run workflow -> start = 2023-04-01 (optionally sites = a,b)
+# Retune:    Run workflow -> rebuild = true   (reclassify cached scenes only)
+on:
+  schedule:
+    - cron: "23 15 * * 1,4"
+  workflow_dispatch:
+    inputs:
+      sites:
+        description: "Sites to run (comma list; blank = all)"
+        default: ""
+      start:
+        description: "Fetch from this date (blank = since the last scene)"
+        default: ""
+      rebuild:
+        description: "Only reclassify cached scenes (true/false)"
+        default: "false"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stockpile-monitor
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      sites: ${{ steps.s.outputs.sites }}
+    steps:
+      - uses: actions/checkout@v5
+      - id: s
+        run: |
+          python3 - <<'EOF' >> "$GITHUB_OUTPUT"
+          import json, sys
+          sys.path.insert(0, ".")
+          from stockpile.sites import all_ids
+          want = [s.strip() for s in "${{ inputs.sites }}".split(",") if s.strip()]
+          ids = [i for i in all_ids() if not want or i in want]
+          print("sites=" + json.dumps(ids))
+          EOF
+
+  site:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        site: ${{ fromJSON(needs.plan.outputs.sites) }}
+    steps:
+      - uses: actions/checkout@v5
+      - name: Cached band stacks
+        run: |
+          mkdir -p stacks
+          if git fetch -q --depth 1 origin stacks 2>/dev/null && git ls-tree -d --name-only FETCH_HEAD | grep -qx "${{ matrix.site }}"; then
+            git archive FETCH_HEAD "${{ matrix.site }}" | tar -x -C stacks
+          fi
+          echo "cached scenes: $(ls stacks/${{ matrix.site }} 2>/dev/null | wc -l)"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -q -r requirements.txt
+      - name: Update
+        run: |
+          set -o pipefail
+          if [ "${{ inputs.rebuild }}" = "true" ]; then
+            python -m stockpile rebuild --site ${{ matrix.site }} 2>&1 | tee run.log
+          elif [ -n "${{ inputs.start }}" ]; then
+            python -m stockpile update --site ${{ matrix.site }} --start ${{ inputs.start }} 2>&1 | tee run.log
+          else
+            python -m stockpile update --site ${{ matrix.site }} 2>&1 | tee run.log
+          fi
+          mkdir -p data/${{ matrix.site }} && cp run.log data/${{ matrix.site }}/last-run.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: site-${{ matrix.site }}
+          path: |
+            docs/data/${{ matrix.site }}
+            data/${{ matrix.site }}
+            stacks/${{ matrix.site }}
+          retention-days: 7
+          if-no-files-found: ignore
+
+  publish:
+    needs: site
+    if: always() && needs.site.result != 'cancelled'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: site-*
+          path: incoming
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -q -r requirements.txt
+      - name: Merge site results
+        run: |
+          shopt -s nullglob
+          for d in incoming/site-*; do
+            id=${d#incoming/site-}
+            [ -d "$d/docs/data/$id" ] && mkdir -p docs/data && rm -rf "docs/data/$id" && cp -r "$d/docs/data/$id" docs/data/
+            [ -d "$d/data/$id" ] && mkdir -p data && rm -rf "data/$id" && cp -r "$d/data/$id" data/
+          done
+          python -m stockpile publish
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data docs/charts data
+          git diff --staged --quiet && { echo "nothing new"; exit 0; }
+          git commit -q -m "📡 stockpile update $(date -u +%Y-%m-%d) [skip ci]"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q && exit 0; sleep 10; done
+          exit 1
+      - name: Save band stacks
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p /tmp/stacks
+          if git fetch -q --depth 1 origin stacks 2>/dev/null; then git archive FETCH_HEAD | tar -x -C /tmp/stacks; fi
+          shopt -s nullglob
+          for d in incoming/site-*; do
+            id=${d#incoming/site-}
+            [ -d "$d/stacks/$id" ] && mkdir -p "/tmp/stacks/$id" && cp -r "$d/stacks/$id/." "/tmp/stacks/$id/"
+          done
+          cd /tmp/stacks && [ -n "$(ls)" ] || exit 0
+          git init -q -b stacks
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A && git commit -q -m "band stacks $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -f -q "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" stacks
+          du -sh /tmp/stacks

@@ -22,3 +22,7 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# v2: band stacks live on the `stacks` branch
+stacks/
+stacks.tar

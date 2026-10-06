@@ -1,0 +1,33 @@
+{
+  "_about": "Classification rules per commodity. 'scale' says which reflectance the thresholds were tuned on: 'legacy' = v1's raw DN/10000, which still carried Sentinel-2's +1000 offset (processing baseline 04.00+, i.e. every scene since January 2022); 'true' = surface reflectance with the offset removed. min_object_px drops specks smaller than that many 10 m pixels; fill_holes_px fills gaps inside a pile up to that size.",
+  "lumber": {
+    "scale": "legacy",
+    "water_ndwi": 0.1,
+    "veg_ndvi": 0.35,
+    "bsi_min": 0.03,
+    "brightness_min": 0.175,
+    "brightness_max": 0.25,
+    "min_object_px": 3,
+    "fill_holes_px": 2
+  },
+  "containers": {
+    "scale": "legacy",
+    "water_ndwi": 0.1,
+    "veg_ndvi": 0.35,
+    "bsi_min": -0.2,
+    "brightness_min": 0.10,
+    "brightness_max": 0.50,
+    "min_object_px": 3,
+    "fill_holes_px": 2
+  },
+  "wind_components": {
+    "scale": "legacy",
+    "water_ndwi": 0.1,
+    "veg_ndvi": 0.35,
+    "bsi_min": -0.05,
+    "brightness_min": 0.22,
+    "brightness_max": 0.50,
+    "min_object_px": 3,
+    "fill_holes_px": 2
+  }
+}

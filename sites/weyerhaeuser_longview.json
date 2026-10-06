@@ -1,0 +1,11 @@
+{
+  "id": "weyerhaeuser_longview",
+  "name": "Weyerhaeuser Longview Mill Complex",
+  "commodity": "lumber",
+  "latitude": 46.138,
+  "longitude": -122.937,
+  "buffer_meters": 700,
+  "description": "Major Weyerhaeuser lumber mill and log yard on the Columbia River. Large log sorting and storage area.",
+  "notes": "Raw logs in water and on land, dimensional lumber stacks, sawdust piles. Mill buildings have distinct thermal and spectral signatures.",
+  "start": "2023-04-01"
+}
