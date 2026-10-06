@@ -25,9 +25,9 @@ Median active stockpile area over June–September, from every clear Sentinel-2 
 | [Weyerhaeuser Longview](docs/charts/weyerhaeuser_longview_yoy.png) | logs, lumber, chips | 33.1 ha | 34.1 ha | 31.7 ha | 25.0 ha |
 | [Port of Tacoma, Husky + East Sitcum](docs/charts/tacoma_port_yoy.png) | container stacks | 7.4 ha | 12.8 ha | 11.4 ha | 9.1 ha |
 
-(15–31 clear scenes per summer per site; 2026 runs to the end of September.)
+(15–31 clear scenes per summer per site; 2026 runs to the end of September. Tacoma is total stack area: container yards have no always-on ground to subtract. The wind rule measures big, bright, neutral-white cargo, which on the photos is blades and towers.)
 
-- **The wind yards have emptied.** Terminal 5 went from rows of blades across the yard in 2023 to bare pavement in 2025 and 2026. Longview's blade racks have shrunk every summer too, by more than half since 2023. The data shows the decline, not its cause: project pipelines, interest rates, supply chains and federal wind policy all moved over these years.
+- **Terminal 5 has emptied, and Longview has more than halved.** Terminal 5 went from rows of blades across the yard in 2023 to bare pavement in 2025 and 2026. Longview's blade racks have shrunk every summer too, by more than half since 2023. The data shows the decline, not its cause: project pipelines, interest rates, supply chains and federal wind policy all moved over these years.
 - **The log yard's summer is smaller this year.** Weyerhaeuser's decks and chip piles fill every summer (and read lower every winter, partly because wet wood is darker); summer 2026 is about a quarter below the three before it.
 - **Tacoma's stacks jumped in 2024** and have eased since, while staying above 2023.
 
@@ -38,7 +38,7 @@ These are areas, not volumes or counts, and they are an index of activity. The [
 ## How it works
 
 1. **Find the passes.** For each site, every Sentinel-2 L2A scene since the start date is found on [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/dataset/sentinel-2-l2a), keeping one per day whose footprint covers the whole yard.
-2. **Screen for weather.** Sentinel's own scene classification (SCL) has to show under 10% cloud and shadow in a 3 km window and almost none over the yard. About half of all passes fail, mostly in winter. Later, scenes whose yard is much brighter than usual in blue (cloud the mask missed, wildfire smoke) and scenes with a fifth of the yard under snow are set aside too.
+2. **Screen for weather.** Sentinel's own scene classification (SCL) has to show under 10% cloud and shadow in a window of 3 km or more and almost none over the yard. Passes over 80% cloudy are skipped outright; of the rest, 40–58% still fail, at the worst rate in winter. Later, scenes whose yard is much brighter than usual in blue (cloud the mask missed, wildfire smoke) and scenes with a fifth of the yard under snow are set aside too.
 3. **Put every scene on one grid.** Six bands (blue, green, red, NIR, SWIR1, SWIR2) are warped onto a fixed 10 m UTM grid per site, with Sentinel-2's +1000 reflectance offset removed. These band stacks are cached on the `stacks` branch, so reclassifying never re-downloads anything.
 4. **Classify each pixel by colour,** with one rule per kind of cargo, on true surface reflectance:
    - *Logs, lumber and chips* are warm: red well above blue, (R−B)/(R+B) > 0.25, above a brightness floor that leaves out the dark bark mud between the decks.
@@ -69,7 +69,7 @@ The rules live in [`sites/commodities.json`](sites/commodities.json), each with 
 The first version of this project ran from a notebook and a monthly workflow. Rebuilding it turned up three problems that changed its numbers, so they're worth saying plainly:
 
 - **Two sites were in the wrong place.** The "Port of Vancouver" box sat on downtown Vancouver, about 5 km southeast of Terminal 5, and the Weyerhaeuser box sat on downtown Longview. v1's Vancouver wind figures (summer peaks of 53–73 ha) were measuring bright downtown roofs, not blades. Every yard is now an OpenStreetMap outline of the actual terminal.
-- **The reflectance offset was never removed.** Since processing baseline 04.00 (January 2022), Sentinel-2 L2A values carry a +1000 offset. v1's thresholds were tuned on the offset values, which made ordinary pavement look like cargo; on the correct outlines its rules called 50–100% of each yard stockpile.
+- **The reflectance offset was never removed.** Since processing baseline 04.00 (January 2022), Sentinel-2 L2A values carry a +1000 offset. v1's thresholds were tuned on the offset values, which made ordinary pavement look like cargo; on the correct outlines its rules called between a quarter of a yard and all of it stockpile (Tacoma: every day, every pixel).
 - **The pipeline had been failing since April**: three jobs raced to push their results, and GitHub had switched the schedule off for inactivity.
 
 v3 adds the per-cargo colour rules above, the seasonal-green, snow and haze screens, per-site grids, cached band stacks, one-commit publishing, the validation tools and the dashboard. The Port of Longview, which v1 tracked as lumber, is now measured for blades: inside its outline, the 2023 photo shows blade racks and steel, and the log decks are next door at Weyerhaeuser. (Steel pipe and rail are as dark as the pavement and aren't measured.)

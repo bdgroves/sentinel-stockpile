@@ -6,7 +6,7 @@
   "longitude": -122.97244,
   "buffer_meters": 1700,
   "description": "Weyerhaeuser's Longview complex along the Columbia west of the Lewis and Clark Bridge: log decks, lumber yards, chip and sawdust piles and the mills themselves.",
-  "notes": "v1 measured a square on downtown Longview (46.138, -122.937) by mistake; v2 measures the mapped mill and yard outline. Mill roofs show up as always-on area and are kept apart.",
+  "notes": "v1 measured a square on downtown Longview (46.138, -122.937) by mistake; v3 measures the mapped mill and yard outline. Mill roofs show up as always-on area and are kept apart.",
   "start": "2023-04-01",
   "aoi": {
     "type": "Polygon",

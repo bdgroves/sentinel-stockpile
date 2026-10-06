@@ -6,7 +6,7 @@
   "longitude": -122.73171,
   "buffer_meters": 670,
   "description": "Terminal 5 at the Port of Vancouver USA is the laydown yard where wind-turbine blades, tower sections and nacelles are staged after they come off the ship; they leave by truck through the Columbia River Gorge for wind farms across the interior West.",
-  "notes": "v1 measured a square on downtown Vancouver's waterfront (45.626, -122.680) by mistake; v2 measures Terminal 5's mapped outline. Terminal 4 next door holds imported cars and is left out.",
+  "notes": "v1 measured a square on downtown Vancouver's waterfront (45.626, -122.680) by mistake; v3 measures Terminal 5's mapped outline. Terminal 4 next door holds imported cars and is left out.",
   "start": "2023-04-01",
   "aoi": {
     "type": "Polygon",
