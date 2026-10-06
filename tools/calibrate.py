@@ -51,12 +51,13 @@ def main():
     stack, _ = load_stack(f)
     aoi = site.aoi_mask()
     cls = C.classify(stack, rules)
-    pile = C.clean((cls == C.PILE) & aoi, rules.get("min_object_px", 3), rules.get("fill_holes_px", 2))
+    green = C.seasonal_green([C.ndvi(load_stack(g)[0]) for g in sorted(stacks_dir(site.id).glob("*.npz"))], rules)
+    pile = C.clean((cls == C.PILE) & aoi & ~green, rules.get("min_object_px", 3), rules.get("fill_holes_px", 2))
     b, valid = C.reflectance(stack)
     ix = C.indices(b, C.LEGACY_OFFSET if rules.get("scale") == "legacy" else 0.0)
     print(f"{site.id}: Sentinel {d} ({k} days from NAIP {naip_day}); rules scale={rules.get('scale')}")
     print(f"  stockpile {pile.sum() / 100:.1f} ha of {aoi.sum() / 100:.1f} ha yard ({pile.sum() / aoi.sum():.0%})")
-    for name in ("brightness", "bsi", "ndvi", "ndwi"):
+    for name in ("brightness", "warmth", "saturation", "swir1", "bsi", "ndvi", "ndwi"):
         v = ix[name][aoi & valid]
         q = np.percentile(v, [5, 25, 50, 75, 95])
         print(f"  {name:<10} yard p5 {q[0]:6.3f}  p25 {q[1]:6.3f}  p50 {q[2]:6.3f}  p75 {q[3]:6.3f}  p95 {q[4]:6.3f}")

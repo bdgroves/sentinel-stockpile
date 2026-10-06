@@ -1,22 +1,23 @@
 """
 Spectral classification of each pixel, then clean-up into objects.
 
-Classes: 1 water, 2 vegetation, 3 stockpile, 4 ground (and 0 no data).
+Classes: 1 water, 2 vegetation, 3 stockpile, 4 ground, 5 snow (and 0 no data).
 
-The rules are the same family as v1 (NDWI for water, NDVI for vegetation,
-then a bare-soil index and a brightness window for stockpile material), with
-the thresholds per commodity in sites/commodities.json. A commodity's
-thresholds carry the reflectance scale they were tuned on: 'legacy' rules are
-applied to reflectance with Sentinel-2's +0.1 offset put back, so v1's tuning
-reproduces exactly; 'true' rules apply to surface reflectance.
+Water (NDWI, and dark in the NIR), then vegetation (NDVI), then stockpile:
+a brightness window plus whichever colour tests the commodity names in
+sites/commodities.json (warmth for wood and painted containers, neutral white
+for blades, SWIR for dry wood). Thresholds are on true surface reflectance;
+a commodity marked scale 'legacy' gets Sentinel-2's +0.1 offset put back, so
+v1's original tuning can still be reproduced.
 """
 from __future__ import annotations
 
 import numpy as np
 from scipy import ndimage
 
-WATER, VEG, PILE, GROUND = 1, 2, 3, 4
-NAMES = {0: "nodata", 1: "water", 2: "vegetation", 3: "stockpile", 4: "ground"}
+WATER, VEG, PILE, GROUND, SNOW = 1, 2, 3, 4, 5
+NAMES = {0: "nodata", 1: "water", 2: "vegetation", 3: "stockpile", 4: "ground", 5: "snow"}
+SNOW_NDSI = 0.4  # snow is white in the visible and black in SWIR; blades and roofs are not
 LEGACY_OFFSET = 0.1
 
 
@@ -40,6 +41,17 @@ def indices(b: dict, shift: float = 0.0) -> dict:
         "ndwi": _nd(b["green"], b["nir"]),
         "bsi": _nd(b["swir1"] + b["red"], b["nir"] + b["blue"]),
         "brightness": ((b["red"] + b["green"] + b["blue"]) / 3.0).astype(np.float32),
+        # warm vs cool: fresh wood, bark and chips are orange-brown; pavement,
+        # concrete and roofs are grey or white
+        "warmth": _nd(b["red"], b["blue"]),
+        # how coloured, as opposed to grey: painted containers are coloured
+        "saturation": ((np.maximum(np.maximum(b["red"], b["green"]), b["blue"])
+                        - np.minimum(np.minimum(b["red"], b["green"]), b["blue"]))
+                       / np.maximum((b["red"] + b["green"] + b["blue"]) / 3.0, 1e-3)).astype(np.float32),
+        # shortwave infrared: dry wood, chips and bark-free lumber are bright
+        # here; wet bark mud and asphalt are dark
+        "swir1": b["swir1"].astype(np.float32),
+        "ndsi": _nd(b["green"], b["swir1"]),
     }
 
 
@@ -47,15 +59,46 @@ def classify(stack: np.ndarray, rules: dict) -> np.ndarray:
     b, valid = reflectance(stack)
     ix = indices(b, LEGACY_OFFSET if rules.get("scale") == "legacy" else 0.0)
     out = np.full(valid.shape, GROUND, dtype=np.uint8)
-    water = ix["ndwi"] > rules["water_ndwi"]
+    # water is green-over-NIR *and* dark in the NIR; white blades and roofs
+    # can have a slightly positive NDWI but are bright in every band
+    water = (ix["ndwi"] > rules["water_ndwi"]) & (b["nir"] < rules.get("water_nir_max", 0.15))
     veg = ~water & (ix["ndvi"] > rules["veg_ndvi"])
-    pile = (~water & ~veg & (ix["bsi"] > rules["bsi_min"])
-            & (ix["brightness"] > rules["brightness_min"]) & (ix["brightness"] < rules["brightness_max"]))
+    snow = ~water & ~veg & (ix["ndsi"] > rules.get("snow_ndsi", SNOW_NDSI)) & (ix["brightness"] > 0.15)
+    pile = ~water & ~veg & ~snow & (ix["brightness"] > rules["brightness_min"]) & (ix["brightness"] < rules["brightness_max"])
+    # optional tests: only the ones a commodity's rules name are applied
+    for key, idx, op in (("bsi_min", "bsi", ">"), ("bsi_max", "bsi", "<"),
+                         ("warmth_min", "warmth", ">"), ("warmth_max", "warmth", "<"),
+                         ("saturation_min", "saturation", ">"), ("saturation_max", "saturation", "<"),
+                         ("swir1_min", "swir1", ">"), ("swir1_max", "swir1", "<")):
+        if key in rules:
+            pile &= (ix[idx] > rules[key]) if op == ">" else (ix[idx] < rules[key])
     out[water] = WATER
     out[veg] = VEG
+    out[snow] = SNOW
     out[pile] = PILE
     out[~valid] = 0
     return out
+
+
+def ndvi(stack: np.ndarray) -> np.ndarray:
+    """NDVI with no-data as NaN, for the seasonal-vegetation mask."""
+    b, valid = reflectance(stack)
+    x = indices(b)["ndvi"]
+    x[~valid] = np.nan
+    return x
+
+
+def seasonal_green(ndvis: list, rules: dict, q: float = 90) -> np.ndarray:
+    """Pixels that are properly green on a good share of clear dates (their
+    90th-percentile NDVI is above green_ever_ndvi). In late summer dry grass
+    has the colour of a log deck; in spring it gives itself away."""
+    if "green_ever_ndvi" not in rules or len(ndvis) < 10:
+        return np.zeros(ndvis[0].shape, bool) if ndvis else np.zeros((0, 0), bool)
+    import warnings
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", RuntimeWarning)
+        p = np.nanpercentile(np.stack(ndvis), q, axis=0)
+    return np.nan_to_num(p, nan=0.0) > rules["green_ever_ndvi"]
 
 
 def clean(pile: np.ndarray, min_px: int = 3, fill_px: int = 2) -> np.ndarray:

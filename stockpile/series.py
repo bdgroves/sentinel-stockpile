@@ -30,6 +30,8 @@ from .sites import ROOT, Site, commodities
 PERSIST_FRAC = 0.9        # stockpile on at least this share of clear scenes ...
 PERSIST_MIN_SCENES = 20   # ... out of at least this many
 SMOOTH_DAYS = 21
+SNOW_MAX = 0.2            # scenes with more of the yard than this under snow are set aside
+HAZE_RATIO = 1.5          # ... and scenes whose yard is this much brighter in blue than usual
 
 
 def web_dir(site_id: str) -> Path:
@@ -64,24 +66,43 @@ def build(site: Site, write_objects: bool = True) -> dict:
     (out_dir / "objects").mkdir(parents=True, exist_ok=True)
     (out_dir / "thumbs").mkdir(parents=True, exist_ok=True)
 
-    # pass 1: classify and clean every cached scene
-    scenes, piles = [], []
+    # pass 1: classify every cached scene
+    scenes, ndvis, snowy = [], [], []
     for f in files:
         stack, meta = load_stack(f)
         day = f"{f.stem[:4]}-{f.stem[4:6]}-{f.stem[6:]}"
         cls = C.classify(stack, rules)
-        pile = C.clean((cls == C.PILE) & aoi, rules.get("min_object_px", 3), rules.get("fill_holes_px", 2))
         valid = (cls > 0) & aoi
-        scenes.append({"date": day, "stack": f, "cls": cls, "valid": valid})
-        piles.append(pile)
+        if ((cls == C.SNOW) & aoi).sum() > SNOW_MAX * aoi.sum():
+            snowy.append(day)  # piles under snow can't be measured
+            continue
+        blue = stack[0][aoi & (stack[0] != -32768)]
+        scenes.append({"date": day, "stack": f, "cls": cls, "valid": valid,
+                       "blue": float(np.median(blue)) / 1e4 if blue.size else np.nan})
+        ndvis.append(C.ndvi(stack))
         if write_objects:
-            tp = out_dir / "thumbs" / f"{f.stem}.jpg"
-            if not tp.exists():
-                thumb(stack, tp)
+            # always rewritten (JPEG output is deterministic, so unchanged
+            # scenes make no git diff): a moved grid must never leave old
+            # thumbnails behind under the same dates
+            thumb(stack, out_dir / "thumbs" / f"{f.stem}.jpg")
+    # haze: cloud the scene classification missed, or wildfire smoke, lifts
+    # the whole yard in the blue band. Set aside scenes far above the usual.
+    hazy = []
+    if len(scenes) >= 10:
+        typical = float(np.nanmedian([s_["blue"] for s_ in scenes]))
+        ok = [not (s_["blue"] > HAZE_RATIO * typical) for s_ in scenes]
+        hazy = [s_["date"] for s_, k in zip(scenes, ok) if not k]
+        scenes = [s_ for s_, k in zip(scenes, ok) if k]
+        ndvis = [n for n, k in zip(ndvis, ok) if k]
     if not scenes:
         return {}
+    # ground that is green for a good part of the year is never stockpile
+    green = C.seasonal_green(ndvis, rules)
+    del ndvis
+    piles = [C.clean((s["cls"] == C.PILE) & aoi & ~green, rules.get("min_object_px", 3),
+                     rules.get("fill_holes_px", 2)) for s in scenes]
     # drop web files for scenes no longer in the cache (e.g. after the grid moved)
-    keep = {f.stem for f in files}
+    keep = {s["stack"].stem for s in scenes}
     for sub, ext in (("objects", ".geojson"), ("thumbs", ".jpg")):
         for old in (out_dir / sub).glob(f"*{ext}"):
             if old.stem not in keep:
@@ -156,12 +177,15 @@ def build(site: Site, write_objects: bool = True) -> dict:
         "persistent": {"type": "FeatureCollection", "features": pers_feats,
                        "rule": f"stockpile on >= {PERSIST_FRAC:.0%} of {n_clear} clear scenes",
                        "area_ha": round(float(persistent.sum() * px_ha), 3)},
+        "seasonal_green_ha": round(float((green & aoi).sum() * px_ha), 2),
         "scenes": rows,
         "norm_active_by_week": norm,
         "looked_at": len(catalog),
-        "rejected": {k: sum(1 for s in rejected if s.get("status") == k) for k in ("cloudy", "nodata")},
+        "rejected": {**{k: sum(1 for s in rejected if s.get("status") == k) for k in ("cloudy", "nodata")},
+                     "snow": len(snowy), "haze": len(hazy)},
+        "set_aside": {"snow": snowy, "haze": hazy},
         "updated": date.today().isoformat(),
-        "version": 2,
+        "version": 3,
     }
     (out_dir / "series.json").write_text(json.dumps(series, separators=(",", ":")))
     # a flat CSV for anyone who just wants the numbers

@@ -117,9 +117,9 @@ footer{border-top:1px solid var(--line);padding:18px 24px;font-size:13px;color:v
   </div>
 
   <div class="method">
-    <div><h3>What's measured</h3>Each Sentinel-2 pass (every 2&ndash;5 days) is warped onto the same 10 m grid. Every pixel is sorted into water, vegetation, ground or stockpile from its colour in six bands, specks under 300 m&sup2; are dropped, and what's left becomes outlined piles. <em>Active</em> area leaves out ground that reads as stockpile on nearly every clear day: roofs, slabs, permanent stacks.</div>
-    <div><h3>Clouds</h3>A scene is kept only if Sentinel's own scene classification finds under 10% cloud and shadow in a 3 km window around the yard, and almost none over it. Bright white piles can fool the cloud mask, so the yard itself is held to high-confidence cloud only. The count of passes lost to cloud is shown for each site; it is highest in winter.</div>
-    <div><h3>Caveats</h3>Ten-metre pixels see piles, not individual logs or blades; a pile under 300 m&sup2; is invisible. Area is not volume, and colour-based rules can confuse a pile with a bright roof or fresh concrete. Treat the numbers as an index of activity, and the year-over-year shape as the story.</div>
+    <div><h3>What's measured</h3>Each Sentinel-2 pass (every 2&ndash;5 days) is warped onto the same 10 m grid. Every pixel is sorted into water, vegetation, snow, ground or stockpile by colour, with a rule per cargo: wood is warm (red well above blue), container stacks are warmer than the grey pavement around them, and blades are bright, neutral white. Ground that turns green in spring is never counted (summer-dry grass is log-coloured). Specks under 300 m&sup2; are dropped and what's left becomes outlined piles. <em>Active</em> area leaves out ground that reads as stockpile on nearly every clear day, such as white roofs.</div>
+    <div><h3>Clouds, smoke and snow</h3>A scene is kept only if Sentinel's own scene classification finds under 10% cloud and shadow in a 3 km window around the yard, and almost none over it. Scenes where the whole yard is much brighter in blue than usual (cloud the mask missed, wildfire smoke) and scenes with a fifth of the yard under snow are set aside too. The counts are shown for each site; most losses are winter cloud.</div>
+    <div><h3>Caveats</h3>Ten-metre pixels see piles, not individual logs or blades; a pile under 300 m&sup2; is invisible. Area is not volume. Wet wood is darker than dry, so log yards read lower in winter: compare a date with the same weeks of other years (the norm and the year-over-year chart), not with last month. Treat the numbers as an index of activity, and the year-over-year shape as the story.</div>
   </div>
 </main>
 <footer>Contains modified Copernicus Sentinel-2 data (ESA), via Microsoft Planetary Computer &middot; built by <a href="https://brooksgroves.com">Brooks Groves</a> &middot; <a href="https://github.com/bdgroves/sentinel-stockpile">code and data</a></footer>
@@ -129,7 +129,7 @@ footer{border-top:1px solid var(--line);padding:18px 24px;font-size:13px;color:v
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script>
 const COMMODITY = {lumber: "Logs & lumber", containers: "Containers", wind_components: "Wind-turbine components"};
-const YEAR = {2023: "#8f8a80", 2024: "#6f9ab9", 2025: "#5aa3d6", 2026: "#e0a93b", 2027: "#c58bd6"};
+const YEAR = {2023: "#7d8590", 2024: "#4f8fd1", 2025: "#4fbfa3", 2026: "#e0a93b", 2027: "#c58bd6"};
 let SITES = [], S = null, idx = 0, timer = null;
 const $ = id => document.getElementById(id);
 const fmt = (v, d = 1) => v == null ? "–" : v.toLocaleString("en-US", {maximumFractionDigits: d, minimumFractionDigits: d});
@@ -172,7 +172,7 @@ async function choose(id) {
 function header() {
   const st = S.site, man = SITES.find(s => s.id === S.id);
   $("name").textContent = st.name;
-  $("where").textContent = `${COMMODITY[st.commodity] || st.commodity} · ${st.latitude.toFixed(3)}°N ${(-st.longitude).toFixed(3)}°W · ${S.scenes.length} clear scenes of ${S.looked_at} passes since ${nice(S.scenes[0].date)} (${Math.round(100 * (S.looked_at - S.scenes.length) / S.looked_at)}% lost to cloud)`;
+  $("where").textContent = `${COMMODITY[st.commodity] || st.commodity} · ${st.latitude.toFixed(3)}°N ${(-st.longitude).toFixed(3)}°W · ${S.scenes.length} clear scenes of ${S.looked_at} passes since ${nice(S.scenes[0].date)} (${Math.round(100 * (S.rejected.cloudy || 0) / S.looked_at)}% lost to cloud${S.rejected.snow ? `, ${S.rejected.snow} to snow` : ""})`;
   const last = S.scenes[S.scenes.length - 1];
   const vs = (a, b) => (a == null || b == null || !b) ? "" : (() => { const p = Math.round((a - b) / b * 100); return p === 0 ? "±0%" : `<span class="${p > 0 ? "up" : "down"}">${p > 0 ? "+" : "−"}${Math.abs(p)}%</span>`; })();
   $("kpis").innerHTML = `

@@ -1,12 +1,12 @@
 {
   "id": "longview_port",
-  "name": "Port of Longview — log and cargo yards",
-  "commodity": "lumber",
+  "name": "Port of Longview — breakbulk and wind cargo yards",
+  "commodity": "wind_components",
   "latitude": 46.10724,
   "longitude": -122.94756,
   "buffer_meters": 860,
-  "description": "The Port of Longview's riverfront berths and yards east of the Lewis and Clark Bridge: export logs, lumber, steel and project cargo such as wind-turbine blades.",
-  "notes": "The grain export terminal to the east is left out (its silos and conveyors read as permanent bright structures).",
+  "description": "The Port of Longview's riverfront laydown yards east of the Lewis and Clark Bridge, where wind-turbine blades and towers, steel and other project cargo wait for ships, trains and trucks.",
+  "notes": "The grain export terminal to the east is left out (its silos and conveyors read as permanent bright structures). v1 tracked this yard as lumber; on the 2023 NAIP photo the cargo inside this outline is blade racks and steel, and the log decks are next door at Weyerhaeuser, so v3 measures blades. Steel pipe and rail are as dark as the pavement and aren't measured.",
   "start": "2023-04-01",
   "aoi": {
     "type": "MultiPolygon",
