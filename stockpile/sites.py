@@ -82,6 +82,12 @@ class Site:
         from rasterio.features import geometry_mask
         from rasterio.warp import transform_geom
         geom = transform_geom("EPSG:4326", g.crs, self.aoi)
+        inset = float(self.extra.get("inset_m", 0))
+        if inset:
+            # pull the edge in, for yards whose outline runs along a strip of
+            # grass or trees that would otherwise blur into the edge pixels
+            from shapely.geometry import mapping, shape
+            geom = mapping(shape(geom).buffer(-inset))
         return geometry_mask([geom], out_shape=(g.height, g.width), transform=g.transform, invert=True)
 
     def aoi_geojson(self) -> dict:

@@ -6,7 +6,7 @@
   "longitude": -122.7484,
   "buffer_meters": 1380,
   "description": "Terminal 6 on the Columbia River in North Portland, Oregon's only international container terminal, which lost and then regained regular container service over the last decade.",
-  "notes": "The terminal also handles imported autos, which are mostly white and silver and fall outside the container colour rule.",
+  "notes": "The terminal also handles imported autos, which are mostly white and silver and fall outside the container colour rule. The outline is pulled in 20 m so the planted strip along its inland edge stays out.",
   "start": "2023-04-01",
   "aoi": {
     "type": "Polygon",
@@ -611,5 +611,6 @@
       ]
     ]
   },
-  "aoi_source": "OpenStreetMap way/420434119 (© OpenStreetMap contributors, ODbL)"
+  "aoi_source": "OpenStreetMap way/420434119 (© OpenStreetMap contributors, ODbL)",
+  "inset_m": 20
 }

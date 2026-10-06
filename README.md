@@ -4,7 +4,7 @@
 
 Logs stack up at a Columbia River mill. Wind-turbine blades wait on the docks for their trucks to the Gorge. Containers pile up behind the cranes in Tacoma. All of it is visible from 786 km up, every few days, for free.
 
-Sentinel Stockpile watches four Pacific Northwest yards with the European Space Agency's Sentinel-2 satellites, measures how much of each yard is covered in cargo on every clear day since April 2023, and keeps doing it twice a week on its own.
+Sentinel Stockpile watches eight Pacific Northwest port and mill yards with the European Space Agency's Sentinel-2 satellites, measures how much of each yard is covered in cargo on every clear day since April 2023, and keeps doing it twice a week on its own.
 
 **→ [Live dashboard](https://brooksgroves.com/sentinel-stockpile/)** · map with every clear scene and its outlined piles, time series, year-over-year chart, the numbers as CSV.
 
@@ -24,8 +24,12 @@ Median active stockpile area over June–September, from every clear Sentinel-2 
 | [Port of Longview](docs/charts/longview_port_yoy.png) | wind-turbine blades | 5.9 ha | 4.3 ha | 3.2 ha | 2.7 ha |
 | [Weyerhaeuser Longview](docs/charts/weyerhaeuser_longview_yoy.png) | logs, lumber, chips | 33.1 ha | 34.1 ha | 31.7 ha | 25.0 ha |
 | [Port of Tacoma, Husky + East Sitcum](docs/charts/tacoma_port_yoy.png) | container stacks | 7.4 ha | 12.8 ha | 11.4 ha | 9.1 ha |
+| [Port of Grays Harbor, Terminal 4](docs/charts/grays_harbor_yoy.png) | export logs | 7.8 ha | 2.9 ha | 3.1 ha | 2.2 ha |
+| [Port of Seattle, Terminal 5](docs/charts/seattle_t5_yoy.png) | container stacks | 3.9 ha | 3.9 ha | 10.5 ha | 8.9 ha |
+| [Port of Seattle, Terminal 18](docs/charts/seattle_t18_yoy.png) | container stacks | 2.5 ha | 3.8 ha | 4.6 ha | 2.1 ha |
+| [Port of Portland, Terminal 6](docs/charts/portland_t6_yoy.png) | container stacks | 3.7 ha | 2.9 ha | 2.2 ha | 1.7 ha |
 
-(15–31 clear scenes per summer per site; 2026 runs to the end of September. Tacoma is total stack area: container yards have no always-on ground to subtract. The wind rule measures big, bright, neutral-white cargo, which on the photos is blades and towers.)
+(15–31 clear scenes per summer per site, except Grays Harbor at 6–13: only one satellite track covers that whole yard. The last four yards were added in October 2026 and backfilled to 2023; 2026 runs to the end of September. Container yards are total stack area: they have no always-on ground to subtract. The wind rule measures big, bright, neutral-white cargo, which on the photos is blades and towers.)
 
 - **Terminal 5 has emptied, and Longview has more than halved.** Terminal 5 went from rows of blades across the yard in 2023 to bare pavement in 2025 and 2026. Longview's blade racks have shrunk every summer too, by more than half since 2023. The data shows the decline, not its cause: project pipelines, interest rates, supply chains and federal wind policy all moved over these years.
 - **The log yard's summer is smaller this year.** Weyerhaeuser's decks and chip piles fill every summer (and read lower every winter, partly because wet wood is darker); summer 2026 is about a quarter below the three before it.
