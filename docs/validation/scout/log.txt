@@ -1,0 +1,4 @@
+scout vancouver: NAIP 2023, 87 OSM outlines
+    retry 1: HTTPError: HTTP Error 504: Gateway Timeout
+scout longview: NAIP 2023, 16 OSM outlines
+scout tacoma: NAIP 2023, 131 OSM outlines
