@@ -1,5 +1,5 @@
 {
-  "_about": "Classification rules per commodity. 'scale' says which reflectance the thresholds were tuned on: 'legacy' = v1's raw DN/10000, which still carried Sentinel-2's +1000 offset (processing baseline 04.00+, i.e. every scene since January 2022); 'true' = surface reflectance with the offset removed. min_object_px drops specks smaller than that many 10 m pixels; fill_holes_px fills gaps inside a pile up to that size.",
+  "_about": "Classification rules per commodity. 'scale' says which reflectance the thresholds were tuned on: 'legacy' = v1's raw DN/10000, which still carried Sentinel-2's +1000 offset (processing baseline 04.00+, i.e. every scene since January 2022); 'true' = surface reflectance with the offset removed. min_object_px drops specks smaller than that many 10 m pixels; fill_holes_px fills gaps inside a pile up to that size. subtract_persistent: whether ground that reads as stockpile on nearly every clear date (roofs, slabs) is kept out of the active area; off for container yards, which are full nearly every day.",
   "lumber": {
     "scale": "legacy",
     "water_ndwi": 0.1,
@@ -8,17 +8,19 @@
     "brightness_min": 0.175,
     "brightness_max": 0.25,
     "min_object_px": 3,
-    "fill_holes_px": 2
+    "fill_holes_px": 2,
+    "subtract_persistent": true
   },
   "containers": {
     "scale": "legacy",
     "water_ndwi": 0.1,
     "veg_ndvi": 0.35,
     "bsi_min": -0.2,
-    "brightness_min": 0.10,
-    "brightness_max": 0.50,
+    "brightness_min": 0.1,
+    "brightness_max": 0.5,
     "min_object_px": 3,
-    "fill_holes_px": 2
+    "fill_holes_px": 2,
+    "subtract_persistent": false
   },
   "wind_components": {
     "scale": "legacy",
@@ -26,8 +28,9 @@
     "veg_ndvi": 0.35,
     "bsi_min": -0.05,
     "brightness_min": 0.22,
-    "brightness_max": 0.50,
+    "brightness_max": 0.5,
     "min_object_px": 3,
-    "fill_holes_px": 2
+    "fill_holes_px": 2,
+    "subtract_persistent": true
   }
 }

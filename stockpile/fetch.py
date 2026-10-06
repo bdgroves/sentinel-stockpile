@@ -161,9 +161,34 @@ def load_stack(path: Path) -> tuple[np.ndarray, dict]:
     return z["bands"], json.loads(str(z["meta"]))
 
 
+def grid_signature(site: Site) -> dict:
+    g = site.grid()
+    return {"crs": g.crs, "x0": g.x0, "y1": g.y1, "res": g.res, "width": g.width, "height": g.height}
+
+
+def check_grid(site: Site) -> bool:
+    """If the site's grid has changed (new outline, new buffer), the cached
+    scenes no longer line up: clear them and the catalog. Returns True if it did."""
+    p = ROOT / "data" / site.id / "grid.json"
+    sig = grid_signature(site)
+    old = json.loads(p.read_text()) if p.exists() else None
+    p.parent.mkdir(parents=True, exist_ok=True)
+    if old == sig:
+        return False
+    if old is not None or catalog_path(site.id).exists():
+        print(f"{site.id}: grid changed, clearing cached scenes", flush=True)
+        for f in stacks_dir(site.id).glob("*.npz"):
+            f.unlink()
+        catalog_path(site.id).unlink(missing_ok=True)
+    p.write_text(json.dumps(sig))
+    return True
+
+
 def update(site: Site, start: str, end: str) -> list[dict]:
     """Fetch every new acceptable scene between start and end. Scenes already
     in the catalog are skipped, so this is safe to rerun."""
+    if check_grid(site):
+        start = min(start, site.start)
     catalog = load_catalog(site.id)
     seen = {s["date"] for s in catalog}
     items = search(site, start, end)

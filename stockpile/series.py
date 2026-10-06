@@ -80,10 +80,18 @@ def build(site: Site, write_objects: bool = True) -> dict:
                 thumb(stack, tp)
     if not scenes:
         return {}
+    # drop web files for scenes no longer in the cache (e.g. after the grid moved)
+    keep = {f.stem for f in files}
+    for sub, ext in (("objects", ".geojson"), ("thumbs", ".jpg")):
+        for old in (out_dir / sub).glob(f"*{ext}"):
+            if old.stem not in keep:
+                old.unlink()
     P = np.stack(piles)
     n_clear = len(scenes)
     freq = P.mean(axis=0)
     persistent = (freq >= PERSIST_FRAC) if n_clear >= PERSIST_MIN_SCENES else np.zeros_like(freq, bool)
+    if not rules.get("subtract_persistent", True):
+        persistent = np.zeros_like(freq, bool)
 
     # pass 2: measure
     rows = []

@@ -34,8 +34,8 @@ def main():
     elif a.cmd == "update":
         site = load(a.site)
         start = a.start
+        cat = fetch.load_catalog(site.id)
         if not start:
-            cat = fetch.load_catalog(site.id)
             start = ((date.fromisoformat(cat[-1]["date"]) - timedelta(days=20)).isoformat()
                      if cat else site.start)
         fetch.update(site, start, a.end)

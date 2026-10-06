@@ -136,7 +136,7 @@ jobs:
           shopt -s nullglob
           for d in incoming/site-*; do
             id=${d#incoming/site-}
-            [ -d "$d/stacks/$id" ] && mkdir -p "/tmp/stacks/$id" && cp -r "$d/stacks/$id/." "/tmp/stacks/$id/"
+            [ -d "$d/stacks/$id" ] && rm -rf "/tmp/stacks/$id" && mkdir -p "/tmp/stacks/$id" && cp -r "$d/stacks/$id/." "/tmp/stacks/$id/"
           done
           cd /tmp/stacks && [ -n "$(ls)" ] || exit 0
           git init -q -b stacks
