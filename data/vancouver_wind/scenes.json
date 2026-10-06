@@ -5,7 +5,7 @@
   "tile_cloud": 28.912473,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0005,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -16,10 +16,10 @@
   "tile_cloud": 3.046012,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.1492,
-  "cloud_aoi": 0.2177,
+  "cloud_context": 0.0575,
+  "cloud_aoi": 0.0062,
   "nodata_aoi": 0.0,
-  "status": "cloudy"
+  "status": "ok"
  },
  {
   "date": "2023-05-10",
@@ -27,7 +27,7 @@
   "tile_cloud": 4.77812,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0002,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -38,10 +38,10 @@
   "tile_cloud": 17.862655,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.93,
-  "cloud_aoi": 0.843,
+  "cloud_context": 0.0002,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
-  "status": "cloudy"
+  "status": "ok"
  },
  {
   "date": "2023-05-15",
@@ -49,7 +49,7 @@
   "tile_cloud": 1.051006,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0004,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -60,7 +60,7 @@
   "tile_cloud": 3.762602,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0001,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -71,10 +71,10 @@
   "tile_cloud": 29.648107,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.8251,
-  "cloud_aoi": 0.3905,
+  "cloud_context": 0.0148,
+  "cloud_aoi": 0.0016,
   "nodata_aoi": 0.0,
-  "status": "cloudy"
+  "status": "ok"
  },
  {
   "date": "2023-05-25",
@@ -93,8 +93,8 @@
   "tile_cloud": 63.437396,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.6531,
-  "cloud_aoi": 0.5038,
+  "cloud_context": 0.9598,
+  "cloud_aoi": 0.8528,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -104,8 +104,8 @@
   "tile_cloud": 65.087563,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.2629,
-  "cloud_aoi": 0.2033,
+  "cloud_context": 0.2263,
+  "cloud_aoi": 0.0439,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -115,10 +115,10 @@
   "tile_cloud": 18.471053,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.4192,
-  "cloud_aoi": 0.22,
+  "cloud_context": 0.0013,
+  "cloud_aoi": 0.0002,
   "nodata_aoi": 0.0,
-  "status": "cloudy"
+  "status": "ok"
  },
  {
   "date": "2023-06-04",
@@ -126,7 +126,7 @@
   "tile_cloud": 0.856858,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0003,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -137,7 +137,7 @@
   "tile_cloud": 3.818524,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.0001,
+  "cloud_context": 0.001,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -148,7 +148,7 @@
   "tile_cloud": 0.640396,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0003,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -159,8 +159,8 @@
   "tile_cloud": 48.850152,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.883,
-  "cloud_aoi": 0.6767,
+  "cloud_context": 0.7704,
+  "cloud_aoi": 0.6919,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -171,7 +171,7 @@
   "baseline": "05.10",
   "offset": 1000,
   "cloud_context": 1.0,
-  "cloud_aoi": 0.9206,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -181,7 +181,7 @@
   "tile_cloud": 14.69547,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.001,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -203,8 +203,8 @@
   "tile_cloud": 6.33432,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.0034,
-  "cloud_aoi": 0.012,
+  "cloud_context": 0.0026,
+  "cloud_aoi": 0.0007,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -225,7 +225,7 @@
   "tile_cloud": 0.009164,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0005,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -247,7 +247,7 @@
   "tile_cloud": 0.291864,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0008,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -258,7 +258,7 @@
   "tile_cloud": 1.60379,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0007,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -269,8 +269,8 @@
   "tile_cloud": 16.428883,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.1977,
-  "cloud_aoi": 0.0347,
+  "cloud_context": 0.1413,
+  "cloud_aoi": 0.3221,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -280,7 +280,7 @@
   "tile_cloud": 0.001177,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0006,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -291,10 +291,10 @@
   "tile_cloud": 4.078839,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.1284,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
-  "status": "ok"
+  "status": "cloudy"
  },
  {
   "date": "2023-07-19",
@@ -313,7 +313,7 @@
   "tile_cloud": 0.005246,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0003,
+  "cloud_context": 0.0006,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -324,8 +324,8 @@
   "tile_cloud": 0.101284,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0002,
-  "cloud_aoi": 0.0002,
+  "cloud_context": 0.0001,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -335,8 +335,8 @@
   "tile_cloud": 6.547648,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.0983,
-  "cloud_aoi": 0.0106,
+  "cloud_context": 0.0276,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -346,8 +346,8 @@
   "tile_cloud": 0.050239,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.0001,
-  "cloud_aoi": 0.0002,
+  "cloud_context": 0.0002,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -357,7 +357,7 @@
   "tile_cloud": 0.054618,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0002,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -379,8 +379,8 @@
   "tile_cloud": 27.807266,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.8209,
-  "cloud_aoi": 0.2569,
+  "cloud_context": 0.9949,
+  "cloud_aoi": 0.9724,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -390,7 +390,7 @@
   "tile_cloud": 18.414979,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0001,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -401,7 +401,7 @@
   "tile_cloud": 0.001715,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0014,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -412,7 +412,7 @@
   "tile_cloud": 0.002242,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0008,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -423,7 +423,7 @@
   "tile_cloud": 25.926223,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0035,
+  "cloud_context": 0.0032,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -434,8 +434,8 @@
   "tile_cloud": 3.130394,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0017,
-  "cloud_aoi": 0.0002,
+  "cloud_context": 0.0049,
+  "cloud_aoi": 0.0013,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -445,7 +445,7 @@
   "tile_cloud": 10.650228,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0004,
+  "cloud_context": 0.0012,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -456,8 +456,8 @@
   "tile_cloud": 65.210235,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.2124,
-  "cloud_aoi": 0.0527,
+  "cloud_context": 0.1774,
+  "cloud_aoi": 0.0096,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -467,7 +467,7 @@
   "tile_cloud": 0.003129,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0006,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -478,10 +478,10 @@
   "tile_cloud": 16.016248,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.196,
-  "cloud_aoi": 0.005,
+  "cloud_context": 0.0173,
+  "cloud_aoi": 0.0192,
   "nodata_aoi": 0.0,
-  "status": "cloudy"
+  "status": "ok"
  },
  {
   "date": "2023-09-14",
@@ -489,8 +489,8 @@
   "tile_cloud": 0.001158,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0011,
-  "cloud_aoi": 0.0006,
+  "cloud_context": 0.0007,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -500,8 +500,8 @@
   "tile_cloud": 44.823691,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.8264,
-  "cloud_aoi": 0.8902,
+  "cloud_context": 0.1056,
+  "cloud_aoi": 0.0192,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -511,8 +511,8 @@
   "tile_cloud": 4.700821,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0001,
-  "cloud_aoi": 0.0003,
+  "cloud_context": 0.0046,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -522,7 +522,7 @@
   "tile_cloud": 0.002384,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0001,
+  "cloud_context": 0.0004,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -544,8 +544,8 @@
   "tile_cloud": 0.00122,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0013,
-  "cloud_aoi": 0.0002,
+  "cloud_context": 0.0001,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -555,8 +555,8 @@
   "tile_cloud": 13.733497,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.185,
-  "cloud_aoi": 0.0505,
+  "cloud_context": 0.1009,
+  "cloud_aoi": 0.1123,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -567,7 +567,7 @@
   "baseline": "05.09",
   "offset": 1000,
   "cloud_context": 1.0,
-  "cloud_aoi": 0.9133,
+  "cloud_aoi": 0.6249,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -577,10 +577,10 @@
   "tile_cloud": 2.039618,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.0211,
+  "cloud_context": 0.118,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
-  "status": "ok"
+  "status": "cloudy"
  },
  {
   "date": "2023-10-27",
@@ -588,7 +588,7 @@
   "tile_cloud": 2.218232,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0008,
+  "cloud_context": 0.0005,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -599,9 +599,9 @@
   "tile_cloud": 0.001556,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0004,
   "cloud_aoi": 0.0,
-  "nodata_aoi": 0.0,
+  "nodata_aoi": 0.0002,
   "status": "ok"
  },
  {
@@ -610,8 +610,8 @@
   "tile_cloud": 39.270034,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.9956,
-  "cloud_aoi": 0.9733,
+  "cloud_context": 0.9475,
+  "cloud_aoi": 0.4164,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -621,8 +621,8 @@
   "tile_cloud": 77.760023,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.9924,
-  "cloud_aoi": 0.9825,
+  "cloud_context": 0.9948,
+  "cloud_aoi": 0.945,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -632,10 +632,10 @@
   "tile_cloud": 36.557695,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.9819,
-  "cloud_aoi": 0.7791,
+  "cloud_context": 0.0779,
+  "cloud_aoi": 0.0027,
   "nodata_aoi": 0.0,
-  "status": "cloudy"
+  "status": "ok"
  },
  {
   "date": "2023-11-18",
@@ -643,8 +643,8 @@
   "tile_cloud": 65.411735,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 1.0,
-  "cloud_aoi": 0.6456,
+  "cloud_context": 0.9999,
+  "cloud_aoi": 0.3406,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -654,7 +654,7 @@
   "tile_cloud": 14.503485,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0004,
+  "cloud_context": 0.0048,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -665,8 +665,8 @@
   "tile_cloud": 0.277189,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.0,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.0009,
+  "cloud_aoi": 0.0009,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -676,8 +676,8 @@
   "tile_cloud": 10.671209,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0001,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.0005,
+  "cloud_aoi": 0.0016,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -687,8 +687,8 @@
   "tile_cloud": 78.000802,
   "baseline": "05.09",
   "offset": 1000,
-  "cloud_context": 0.2093,
-  "cloud_aoi": 0.0008,
+  "cloud_context": 0.1576,
+  "cloud_aoi": 0.01,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -698,8 +698,8 @@
   "tile_cloud": 75.539595,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.7335,
-  "cloud_aoi": 0.1339,
+  "cloud_context": 0.9634,
+  "cloud_aoi": 0.5652,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -709,8 +709,8 @@
   "tile_cloud": 76.71929,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.9792,
-  "cloud_aoi": 0.4938,
+  "cloud_context": 0.9551,
+  "cloud_aoi": 0.4507,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -720,10 +720,10 @@
   "tile_cloud": 38.738486,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
-  "cloud_aoi": 0.0002,
+  "cloud_context": 0.0949,
+  "cloud_aoi": 0.1922,
   "nodata_aoi": 0.0,
-  "status": "ok"
+  "status": "cloudy"
  },
  {
   "date": "2023-12-23",
@@ -731,8 +731,8 @@
   "tile_cloud": 19.101997,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.9965,
-  "cloud_aoi": 0.9995,
+  "cloud_context": 1.0,
+  "cloud_aoi": 1.0,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -742,8 +742,8 @@
   "tile_cloud": 53.525054,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.993,
-  "cloud_aoi": 1.0,
+  "cloud_context": 0.9292,
+  "cloud_aoi": 0.9385,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -753,9 +753,9 @@
   "tile_cloud": 23.081677,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0036,
+  "cloud_context": 0.0006,
   "cloud_aoi": 0.0,
-  "nodata_aoi": 0.0008,
+  "nodata_aoi": 0.0002,
   "status": "ok"
  },
  {
@@ -764,8 +764,8 @@
   "tile_cloud": 65.166724,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.9939,
-  "cloud_aoi": 0.8719,
+  "cloud_context": 0.9961,
+  "cloud_aoi": 0.9701,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -775,7 +775,7 @@
   "tile_cloud": 20.385849,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0021,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -797,7 +797,7 @@
   "tile_cloud": 20.041543,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0018,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -808,10 +808,10 @@
   "tile_cloud": 10.924548,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0022,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.0596,
+  "cloud_aoi": 0.0595,
   "nodata_aoi": 0.0,
-  "status": "ok"
+  "status": "cloudy"
  },
  {
   "date": "2024-03-15",
@@ -819,8 +819,8 @@
   "tile_cloud": 0.158682,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.0108,
+  "cloud_aoi": 0.0105,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -830,10 +830,10 @@
   "tile_cloud": 9.386177,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.1847,
-  "cloud_aoi": 0.0814,
+  "cloud_context": 0.0058,
+  "cloud_aoi": 0.0016,
   "nodata_aoi": 0.0,
-  "status": "cloudy"
+  "status": "ok"
  },
  {
   "date": "2024-03-30",
@@ -841,7 +841,7 @@
   "tile_cloud": 0.060083,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0001,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -852,7 +852,7 @@
   "tile_cloud": 0.75048,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0002,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -863,8 +863,8 @@
   "tile_cloud": 70.533979,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 1.0,
-  "cloud_aoi": 0.9752,
+  "cloud_context": 0.7669,
+  "cloud_aoi": 0.5208,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -874,7 +874,7 @@
   "tile_cloud": 26.066133,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0001,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -885,8 +885,8 @@
   "tile_cloud": 70.887595,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.8893,
-  "cloud_aoi": 0.4497,
+  "cloud_context": 0.9179,
+  "cloud_aoi": 0.2693,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -896,8 +896,8 @@
   "tile_cloud": 0.03735,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.001,
+  "cloud_aoi": 0.0002,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -907,10 +907,10 @@
   "tile_cloud": 62.014085,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.3287,
-  "cloud_aoi": 0.0841,
+  "cloud_context": 0.0773,
+  "cloud_aoi": 0.0178,
   "nodata_aoi": 0.0,
-  "status": "cloudy"
+  "status": "ok"
  },
  {
   "date": "2024-04-24",
@@ -919,7 +919,7 @@
   "baseline": "05.10",
   "offset": 1000,
   "cloud_context": 1.0,
-  "cloud_aoi": 0.8845,
+  "cloud_aoi": 1.0,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -929,8 +929,8 @@
   "tile_cloud": 76.947057,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.7185,
-  "cloud_aoi": 0.4342,
+  "cloud_context": 0.1937,
+  "cloud_aoi": 0.164,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -951,7 +951,7 @@
   "tile_cloud": 0.380219,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0001,
+  "cloud_context": 0.0008,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -973,7 +973,7 @@
   "tile_cloud": 13.575451,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0001,
+  "cloud_context": 0.0016,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -984,8 +984,8 @@
   "tile_cloud": 59.037679,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.5604,
-  "cloud_aoi": 0.158,
+  "cloud_context": 0.9996,
+  "cloud_aoi": 1.0,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -995,7 +995,7 @@
   "tile_cloud": 24.803777,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0183,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1006,10 +1006,10 @@
   "tile_cloud": 78.622317,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.7645,
+  "cloud_aoi": 0.8924,
   "nodata_aoi": 0.0,
-  "status": "ok"
+  "status": "cloudy"
  },
  {
   "date": "2024-05-31",
@@ -1017,10 +1017,10 @@
   "tile_cloud": 10.800891,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.3985,
+  "cloud_aoi": 0.2825,
   "nodata_aoi": 0.0,
-  "status": "ok"
+  "status": "cloudy"
  },
  {
   "date": "2024-06-05",
@@ -1028,8 +1028,8 @@
   "tile_cloud": 1.908585,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.004,
+  "cloud_aoi": 0.0007,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -1039,8 +1039,8 @@
   "tile_cloud": 0.001287,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.0015,
+  "cloud_aoi": 0.0002,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -1061,8 +1061,8 @@
   "tile_cloud": 74.132943,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.3448,
-  "cloud_aoi": 0.1636,
+  "cloud_context": 0.7419,
+  "cloud_aoi": 0.7469,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1083,7 +1083,7 @@
   "tile_cloud": 9.314713,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0008,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1094,7 +1094,7 @@
   "tile_cloud": 0.001898,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0005,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1116,8 +1116,8 @@
   "tile_cloud": 77.212071,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.5853,
-  "cloud_aoi": 0.3711,
+  "cloud_context": 1.0,
+  "cloud_aoi": 0.9998,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1127,7 +1127,7 @@
   "tile_cloud": 0.036859,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0003,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1138,7 +1138,7 @@
   "tile_cloud": 0.001914,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0005,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1149,7 +1149,7 @@
   "tile_cloud": 0.001994,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0006,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1160,7 +1160,7 @@
   "tile_cloud": 0.001841,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0001,
+  "cloud_context": 0.0056,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1182,7 +1182,7 @@
   "tile_cloud": 3.746428,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0002,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1193,7 +1193,7 @@
   "tile_cloud": 0.001611,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0006,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1204,7 +1204,7 @@
   "tile_cloud": 0.001248,
   "baseline": "05.10",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0011,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1215,7 +1215,7 @@
   "tile_cloud": 0.002568,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0004,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1226,8 +1226,8 @@
   "tile_cloud": 50.295979,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.7655,
-  "cloud_aoi": 0.1617,
+  "cloud_context": 0.9424,
+  "cloud_aoi": 0.7492,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1237,8 +1237,8 @@
   "tile_cloud": 75.755799,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.3192,
-  "cloud_aoi": 0.1758,
+  "cloud_context": 0.9988,
+  "cloud_aoi": 0.0241,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1249,7 +1249,7 @@
   "baseline": "05.11",
   "offset": 1000,
   "cloud_context": 0.0002,
-  "cloud_aoi": 0.0002,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -1270,8 +1270,8 @@
   "tile_cloud": 74.682015,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.5524,
-  "cloud_aoi": 0.203,
+  "cloud_context": 0.5236,
+  "cloud_aoi": 0.2758,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1281,7 +1281,7 @@
   "tile_cloud": 54.013211,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0809,
+  "cloud_context": 0.0002,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1292,10 +1292,10 @@
   "tile_cloud": 23.957597,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.2711,
-  "cloud_aoi": 0.3184,
+  "cloud_context": 0.0158,
+  "cloud_aoi": 0.0002,
   "nodata_aoi": 0.0,
-  "status": "cloudy"
+  "status": "ok"
  },
  {
   "date": "2024-08-27",
@@ -1303,8 +1303,8 @@
   "tile_cloud": 36.204731,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.2271,
-  "cloud_aoi": 0.1233,
+  "cloud_context": 0.1791,
+  "cloud_aoi": 0.4351,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1314,7 +1314,7 @@
   "tile_cloud": 0.005033,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0001,
+  "cloud_context": 0.0073,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1325,8 +1325,8 @@
   "tile_cloud": 53.435719,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.53,
-  "cloud_aoi": 0.3591,
+  "cloud_context": 0.1552,
+  "cloud_aoi": 0.0218,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1347,7 +1347,7 @@
   "tile_cloud": 0.08842,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0016,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1358,10 +1358,10 @@
   "tile_cloud": 3.560516,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0001,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.0058,
+  "cloud_aoi": 0.0278,
   "nodata_aoi": 0.0,
-  "status": "ok"
+  "status": "cloudy"
  },
  {
   "date": "2024-09-21",
@@ -1380,8 +1380,8 @@
   "tile_cloud": 24.584024,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.0054,
+  "cloud_aoi": 0.0027,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -1392,7 +1392,7 @@
   "baseline": "05.11",
   "offset": 1000,
   "cloud_context": 1.0,
-  "cloud_aoi": 0.2659,
+  "cloud_aoi": 0.0214,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1402,7 +1402,7 @@
   "tile_cloud": 0.003857,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0005,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1413,8 +1413,8 @@
   "tile_cloud": 6.931991,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.3108,
-  "cloud_aoi": 0.3786,
+  "cloud_context": 0.6471,
+  "cloud_aoi": 0.9029,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1424,7 +1424,7 @@
   "tile_cloud": 4.972601,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0007,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1446,8 +1446,8 @@
   "tile_cloud": 10.006169,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.172,
-  "cloud_aoi": 0.0273,
+  "cloud_context": 0.4269,
+  "cloud_aoi": 0.3667,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1457,8 +1457,8 @@
   "tile_cloud": 72.930038,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.8794,
-  "cloud_aoi": 0.0686,
+  "cloud_context": 0.9933,
+  "cloud_aoi": 0.9984,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1468,8 +1468,8 @@
   "tile_cloud": 79.171646,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.9994,
-  "cloud_aoi": 0.4772,
+  "cloud_context": 1.0,
+  "cloud_aoi": 0.6534,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1479,7 +1479,7 @@
   "tile_cloud": 0.405795,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0003,
+  "cloud_context": 0.0004,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1490,8 +1490,8 @@
   "tile_cloud": 72.678781,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.7922,
-  "cloud_aoi": 0.5261,
+  "cloud_context": 0.7373,
+  "cloud_aoi": 0.5155,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1501,8 +1501,8 @@
   "tile_cloud": 76.086986,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.8576,
-  "cloud_aoi": 0.3877,
+  "cloud_context": 0.8417,
+  "cloud_aoi": 0.7808,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1512,8 +1512,8 @@
   "tile_cloud": 76.557821,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.5816,
-  "cloud_aoi": 0.6145,
+  "cloud_context": 0.1531,
+  "cloud_aoi": 0.3636,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1523,8 +1523,8 @@
   "tile_cloud": 64.365405,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 1.0,
-  "cloud_aoi": 0.9625,
+  "cloud_context": 0.9788,
+  "cloud_aoi": 0.9276,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1534,10 +1534,10 @@
   "tile_cloud": 55.665708,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0001,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.1099,
+  "cloud_aoi": 0.1018,
   "nodata_aoi": 0.0,
-  "status": "ok"
+  "status": "cloudy"
  },
  {
   "date": "2024-12-02",
@@ -1545,7 +1545,7 @@
   "tile_cloud": 22.044216,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.003,
+  "cloud_context": 0.0009,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1556,7 +1556,7 @@
   "tile_cloud": 6.662148,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0004,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1567,8 +1567,8 @@
   "tile_cloud": 76.527613,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.5338,
-  "cloud_aoi": 0.3406,
+  "cloud_context": 0.3388,
+  "cloud_aoi": 0.0746,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1589,10 +1589,10 @@
   "tile_cloud": 8.47647,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0214,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.54,
+  "cloud_aoi": 0.5638,
   "nodata_aoi": 0.0,
-  "status": "ok"
+  "status": "cloudy"
  },
  {
   "date": "2025-01-14",
@@ -1600,7 +1600,7 @@
   "tile_cloud": 66.613132,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.9986,
+  "cloud_context": 1.0,
   "cloud_aoi": 1.0,
   "nodata_aoi": 0.0,
   "status": "cloudy"
@@ -1611,8 +1611,8 @@
   "tile_cloud": 49.651343,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.9848,
-  "cloud_aoi": 0.9487,
+  "cloud_context": 0.998,
+  "cloud_aoi": 1.0,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1622,8 +1622,8 @@
   "tile_cloud": 1.578891,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.6511,
-  "cloud_aoi": 0.3472,
+  "cloud_context": 0.0942,
+  "cloud_aoi": 0.1691,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1633,7 +1633,7 @@
   "tile_cloud": 0.057505,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0002,
+  "cloud_context": 0.0005,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1644,7 +1644,7 @@
   "tile_cloud": 0.002864,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0002,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1655,7 +1655,7 @@
   "tile_cloud": 0.042476,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0001,
+  "cloud_context": 0.0004,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1666,8 +1666,8 @@
   "tile_cloud": 13.562684,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0032,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.0236,
+  "cloud_aoi": 0.0029,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -1677,8 +1677,8 @@
   "tile_cloud": 46.070302,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.3259,
-  "cloud_aoi": 0.1033,
+  "cloud_context": 0.1496,
+  "cloud_aoi": 0.0156,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1688,8 +1688,8 @@
   "tile_cloud": 62.049258,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.7731,
-  "cloud_aoi": 0.352,
+  "cloud_context": 0.4035,
+  "cloud_aoi": 0.0207,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1699,7 +1699,7 @@
   "tile_cloud": 25.356132,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0004,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1710,8 +1710,8 @@
   "tile_cloud": 68.885106,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 1.0,
-  "cloud_aoi": 0.9712,
+  "cloud_context": 0.7083,
+  "cloud_aoi": 0.6859,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1721,7 +1721,7 @@
   "tile_cloud": 9.815687,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0005,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1732,7 +1732,7 @@
   "tile_cloud": 0.023941,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0005,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1743,7 +1743,7 @@
   "tile_cloud": 0.336704,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0009,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1754,7 +1754,7 @@
   "tile_cloud": 19.854417,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0012,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1766,7 +1766,7 @@
   "baseline": "05.11",
   "offset": 1000,
   "cloud_context": 1.0,
-  "cloud_aoi": 0.9953,
+  "cloud_aoi": 1.0,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1776,7 +1776,7 @@
   "tile_cloud": 0.00865,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0001,
+  "cloud_context": 0.0009,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1787,8 +1787,8 @@
   "tile_cloud": 28.502786,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.8339,
-  "cloud_aoi": 0.8814,
+  "cloud_context": 0.9853,
+  "cloud_aoi": 0.965,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1798,8 +1798,8 @@
   "tile_cloud": 62.257797,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.3337,
-  "cloud_aoi": 0.2273,
+  "cloud_context": 0.0883,
+  "cloud_aoi": 0.0911,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1809,8 +1809,8 @@
   "tile_cloud": 0.008859,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0004,
-  "cloud_aoi": 0.0002,
+  "cloud_context": 0.0007,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -1820,7 +1820,7 @@
   "tile_cloud": 24.060121,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0003,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1831,7 +1831,7 @@
   "tile_cloud": 17.960159,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0002,
+  "cloud_context": 0.0,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1842,8 +1842,8 @@
   "tile_cloud": 38.008389,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0124,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.0075,
+  "cloud_aoi": 0.0018,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -1853,8 +1853,8 @@
   "tile_cloud": 69.517606,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.1724,
-  "cloud_aoi": 0.0678,
+  "cloud_context": 0.0965,
+  "cloud_aoi": 0.0775,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1864,7 +1864,7 @@
   "tile_cloud": 10.095239,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0002,
+  "cloud_context": 0.0799,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1875,7 +1875,7 @@
   "tile_cloud": 1.573871,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.003,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1897,7 +1897,7 @@
   "tile_cloud": 0.706282,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0009,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1908,8 +1908,8 @@
   "tile_cloud": 0.080336,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0088,
-  "cloud_aoi": 0.0041,
+  "cloud_context": 0.0098,
+  "cloud_aoi": 0.0022,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -1919,8 +1919,8 @@
   "tile_cloud": 25.672877,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.4502,
-  "cloud_aoi": 0.2808,
+  "cloud_context": 0.5311,
+  "cloud_aoi": 0.258,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1930,7 +1930,7 @@
   "tile_cloud": 0.001175,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0003,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1941,10 +1941,10 @@
   "tile_cloud": 32.768705,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.2323,
-  "cloud_aoi": 0.0381,
+  "cloud_context": 0.0129,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
-  "status": "cloudy"
+  "status": "ok"
  },
  {
   "date": "2025-06-15",
@@ -1952,8 +1952,8 @@
   "tile_cloud": 2.214183,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0003,
-  "cloud_aoi": 0.0008,
+  "cloud_context": 0.0007,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -1963,7 +1963,7 @@
   "tile_cloud": 36.512637,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0001,
+  "cloud_context": 0.0413,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -1985,8 +1985,8 @@
   "tile_cloud": 41.640857,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.1948,
-  "cloud_aoi": 0.0361,
+  "cloud_context": 0.1285,
+  "cloud_aoi": 0.1591,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -1996,7 +1996,7 @@
   "tile_cloud": 0.002581,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0001,
+  "cloud_context": 0.0007,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2007,7 +2007,7 @@
   "tile_cloud": 0.1375,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0002,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2018,7 +2018,7 @@
   "tile_cloud": 0.687194,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0012,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2029,7 +2029,7 @@
   "tile_cloud": 0.001309,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0025,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2040,8 +2040,8 @@
   "tile_cloud": 62.929827,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 1.0,
-  "cloud_aoi": 0.9797,
+  "cloud_context": 0.6667,
+  "cloud_aoi": 0.2139,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2051,7 +2051,7 @@
   "tile_cloud": 0.002923,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0012,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2073,7 +2073,7 @@
   "tile_cloud": 1.54036,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0005,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2084,10 +2084,10 @@
   "tile_cloud": 42.577356,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.9623,
+  "cloud_aoi": 0.7984,
   "nodata_aoi": 0.0,
-  "status": "ok"
+  "status": "cloudy"
  },
  {
   "date": "2025-07-23",
@@ -2095,7 +2095,7 @@
   "tile_cloud": 0.004151,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0001,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2106,8 +2106,8 @@
   "tile_cloud": 2.836759,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0003,
-  "cloud_aoi": 0.0006,
+  "cloud_context": 0.007,
+  "cloud_aoi": 0.0011,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -2128,8 +2128,8 @@
   "tile_cloud": 69.843513,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.9708,
-  "cloud_aoi": 0.2261,
+  "cloud_context": 0.7911,
+  "cloud_aoi": 0.4843,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2139,8 +2139,8 @@
   "tile_cloud": 7.684928,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.0515,
+  "cloud_aoi": 0.0029,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -2150,8 +2150,8 @@
   "tile_cloud": 46.592364,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.7653,
-  "cloud_aoi": 0.5647,
+  "cloud_context": 0.3856,
+  "cloud_aoi": 0.1845,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2161,8 +2161,8 @@
   "tile_cloud": 71.603966,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 1.0,
-  "cloud_aoi": 0.6939,
+  "cloud_context": 0.9989,
+  "cloud_aoi": 0.9657,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2172,8 +2172,8 @@
   "tile_cloud": 0.006163,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0004,
-  "cloud_aoi": 0.0009,
+  "cloud_context": 0.0006,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -2183,8 +2183,8 @@
   "tile_cloud": 76.975352,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.9078,
-  "cloud_aoi": 0.4533,
+  "cloud_context": 0.622,
+  "cloud_aoi": 0.2364,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2194,8 +2194,8 @@
   "tile_cloud": 16.679981,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0011,
-  "cloud_aoi": 0.0028,
+  "cloud_context": 0.0007,
+  "cloud_aoi": 0.0002,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -2205,7 +2205,7 @@
   "tile_cloud": 0.007339,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0006,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2216,7 +2216,7 @@
   "tile_cloud": 0.005318,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0001,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2228,7 +2228,7 @@
   "baseline": "05.11",
   "offset": 1000,
   "cloud_context": 1.0,
-  "cloud_aoi": 0.0678,
+  "cloud_aoi": 0.5266,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2238,10 +2238,10 @@
   "tile_cloud": 21.998362,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0001,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.0619,
+  "cloud_aoi": 0.1109,
   "nodata_aoi": 0.0,
-  "status": "ok"
+  "status": "cloudy"
  },
  {
   "date": "2025-08-29",
@@ -2249,8 +2249,8 @@
   "tile_cloud": 29.539719,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.2455,
-  "cloud_aoi": 0.0433,
+  "cloud_context": 0.4197,
+  "cloud_aoi": 0.3849,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2260,8 +2260,8 @@
   "tile_cloud": 72.510618,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 1.0,
-  "cloud_aoi": 0.6047,
+  "cloud_context": 0.7637,
+  "cloud_aoi": 0.7534,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2271,10 +2271,10 @@
   "tile_cloud": 74.567538,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.2208,
-  "cloud_aoi": 0.0552,
+  "cloud_context": 0.0197,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
-  "status": "cloudy"
+  "status": "ok"
  },
  {
   "date": "2025-09-10",
@@ -2283,7 +2283,7 @@
   "baseline": "05.11",
   "offset": 1000,
   "cloud_context": 1.0,
-  "cloud_aoi": 0.9636,
+  "cloud_aoi": 1.0,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2293,7 +2293,7 @@
   "tile_cloud": 0.212664,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0004,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2305,7 +2305,7 @@
   "baseline": "05.11",
   "offset": 1000,
   "cloud_context": 0.0003,
-  "cloud_aoi": 0.0009,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -2315,8 +2315,8 @@
   "tile_cloud": 16.514467,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0007,
-  "cloud_aoi": 0.0025,
+  "cloud_context": 0.0003,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -2326,8 +2326,8 @@
   "tile_cloud": 48.522821,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.4984,
-  "cloud_aoi": 0.4927,
+  "cloud_context": 0.3067,
+  "cloud_aoi": 0.362,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2337,7 +2337,7 @@
   "tile_cloud": 0.443074,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0001,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2348,7 +2348,7 @@
   "tile_cloud": 0.005395,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0002,
+  "cloud_context": 0.0001,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2359,8 +2359,8 @@
   "tile_cloud": 14.806567,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0003,
-  "cloud_aoi": 0.0009,
+  "cloud_context": 0.0006,
+  "cloud_aoi": 0.0002,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -2371,7 +2371,7 @@
   "baseline": "05.11",
   "offset": 1000,
   "cloud_context": 1.0,
-  "cloud_aoi": 0.2139,
+  "cloud_aoi": 0.3742,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2382,7 +2382,7 @@
   "baseline": "05.11",
   "offset": 1000,
   "cloud_context": 1.0,
-  "cloud_aoi": 0.9992,
+  "cloud_aoi": 1.0,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2392,8 +2392,8 @@
   "tile_cloud": 0.002883,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0001,
-  "cloud_aoi": 0.0002,
+  "cloud_context": 0.0,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -2403,8 +2403,8 @@
   "tile_cloud": 57.51552,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.1671,
-  "cloud_aoi": 0.1569,
+  "cloud_context": 0.6016,
+  "cloud_aoi": 0.1642,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2425,8 +2425,8 @@
   "tile_cloud": 62.172586,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.4799,
-  "cloud_aoi": 0.6136,
+  "cloud_context": 0.8832,
+  "cloud_aoi": 0.9318,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2436,8 +2436,8 @@
   "tile_cloud": 19.659641,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0867,
-  "cloud_aoi": 0.0331,
+  "cloud_context": 0.1177,
+  "cloud_aoi": 0.1528,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2447,8 +2447,8 @@
   "tile_cloud": 44.599175,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.6042,
-  "cloud_aoi": 0.3166,
+  "cloud_context": 0.7091,
+  "cloud_aoi": 0.6781,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2469,10 +2469,10 @@
   "tile_cloud": 23.480631,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0005,
-  "cloud_aoi": 0.0009,
+  "cloud_context": 0.103,
+  "cloud_aoi": 0.1005,
   "nodata_aoi": 0.0,
-  "status": "ok"
+  "status": "cloudy"
  },
  {
   "date": "2025-11-12",
@@ -2480,10 +2480,10 @@
   "tile_cloud": 59.808421,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.5135,
-  "cloud_aoi": 0.0213,
+  "cloud_context": 0.0113,
+  "cloud_aoi": 0.0004,
   "nodata_aoi": 0.0,
-  "status": "cloudy"
+  "status": "ok"
  },
  {
   "date": "2025-11-20",
@@ -2491,8 +2491,8 @@
   "tile_cloud": 51.058704,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.6092,
-  "cloud_aoi": 0.03,
+  "cloud_context": 0.6508,
+  "cloud_aoi": 0.1354,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2524,8 +2524,8 @@
   "tile_cloud": 66.627568,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.9992,
-  "cloud_aoi": 0.0266,
+  "cloud_context": 0.9962,
+  "cloud_aoi": 0.3241,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2535,8 +2535,8 @@
   "tile_cloud": 72.491378,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.4785,
-  "cloud_aoi": 0.3927,
+  "cloud_context": 0.1131,
+  "cloud_aoi": 0.0564,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2546,8 +2546,8 @@
   "tile_cloud": 77.128804,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.9997,
-  "cloud_aoi": 0.9955,
+  "cloud_context": 0.6222,
+  "cloud_aoi": 0.2499,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2557,7 +2557,7 @@
   "tile_cloud": 26.013574,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0133,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2590,7 +2590,7 @@
   "tile_cloud": 0.00444,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0002,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2601,7 +2601,7 @@
   "tile_cloud": 25.650728,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0001,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2612,8 +2612,8 @@
   "tile_cloud": 0.352835,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.0014,
-  "cloud_aoi": 0.0011,
+  "cloud_context": 0.0024,
+  "cloud_aoi": 0.0036,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -2623,8 +2623,8 @@
   "tile_cloud": 68.811297,
   "baseline": "05.11",
   "offset": 1000,
-  "cloud_context": 0.116,
-  "cloud_aoi": 0.0155,
+  "cloud_context": 0.9984,
+  "cloud_aoi": 0.9895,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2634,8 +2634,8 @@
   "tile_cloud": 65.154821,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.1372,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.9764,
+  "cloud_aoi": 0.8267,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2645,8 +2645,8 @@
   "tile_cloud": 38.645506,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0011,
-  "cloud_aoi": 0.0031,
+  "cloud_context": 0.0005,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -2656,8 +2656,8 @@
   "tile_cloud": 39.558282,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.6832,
-  "cloud_aoi": 0.1783,
+  "cloud_context": 0.6492,
+  "cloud_aoi": 0.4475,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2667,7 +2667,7 @@
   "tile_cloud": 35.365316,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0003,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2678,8 +2678,8 @@
   "tile_cloud": 66.786122,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.7984,
-  "cloud_aoi": 0.2161,
+  "cloud_context": 0.0283,
+  "cloud_aoi": 0.029,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2689,8 +2689,8 @@
   "tile_cloud": 59.052342,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.9951,
-  "cloud_aoi": 0.807,
+  "cloud_context": 0.9925,
+  "cloud_aoi": 0.9693,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2700,8 +2700,8 @@
   "tile_cloud": 0.389095,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0004,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.0006,
+  "cloud_aoi": 0.0002,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -2711,10 +2711,10 @@
   "tile_cloud": 46.84138,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0342,
-  "cloud_aoi": 0.0623,
+  "cloud_context": 0.0471,
+  "cloud_aoi": 0.0136,
   "nodata_aoi": 0.0,
-  "status": "cloudy"
+  "status": "ok"
  },
  {
   "date": "2026-04-04",
@@ -2722,8 +2722,8 @@
   "tile_cloud": 14.43025,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.836,
-  "cloud_aoi": 0.8762,
+  "cloud_context": 0.9988,
+  "cloud_aoi": 0.9826,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2733,7 +2733,7 @@
   "tile_cloud": 14.651786,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.002,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2744,7 +2744,7 @@
   "tile_cloud": 14.480127,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0001,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2766,8 +2766,8 @@
   "tile_cloud": 61.74134,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.2218,
-  "cloud_aoi": 0.125,
+  "cloud_context": 0.0884,
+  "cloud_aoi": 0.1308,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2777,7 +2777,7 @@
   "tile_cloud": 0.755715,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0005,
+  "cloud_context": 0.0006,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2788,8 +2788,8 @@
   "tile_cloud": 16.723634,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0039,
-  "cloud_aoi": 0.0017,
+  "cloud_context": 0.0016,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -2810,7 +2810,7 @@
   "tile_cloud": 37.348405,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0006,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2832,8 +2832,8 @@
   "tile_cloud": 69.149393,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.9609,
-  "cloud_aoi": 0.4387,
+  "cloud_context": 0.3578,
+  "cloud_aoi": 0.2188,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2843,7 +2843,7 @@
   "tile_cloud": 0.003467,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0002,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2855,7 +2855,7 @@
   "baseline": "05.12",
   "offset": 1000,
   "cloud_context": 0.0009,
-  "cloud_aoi": 0.0011,
+  "cloud_aoi": 0.0002,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -2865,8 +2865,8 @@
   "tile_cloud": 77.344918,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.7912,
-  "cloud_aoi": 0.3753,
+  "cloud_context": 0.8658,
+  "cloud_aoi": 0.6113,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2876,8 +2876,8 @@
   "tile_cloud": 6.813494,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0002,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.003,
+  "cloud_aoi": 0.0002,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -2887,10 +2887,10 @@
   "tile_cloud": 13.622111,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.8292,
+  "cloud_aoi": 0.9332,
   "nodata_aoi": 0.0,
-  "status": "ok"
+  "status": "cloudy"
  },
  {
   "date": "2026-05-31",
@@ -2898,7 +2898,7 @@
   "tile_cloud": 1.577348,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0002,
+  "cloud_context": 0.0003,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2910,7 +2910,7 @@
   "baseline": "05.12",
   "offset": 1000,
   "cloud_context": 1.0,
-  "cloud_aoi": 0.6873,
+  "cloud_aoi": 0.8487,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2932,7 +2932,7 @@
   "baseline": "05.12",
   "offset": 1000,
   "cloud_context": 1.0,
-  "cloud_aoi": 0.7712,
+  "cloud_aoi": 0.0252,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2942,8 +2942,8 @@
   "tile_cloud": 50.679272,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.9878,
-  "cloud_aoi": 0.52,
+  "cloud_context": 0.8853,
+  "cloud_aoi": 0.757,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2953,8 +2953,8 @@
   "tile_cloud": 64.365268,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.9998,
-  "cloud_aoi": 0.9313,
+  "cloud_context": 1.0,
+  "cloud_aoi": 0.9726,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -2964,10 +2964,10 @@
   "tile_cloud": 52.574795,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.7272,
-  "cloud_aoi": 0.5614,
+  "cloud_context": 0.0013,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
-  "status": "cloudy"
+  "status": "ok"
  },
  {
   "date": "2026-07-03",
@@ -2975,10 +2975,10 @@
   "tile_cloud": 57.774788,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0268,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.1675,
+  "cloud_aoi": 0.0247,
   "nodata_aoi": 0.0,
-  "status": "ok"
+  "status": "cloudy"
  },
  {
   "date": "2026-07-05",
@@ -2986,7 +2986,7 @@
   "tile_cloud": 6.321356,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0011,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -2997,8 +2997,8 @@
   "tile_cloud": 43.281412,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.9996,
-  "cloud_aoi": 0.2913,
+  "cloud_context": 0.5162,
+  "cloud_aoi": 0.3578,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -3008,7 +3008,7 @@
   "tile_cloud": 0.499113,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0005,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -3030,10 +3030,10 @@
   "tile_cloud": 16.545238,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.3742,
-  "cloud_aoi": 0.4564,
+  "cloud_context": 0.001,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
-  "status": "cloudy"
+  "status": "ok"
  },
  {
   "date": "2026-07-18",
@@ -3041,7 +3041,7 @@
   "tile_cloud": 5.857898,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0003,
+  "cloud_context": 0.0054,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -3052,8 +3052,8 @@
   "tile_cloud": 66.711432,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 1.0,
-  "cloud_aoi": 0.9994,
+  "cloud_context": 0.9997,
+  "cloud_aoi": 0.7541,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -3064,7 +3064,7 @@
   "baseline": "05.12",
   "offset": 1000,
   "cloud_context": 0.0003,
-  "cloud_aoi": 0.0002,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -3085,8 +3085,8 @@
   "tile_cloud": 0.380068,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.0073,
+  "cloud_aoi": 0.0013,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -3096,8 +3096,8 @@
   "tile_cloud": 10.844715,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.666,
-  "cloud_aoi": 0.6133,
+  "cloud_context": 0.3556,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -3118,7 +3118,7 @@
   "tile_cloud": 1.026563,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0003,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -3129,8 +3129,8 @@
   "tile_cloud": 45.955276,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 1.0,
-  "cloud_aoi": 0.9164,
+  "cloud_context": 0.7432,
+  "cloud_aoi": 0.6594,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -3140,10 +3140,10 @@
   "tile_cloud": 10.174727,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0072,
-  "cloud_aoi": 0.0,
+  "cloud_context": 0.0764,
+  "cloud_aoi": 0.1212,
   "nodata_aoi": 0.0,
-  "status": "ok"
+  "status": "cloudy"
  },
  {
   "date": "2026-08-17",
@@ -3151,7 +3151,7 @@
   "tile_cloud": 12.711082,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0008,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -3162,7 +3162,7 @@
   "tile_cloud": 27.888861,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0002,
+  "cloud_context": 0.0007,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -3184,7 +3184,7 @@
   "tile_cloud": 24.685751,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0013,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -3195,8 +3195,8 @@
   "tile_cloud": 70.241874,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.9153,
-  "cloud_aoi": 0.8525,
+  "cloud_context": 0.6973,
+  "cloud_aoi": 0.1533,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -3206,8 +3206,8 @@
   "tile_cloud": 65.23568,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.5045,
-  "cloud_aoi": 0.507,
+  "cloud_context": 0.4551,
+  "cloud_aoi": 0.4801,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -3217,8 +3217,8 @@
   "tile_cloud": 0.001009,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.0005,
-  "cloud_aoi": 0.0017,
+  "cloud_context": 0.0,
+  "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
  },
@@ -3228,8 +3228,8 @@
   "tile_cloud": 36.494264,
   "baseline": "05.12",
   "offset": 1000,
-  "cloud_context": 0.2967,
-  "cloud_aoi": 0.428,
+  "cloud_context": 0.0468,
+  "cloud_aoi": 0.059,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  },
@@ -3261,7 +3261,7 @@
   "tile_cloud": 3.36974,
   "baseline": "05.13",
   "offset": 1000,
-  "cloud_context": 0.0001,
+  "cloud_context": 0.0002,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -3272,7 +3272,7 @@
   "tile_cloud": 1.92859,
   "baseline": "05.13",
   "offset": 1000,
-  "cloud_context": 0.0,
+  "cloud_context": 0.0005,
   "cloud_aoi": 0.0,
   "nodata_aoi": 0.0,
   "status": "ok"
@@ -3283,8 +3283,8 @@
   "tile_cloud": 76.442534,
   "baseline": "05.13",
   "offset": 1000,
-  "cloud_context": 0.9959,
-  "cloud_aoi": 0.8698,
+  "cloud_context": 0.9992,
+  "cloud_aoi": 0.9866,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  }

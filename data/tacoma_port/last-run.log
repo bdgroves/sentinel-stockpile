@@ -1,50 +1,51 @@
+tacoma_port: grid changed, clearing cached scenes
 tacoma_port: 298 days with imagery 2023-04-01..2026-10-06, 298 new
-  2023-04-12: cloudy cloud 97.1% around, 80.5% over the yard
-  2023-04-25: ok     cloud 9.7% around, 0.4% over the yard
+  2023-04-12: cloudy cloud 97.4% around, 83.7% over the yard
+  2023-04-25: cloudy cloud 11.6% around, 0.5% over the yard
   2023-04-27: ok     cloud 0.0% around, 0.0% over the yard
-  2023-05-02: cloudy cloud 100.0% around, 2.5% over the yard
+  2023-05-02: cloudy cloud 100.0% around, 3.0% over the yard
   2023-05-10: ok     cloud 0.0% around, 0.0% over the yard
   2023-05-12: ok     cloud 0.0% around, 0.0% over the yard
-  2023-05-15: cloudy cloud 100.0% around, 75.1% over the yard
-  2023-05-17: ok     cloud 0.6% around, 0.1% over the yard
-  2023-05-20: cloudy cloud 31.5% around, 27.7% over the yard
+  2023-05-15: cloudy cloud 100.0% around, 76.1% over the yard
+  2023-05-17: ok     cloud 0.5% around, 0.1% over the yard
+  2023-05-20: cloudy cloud 32.0% around, 38.3% over the yard
   2023-05-25: ok     cloud 0.0% around, 0.0% over the yard
-  2023-05-27: cloudy cloud 99.9% around, 99.9% over the yard
-  2023-05-30: cloudy cloud 95.6% around, 30.5% over the yard
+  2023-05-27: cloudy cloud 100.0% around, 99.9% over the yard
+  2023-05-30: cloudy cloud 98.6% around, 36.2% over the yard
   2023-06-01: ok     cloud 0.0% around, 0.0% over the yard
   2023-06-04: ok     cloud 0.0% around, 0.0% over the yard
   2023-06-06: ok     cloud 0.0% around, 0.0% over the yard
   2023-06-11: ok     cloud 0.1% around, 0.0% over the yard
   2023-06-21: ok     cloud 0.0% around, 0.0% over the yard
   2023-06-24: ok     cloud 0.0% around, 0.0% over the yard
-  2023-06-26: cloudy cloud 66.8% around, 0.2% over the yard
+  2023-06-26: cloudy cloud 56.7% around, 0.1% over the yard
   2023-06-29: ok     cloud 0.0% around, 0.0% over the yard
   2023-07-01: ok     cloud 0.0% around, 0.0% over the yard
-  2023-07-04: cloudy cloud 22.9% around, 20.1% over the yard
+  2023-07-04: cloudy cloud 21.1% around, 22.5% over the yard
   2023-07-06: ok     cloud 0.0% around, 0.0% over the yard
-  2023-07-09: cloudy cloud 50.6% around, 33.6% over the yard
-  2023-07-11: ok     cloud 3.2% around, 0.3% over the yard
+  2023-07-09: cloudy cloud 49.0% around, 32.3% over the yard
+  2023-07-11: ok     cloud 3.1% around, 0.3% over the yard
   2023-07-14: ok     cloud 0.0% around, 0.0% over the yard
-  2023-07-16: cloudy cloud 61.5% around, 15.1% over the yard
+  2023-07-16: cloudy cloud 61.9% around, 17.3% over the yard
   2023-07-19: ok     cloud 0.0% around, 0.0% over the yard
-  2023-07-21: cloudy cloud 53.8% around, 20.3% over the yard
+  2023-07-21: cloudy cloud 59.5% around, 22.8% over the yard
   2023-07-26: ok     cloud 0.0% around, 0.0% over the yard
   2023-07-29: ok     cloud 0.0% around, 0.0% over the yard
   2023-07-31: ok     cloud 0.0% around, 0.0% over the yard
   2023-08-03: ok     cloud 0.0% around, 0.0% over the yard
-  2023-08-08: cloudy cloud 100.0% around, 96.5% over the yard
+  2023-08-08: cloudy cloud 100.0% around, 99.9% over the yard
   2023-08-13: ok     cloud 0.0% around, 0.0% over the yard
   2023-08-15: ok     cloud 0.0% around, 0.0% over the yard
   2023-08-18: ok     cloud 0.0% around, 0.0% over the yard
-  2023-08-20: ok     cloud 0.1% around, 0.0% over the yard
-  2023-08-23: cloudy cloud 74.4% around, 19.5% over the yard
+  2023-08-20: ok     cloud 0.2% around, 0.0% over the yard
+  2023-08-23: cloudy cloud 65.5% around, 9.3% over the yard
   2023-08-25: ok     cloud 0.0% around, 0.0% over the yard
-  2023-09-02: cloudy cloud 11.2% around, 7.8% over the yard
-  2023-09-07: ok     cloud 9.4% around, 1.2% over the yard
+  2023-09-02: ok     cloud 9.7% around, 0.8% over the yard
+  2023-09-07: cloudy cloud 10.7% around, 1.2% over the yard
   2023-09-09: ok     cloud 0.0% around, 0.0% over the yard
   2023-09-14: ok     cloud 0.0% around, 0.0% over the yard
-  2023-09-17: cloudy cloud 21.9% around, 1.8% over the yard
-  2023-09-19: cloudy cloud 98.6% around, 26.7% over the yard
+  2023-09-17: cloudy cloud 28.4% around, 4.1% over the yard
+  2023-09-19: cloudy cloud 97.9% around, 22.9% over the yard
   2023-09-22: ok     cloud 0.0% around, 0.0% over the yard
   2023-09-29: ok     cloud 0.0% around, 0.0% over the yard
   2023-10-04: ok     cloud 0.0% around, 0.0% over the yard
@@ -54,56 +55,56 @@ tacoma_port: 298 days with imagery 2023-04-01..2026-10-06, 298 new
   2023-10-27: ok     cloud 0.0% around, 0.0% over the yard
   2023-10-29: ok     cloud 0.0% around, 0.0% over the yard
   2023-11-08: ok     cloud 0.0% around, 0.0% over the yard
-  2023-11-13: cloudy cloud 19.3% around, 11.8% over the yard
+  2023-11-13: cloudy cloud 17.3% around, 13.8% over the yard
   2023-11-16: ok     cloud 0.0% around, 0.0% over the yard
-  2023-11-18: cloudy cloud 100.0% around, 61.8% over the yard
-  2023-11-23: cloudy cloud 25.4% around, 0.8% over the yard
-  2023-11-26: ok     cloud 0.4% around, 0.0% over the yard
+  2023-11-18: cloudy cloud 100.0% around, 72.4% over the yard
+  2023-11-23: cloudy cloud 32.1% around, 2.3% over the yard
+  2023-11-26: ok     cloud 0.5% around, 0.0% over the yard
   2023-11-28: cloudy cloud 100.0% around, 100.0% over the yard
-  2023-12-01: cloudy cloud 100.0% around, 86.6% over the yard
-  2023-12-08: cloudy cloud 84.7% around, 42.6% over the yard
-  2023-12-11: cloudy cloud 68.0% around, 48.3% over the yard
+  2023-12-01: cloudy cloud 100.0% around, 87.0% over the yard
+  2023-12-08: cloudy cloud 87.8% around, 46.2% over the yard
+  2023-12-11: cloudy cloud 62.2% around, 63.2% over the yard
   2023-12-21: ok     cloud 0.0% around, 0.0% over the yard
   2023-12-23: ok     cloud 0.0% around, 0.0% over the yard
   2023-12-26: ok     cloud 0.0% around, 0.0% over the yard
   2023-12-31: ok     cloud 0.0% around, 0.0% over the yard
-  2024-01-07: cloudy cloud 88.6% around, 59.2% over the yard
-  2024-01-12: cloudy cloud 81.2% around, 34.4% over the yard
-  2024-02-04: cloudy cloud 78.8% around, 23.4% over the yard
-  2024-02-16: cloudy cloud 44.3% around, 65.4% over the yard
-  2024-03-02: cloudy cloud 34.3% around, 23.8% over the yard
+  2024-01-07: cloudy cloud 89.9% around, 55.9% over the yard
+  2024-01-12: cloudy cloud 74.0% around, 45.3% over the yard
+  2024-02-04: cloudy cloud 75.5% around, 20.9% over the yard
+  2024-02-16: cloudy cloud 39.4% around, 55.5% over the yard
+  2024-03-02: cloudy cloud 28.9% around, 10.2% over the yard
   2024-03-05: ok     cloud 0.0% around, 0.0% over the yard
   2024-03-07: ok     cloud 0.0% around, 0.0% over the yard
-  2024-03-12: cloudy cloud 76.1% around, 33.3% over the yard
+  2024-03-12: cloudy cloud 77.2% around, 31.5% over the yard
   2024-03-15: ok     cloud 0.0% around, 0.0% over the yard
   2024-03-17: ok     cloud 0.0% around, 0.0% over the yard
-  2024-03-30: cloudy cloud 99.3% around, 78.4% over the yard
+  2024-03-30: cloudy cloud 99.5% around, 81.8% over the yard
   2024-04-01: ok     cloud 0.0% around, 0.0% over the yard
-  2024-04-09: cloudy cloud 83.9% around, 7.0% over the yard
-  2024-04-11: cloudy cloud 100.0% around, 77.1% over the yard
+  2024-04-09: cloudy cloud 83.9% around, 9.3% over the yard
+  2024-04-11: cloudy cloud 100.0% around, 68.0% over the yard
   2024-04-14: ok     cloud 0.0% around, 0.0% over the yard
-  2024-04-16: cloudy cloud 52.3% around, 25.5% over the yard
-  2024-04-19: cloudy cloud 4.5% around, 2.8% over the yard
-  2024-04-21: cloudy cloud 57.4% around, 51.6% over the yard
-  2024-04-29: cloudy cloud 75.3% around, 59.0% over the yard
-  2024-05-01: cloudy cloud 22.5% around, 15.7% over the yard
+  2024-04-16: cloudy cloud 44.7% around, 13.1% over the yard
+  2024-04-19: ok     cloud 4.7% around, 1.4% over the yard
+  2024-04-21: cloudy cloud 49.9% around, 41.5% over the yard
+  2024-04-29: cloudy cloud 67.5% around, 58.8% over the yard
+  2024-05-01: cloudy cloud 18.4% around, 4.1% over the yard
   2024-05-09: ok     cloud 0.0% around, 0.0% over the yard
   2024-05-11: ok     cloud 0.0% around, 0.0% over the yard
-  2024-05-14: cloudy cloud 54.9% around, 49.5% over the yard
-  2024-05-19: ok     cloud 0.3% around, 0.0% over the yard
+  2024-05-14: cloudy cloud 56.0% around, 54.9% over the yard
+  2024-05-19: ok     cloud 2.0% around, 0.0% over the yard
   2024-05-31: ok     cloud 0.0% around, 0.0% over the yard
-  2024-06-03: cloudy cloud 100.0% around, 11.9% over the yard
-  2024-06-05: ok     cloud 0.3% around, 0.0% over the yard
-  2024-06-08: cloudy cloud 100.0% around, 39.6% over the yard
-  2024-06-10: cloudy cloud 100.0% around, 98.7% over the yard
+  2024-06-03: cloudy cloud 100.0% around, 13.1% over the yard
+  2024-06-05: ok     cloud 0.4% around, 0.0% over the yard
+  2024-06-08: cloudy cloud 100.0% around, 30.7% over the yard
+  2024-06-10: cloudy cloud 100.0% around, 99.4% over the yard
   2024-06-15: cloudy cloud 100.0% around, 0.0% over the yard
-  2024-06-18: cloudy cloud 25.4% around, 6.0% over the yard
+  2024-06-18: cloudy cloud 29.4% around, 8.4% over the yard
   2024-06-20: ok     cloud 0.0% around, 0.0% over the yard
-  2024-06-23: cloudy cloud 78.0% around, 14.5% over the yard
+  2024-06-23: cloudy cloud 76.5% around, 3.8% over the yard
   2024-06-25: ok     cloud 0.0% around, 0.0% over the yard
-  2024-06-28: cloudy cloud 95.4% around, 66.2% over the yard
+  2024-06-28: cloudy cloud 94.0% around, 76.5% over the yard
   2024-06-30: cloudy cloud 100.0% around, 100.0% over the yard
-  2024-07-03: ok     cloud 0.8% around, 0.0% over the yard
+  2024-07-03: ok     cloud 0.4% around, 0.0% over the yard
   2024-07-05: ok     cloud 0.0% around, 0.0% over the yard
   2024-07-08: ok     cloud 0.0% around, 0.0% over the yard
   2024-07-10: ok     cloud 0.0% around, 0.0% over the yard
@@ -112,79 +113,79 @@ tacoma_port: 298 days with imagery 2023-04-01..2026-10-06, 298 new
   2024-07-18: ok     cloud 0.0% around, 0.0% over the yard
   2024-07-20: ok     cloud 0.0% around, 0.0% over the yard
   2024-07-23: ok     cloud 0.0% around, 0.0% over the yard
-  2024-07-25: cloudy cloud 24.1% around, 1.6% over the yard
+  2024-07-25: cloudy cloud 17.2% around, 1.8% over the yard
   2024-08-02: ok     cloud 0.0% around, 0.0% over the yard
   2024-08-04: ok     cloud 0.0% around, 0.0% over the yard
   2024-08-07: ok     cloud 0.0% around, 0.0% over the yard
-  2024-08-09: cloudy cloud 100.0% around, 69.6% over the yard
+  2024-08-09: cloudy cloud 100.0% around, 81.5% over the yard
   2024-08-14: ok     cloud 0.0% around, 0.0% over the yard
   2024-08-17: cloudy cloud 100.0% around, 100.0% over the yard
-  2024-08-27: cloudy cloud 7.9% around, 5.4% over the yard
+  2024-08-27: cloudy cloud 8.7% around, 6.3% over the yard
   2024-08-29: ok     cloud 0.0% around, 0.0% over the yard
   2024-09-01: ok     cloud 0.0% around, 0.0% over the yard
   2024-09-06: ok     cloud 0.0% around, 0.0% over the yard
-  2024-09-08: cloudy cloud 100.0% around, 36.4% over the yard
+  2024-09-08: cloudy cloud 100.0% around, 43.0% over the yard
   2024-09-21: ok     cloud 0.0% around, 0.0% over the yard
-  2024-09-26: cloudy cloud 67.2% around, 59.0% over the yard
-  2024-09-28: cloudy cloud 23.1% around, 10.5% over the yard
+  2024-09-26: cloudy cloud 72.7% around, 71.3% over the yard
+  2024-09-28: cloudy cloud 24.8% around, 8.6% over the yard
   2024-10-01: ok     cloud 0.0% around, 0.0% over the yard
-  2024-10-03: cloudy cloud 99.4% around, 55.4% over the yard
+  2024-10-03: cloudy cloud 99.6% around, 64.7% over the yard
   2024-10-06: ok     cloud 0.0% around, 0.0% over the yard
-  2024-10-11: cloudy cloud 100.0% around, 79.9% over the yard
-  2024-10-13: cloudy cloud 2.2% around, 3.2% over the yard
-  2024-10-16: ok     cloud 2.8% around, 0.5% over the yard
-  2024-10-28: cloudy cloud 20.8% around, 21.8% over the yard
+  2024-10-11: cloudy cloud 100.0% around, 77.8% over the yard
+  2024-10-13: ok     cloud 2.2% around, 0.9% over the yard
+  2024-10-16: ok     cloud 3.0% around, 0.3% over the yard
+  2024-10-28: cloudy cloud 26.1% around, 28.7% over the yard
   2024-11-07: ok     cloud 0.0% around, 0.0% over the yard
-  2024-11-15: cloudy cloud 51.3% around, 44.2% over the yard
-  2024-11-20: cloudy cloud 92.9% around, 52.9% over the yard
+  2024-11-15: cloudy cloud 48.6% around, 45.1% over the yard
+  2024-11-20: cloudy cloud 92.6% around, 62.9% over the yard
   2024-11-22: ok     cloud 0.0% around, 0.0% over the yard
-  2024-11-27: cloudy cloud 93.8% around, 76.5% over the yard
-  2024-11-30: cloudy cloud 17.8% around, 14.7% over the yard
-  2024-12-02: cloudy cloud 100.0% around, 99.8% over the yard
+  2024-11-27: cloudy cloud 91.7% around, 59.0% over the yard
+  2024-11-30: cloudy cloud 16.4% around, 11.7% over the yard
+  2024-12-02: cloudy cloud 100.0% around, 99.6% over the yard
   2024-12-05: ok     cloud 0.0% around, 0.0% over the yard
-  2024-12-15: cloudy cloud 5.0% around, 3.7% over the yard
-  2025-01-06: cloudy cloud 95.3% around, 94.7% over the yard
-  2025-01-09: cloudy cloud 100.0% around, 81.5% over the yard
-  2025-01-11: cloudy cloud 34.8% around, 2.2% over the yard
+  2024-12-15: ok     cloud 5.3% around, 1.1% over the yard
+  2025-01-06: cloudy cloud 89.2% around, 90.6% over the yard
+  2025-01-09: cloudy cloud 100.0% around, 86.8% over the yard
+  2025-01-11: cloudy cloud 36.5% around, 2.0% over the yard
   2025-01-19: ok     cloud 0.0% around, 0.0% over the yard
-  2025-01-26: ok     cloud 2.0% around, 0.0% over the yard
+  2025-01-26: ok     cloud 2.3% around, 0.0% over the yard
   2025-01-29: ok     cloud 0.0% around, 0.0% over the yard
-  2025-02-28: cloudy cloud 9.8% around, 2.4% over the yard
-  2025-03-05: cloudy cloud 38.8% around, 31.9% over the yard
-  2025-03-07: cloudy cloud 83.0% around, 33.7% over the yard
-  2025-03-17: cloudy cloud 59.5% around, 58.8% over the yard
-  2025-03-22: cloudy cloud 24.2% around, 12.6% over the yard
-  2025-03-25: cloudy cloud 99.8% around, 64.5% over the yard
-  2025-03-30: cloudy cloud 99.9% around, 7.4% over the yard
-  2025-04-03: ok     cloud 0.4% around, 0.0% over the yard
-  2025-04-04: cloudy cloud 30.9% around, 27.2% over the yard
-  2025-04-09: ok     cloud 0.1% around, 0.0% over the yard
-  2025-04-11: cloudy cloud 58.6% around, 21.4% over the yard
+  2025-02-28: cloudy cloud 7.1% around, 3.4% over the yard
+  2025-03-05: cloudy cloud 42.8% around, 34.8% over the yard
+  2025-03-07: cloudy cloud 81.9% around, 41.7% over the yard
+  2025-03-17: cloudy cloud 52.1% around, 47.3% over the yard
+  2025-03-22: cloudy cloud 27.0% around, 12.4% over the yard
+  2025-03-25: cloudy cloud 99.7% around, 78.8% over the yard
+  2025-03-30: cloudy cloud 99.7% around, 8.2% over the yard
+  2025-04-03: ok     cloud 0.2% around, 0.0% over the yard
+  2025-04-04: cloudy cloud 23.5% around, 15.6% over the yard
+  2025-04-09: ok     cloud 0.4% around, 0.0% over the yard
+  2025-04-11: cloudy cloud 53.0% around, 16.9% over the yard
   2025-04-14: ok     cloud 0.0% around, 0.0% over the yard
   2025-04-16: ok     cloud 0.0% around, 0.0% over the yard
-  2025-04-21: cloudy cloud 80.8% around, 18.1% over the yard
-  2025-04-23: cloudy cloud 1.6% around, 2.3% over the yard
-  2025-04-24: cloudy cloud 16.4% around, 14.6% over the yard
-  2025-04-26: cloudy cloud 98.7% around, 71.4% over the yard
+  2025-04-21: cloudy cloud 82.1% around, 19.1% over the yard
+  2025-04-23: cloudy cloud 1.5% around, 3.0% over the yard
+  2025-04-24: cloudy cloud 17.2% around, 19.1% over the yard
+  2025-04-26: cloudy cloud 96.4% around, 54.5% over the yard
   2025-05-01: ok     cloud 0.0% around, 0.0% over the yard
   2025-05-04: ok     cloud 0.0% around, 0.0% over the yard
-  2025-05-06: cloudy cloud 99.7% around, 59.1% over the yard
-  2025-05-09: cloudy cloud 99.9% around, 55.3% over the yard
-  2025-05-21: cloudy cloud 13.1% around, 7.2% over the yard
-  2025-05-24: cloudy cloud 36.6% around, 26.4% over the yard
-  2025-05-26: cloudy cloud 99.2% around, 46.1% over the yard
+  2025-05-06: cloudy cloud 99.8% around, 68.0% over the yard
+  2025-05-09: cloudy cloud 99.9% around, 64.2% over the yard
+  2025-05-21: ok     cloud 9.2% around, 0.5% over the yard
+  2025-05-24: cloudy cloud 41.7% around, 35.4% over the yard
+  2025-05-26: cloudy cloud 99.2% around, 51.0% over the yard
   2025-06-02: ok     cloud 0.0% around, 0.0% over the yard
-  2025-06-03: cloudy cloud 17.3% around, 17.6% over the yard
+  2025-06-03: cloudy cloud 17.3% around, 21.5% over the yard
   2025-06-05: ok     cloud 0.0% around, 0.0% over the yard
   2025-06-08: ok     cloud 0.0% around, 0.0% over the yard
   2025-06-10: ok     cloud 0.0% around, 0.0% over the yard
   2025-06-15: ok     cloud 0.0% around, 0.0% over the yard
-  2025-06-18: cloudy cloud 14.8% around, 2.7% over the yard
-  2025-06-23: cloudy cloud 100.0% around, 9.8% over the yard
-  2025-06-28: cloudy cloud 99.1% around, 50.7% over the yard
+  2025-06-18: cloudy cloud 14.0% around, 4.4% over the yard
+  2025-06-23: cloudy cloud 100.0% around, 13.5% over the yard
+  2025-06-28: cloudy cloud 98.0% around, 62.0% over the yard
   2025-06-30: ok     cloud 0.0% around, 0.0% over the yard
   2025-07-03: ok     cloud 0.0% around, 0.0% over the yard
-  2025-07-05: cloudy cloud 27.1% around, 26.0% over the yard
+  2025-07-05: cloudy cloud 31.7% around, 29.8% over the yard
   2025-07-08: ok     cloud 0.0% around, 0.0% over the yard
   2025-07-12: ok     cloud 0.0% around, 0.0% over the yard
   2025-07-13: ok     cloud 0.0% around, 0.0% over the yard
@@ -196,84 +197,84 @@ tacoma_port: 298 days with imagery 2023-04-01..2026-10-06, 298 new
   2025-08-01: ok     cloud 0.0% around, 0.0% over the yard
   2025-08-02: cloudy cloud 100.0% around, 100.0% over the yard
   2025-08-12: ok     cloud 0.0% around, 0.0% over the yard
-  2025-08-14: cloudy cloud 83.7% around, 25.7% over the yard
-  2025-08-19: cloudy cloud 99.6% around, 42.0% over the yard
-  2025-08-21: cloudy cloud 60.0% around, 56.5% over the yard
+  2025-08-14: cloudy cloud 84.6% around, 29.0% over the yard
+  2025-08-19: cloudy cloud 99.8% around, 44.5% over the yard
+  2025-08-21: cloudy cloud 62.5% around, 62.0% over the yard
   2025-08-22: ok     cloud 0.0% around, 0.0% over the yard
   2025-08-24: ok     cloud 0.0% around, 0.0% over the yard
   2025-09-03: ok     cloud 0.0% around, 0.0% over the yard
   2025-09-10: ok     cloud 0.0% around, 0.0% over the yard
-  2025-09-13: ok     cloud 2.8% around, 0.1% over the yard
+  2025-09-13: ok     cloud 3.6% around, 0.0% over the yard
   2025-09-16: ok     cloud 0.0% around, 0.0% over the yard
   2025-09-18: ok     cloud 0.0% around, 0.0% over the yard
-  2025-09-21: cloudy cloud 62.1% around, 38.0% over the yard
+  2025-09-21: cloudy cloud 55.8% around, 35.9% over the yard
   2025-09-23: ok     cloud 0.0% around, 0.0% over the yard
-  2025-09-26: cloudy cloud 23.7% around, 14.6% over the yard
-  2025-09-28: cloudy cloud 100.0% around, 15.2% over the yard
-  2025-09-30: cloudy cloud 99.9% around, 99.5% over the yard
-  2025-10-01: cloudy cloud 100.0% around, 16.9% over the yard
-  2025-10-03: cloudy cloud 38.8% around, 1.0% over the yard
+  2025-09-26: cloudy cloud 23.3% around, 10.3% over the yard
+  2025-09-28: cloudy cloud 100.0% around, 9.8% over the yard
+  2025-09-30: cloudy cloud 99.8% around, 99.7% over the yard
+  2025-10-01: cloudy cloud 99.6% around, 17.4% over the yard
+  2025-10-03: cloudy cloud 37.1% around, 0.0% over the yard
   2025-10-06: ok     cloud 0.0% around, 0.0% over the yard
-  2025-10-08: cloudy cloud 15.1% around, 8.3% over the yard
+  2025-10-08: cloudy cloud 12.3% around, 11.6% over the yard
   2025-10-13: ok     cloud 0.0% around, 0.0% over the yard
-  2025-10-20: cloudy cloud 93.4% around, 85.4% over the yard
-  2025-10-21: cloudy cloud 24.5% around, 11.7% over the yard
-  2025-11-02: cloudy cloud 100.0% around, 44.8% over the yard
-  2025-11-07: cloudy cloud 10.4% around, 1.4% over the yard
+  2025-10-20: cloudy cloud 88.7% around, 74.5% over the yard
+  2025-10-21: cloudy cloud 32.8% around, 18.2% over the yard
+  2025-11-02: cloudy cloud 100.0% around, 44.9% over the yard
+  2025-11-07: cloudy cloud 11.2% around, 1.7% over the yard
   2025-11-20: ok     cloud 0.2% around, 0.0% over the yard
   2025-11-30: ok     cloud 0.0% around, 0.0% over the yard
   2025-12-02: ok     cloud 0.0% around, 0.0% over the yard
-  2025-12-17: cloudy cloud 48.4% around, 0.0% over the yard
-  2025-12-22: cloudy cloud 94.3% around, 48.9% over the yard
-  2025-12-27: cloudy cloud 50.3% around, 3.4% over the yard
-  2025-12-30: cloudy cloud 96.9% around, 84.9% over the yard
-  2026-01-04: cloudy cloud 99.4% around, 22.8% over the yard
-  2026-01-08: ok     cloud 1.0% around, 0.2% over the yard
-  2026-01-09: cloudy cloud 100.0% around, 82.7% over the yard
-  2026-01-14: cloudy cloud 100.0% around, 78.6% over the yard
-  2026-01-16: ok     cloud 0.3% around, 0.0% over the yard
-  2026-01-19: ok     cloud 0.3% around, 0.1% over the yard
-  2026-01-21: cloudy cloud 100.0% around, 93.0% over the yard
+  2025-12-17: cloudy cloud 44.3% around, 1.8% over the yard
+  2025-12-22: cloudy cloud 92.2% around, 55.7% over the yard
+  2025-12-27: cloudy cloud 53.4% around, 3.8% over the yard
+  2025-12-30: cloudy cloud 97.4% around, 86.5% over the yard
+  2026-01-04: cloudy cloud 99.3% around, 32.1% over the yard
+  2026-01-08: ok     cloud 2.3% around, 0.1% over the yard
+  2026-01-09: cloudy cloud 100.0% around, 81.3% over the yard
+  2026-01-14: cloudy cloud 100.0% around, 75.0% over the yard
+  2026-01-16: ok     cloud 0.0% around, 0.0% over the yard
+  2026-01-19: ok     cloud 0.1% around, 0.1% over the yard
+  2026-01-21: cloudy cloud 99.0% around, 93.3% over the yard
   2026-01-24: ok     cloud 0.0% around, 0.0% over the yard
-  2026-02-05: cloudy cloud 48.5% around, 18.9% over the yard
+  2026-02-05: cloudy cloud 54.4% around, 25.3% over the yard
   2026-02-10: ok     cloud 0.0% around, 0.0% over the yard
-  2026-02-15: cloudy cloud 13.2% around, 12.3% over the yard
-  2026-02-25: ok     cloud 5.5% around, 0.0% over the yard
-  2026-03-02: cloudy cloud 97.7% around, 83.3% over the yard
+  2026-02-15: cloudy cloud 15.0% around, 8.2% over the yard
+  2026-02-25: ok     cloud 6.3% around, 0.1% over the yard
+  2026-03-02: cloudy cloud 98.2% around, 87.0% over the yard
   2026-03-05: cloudy cloud 100.0% around, 100.0% over the yard
-  2026-03-09: cloudy cloud 13.8% around, 5.8% over the yard
-  2026-03-15: cloudy cloud 22.9% around, 0.0% over the yard
+  2026-03-09: cloudy cloud 15.2% around, 7.1% over the yard
+  2026-03-15: cloudy cloud 13.4% around, 0.0% over the yard
   2026-03-22: ok     cloud 0.0% around, 0.0% over the yard
-  2026-03-27: ok     cloud 0.0% around, 0.0% over the yard
-  2026-03-30: cloudy cloud 99.4% around, 84.9% over the yard
-  2026-04-04: cloudy cloud 35.5% around, 19.2% over the yard
-  2026-04-06: ok     cloud 4.0% around, 1.1% over the yard
+  2026-03-27: ok     cloud 0.1% around, 0.0% over the yard
+  2026-03-30: cloudy cloud 99.5% around, 88.3% over the yard
+  2026-04-04: cloudy cloud 38.0% around, 22.5% over the yard
+  2026-04-06: ok     cloud 3.6% around, 0.2% over the yard
   2026-04-08: ok     cloud 0.0% around, 0.0% over the yard
   2026-04-09: ok     cloud 0.0% around, 0.0% over the yard
-  2026-04-16: cloudy cloud 64.2% around, 47.4% over the yard
-  2026-04-24: cloudy cloud 2.3% around, 3.3% over the yard
+  2026-04-16: cloudy cloud 60.0% around, 39.6% over the yard
+  2026-04-24: cloudy cloud 2.1% around, 4.3% over the yard
   2026-04-26: ok     cloud 0.0% around, 0.0% over the yard
   2026-04-29: ok     cloud 0.0% around, 0.0% over the yard
-  2026-05-04: cloudy cloud 49.6% around, 55.3% over the yard
+  2026-05-04: cloudy cloud 56.4% around, 65.3% over the yard
   2026-05-11: ok     cloud 0.0% around, 0.0% over the yard
-  2026-05-16: cloudy cloud 22.8% around, 8.2% over the yard
-  2026-05-18: cloudy cloud 99.0% around, 70.2% over the yard
+  2026-05-16: cloudy cloud 15.8% around, 3.9% over the yard
+  2026-05-18: cloudy cloud 99.2% around, 73.2% over the yard
   2026-05-21: ok     cloud 0.0% around, 0.0% over the yard
   2026-05-24: ok     cloud 0.1% around, 0.0% over the yard
   2026-05-31: ok     cloud 0.0% around, 0.0% over the yard
-  2026-06-05: cloudy cloud 78.2% around, 18.2% over the yard
-  2026-06-10: cloudy cloud 20.8% around, 12.2% over the yard
+  2026-06-05: cloudy cloud 75.6% around, 20.6% over the yard
+  2026-06-10: cloudy cloud 16.6% around, 3.5% over the yard
   2026-06-13: ok     cloud 0.0% around, 0.0% over the yard
-  2026-06-18: ok     cloud 0.2% around, 0.0% over the yard
-  2026-06-20: cloudy cloud 89.5% around, 64.6% over the yard
-  2026-06-27: cloudy cloud 86.7% around, 48.3% over the yard
+  2026-06-18: ok     cloud 0.1% around, 0.0% over the yard
+  2026-06-20: cloudy cloud 88.2% around, 71.5% over the yard
+  2026-06-27: cloudy cloud 81.7% around, 40.4% over the yard
   2026-07-05: ok     cloud 0.0% around, 0.0% over the yard
   2026-07-10: ok     cloud 0.0% around, 0.0% over the yard
   2026-07-13: ok     cloud 0.0% around, 0.0% over the yard
-  2026-07-15: cloudy cloud 32.3% around, 35.4% over the yard
-  2026-07-18: cloudy cloud 19.3% around, 0.0% over the yard
-  2026-07-20: ok     cloud 0.7% around, 0.6% over the yard
-  2026-07-27: cloudy cloud 35.3% around, 1.4% over the yard
+  2026-07-15: cloudy cloud 31.3% around, 38.7% over the yard
+  2026-07-18: ok     cloud 9.6% around, 0.0% over the yard
+  2026-07-20: ok     cloud 0.8% around, 0.7% over the yard
+  2026-07-27: cloudy cloud 25.6% around, 0.8% over the yard
   2026-07-30: ok     cloud 0.0% around, 0.0% over the yard
   2026-08-02: ok     cloud 0.0% around, 0.0% over the yard
   2026-08-04: ok     cloud 0.1% around, 0.0% over the yard
@@ -282,19 +283,19 @@ tacoma_port: 298 days with imagery 2023-04-01..2026-10-06, 298 new
   2026-08-12: ok     cloud 0.0% around, 0.0% over the yard
   2026-08-14: ok     cloud 0.0% around, 0.0% over the yard
   2026-08-17: ok     cloud 0.0% around, 0.0% over the yard
-  2026-08-19: cloudy cloud 46.0% around, 21.3% over the yard
+  2026-08-19: cloudy cloud 54.2% around, 27.8% over the yard
   2026-08-22: cloudy cloud 100.0% around, 100.0% over the yard
   2026-08-24: ok     cloud 0.0% around, 0.0% over the yard
-  2026-08-27: cloudy cloud 100.0% around, 93.3% over the yard
-  2026-08-29: cloudy cloud 87.8% around, 54.3% over the yard
-  2026-09-05: cloudy cloud 100.0% around, 84.2% over the yard
+  2026-08-27: cloudy cloud 100.0% around, 93.5% over the yard
+  2026-08-29: cloudy cloud 87.7% around, 48.3% over the yard
+  2026-09-05: cloudy cloud 100.0% around, 79.0% over the yard
   2026-09-06: ok     cloud 0.0% around, 0.0% over the yard
   2026-09-08: ok     cloud 0.0% around, 0.0% over the yard
-  2026-09-11: cloudy cloud 100.0% around, 96.6% over the yard
-  2026-09-16: ok     cloud 0.1% around, 0.2% over the yard
-  2026-09-18: cloudy cloud 45.6% around, 6.5% over the yard
-  2026-09-21: cloudy cloud 14.1% around, 0.0% over the yard
-  2026-09-26: cloudy cloud 89.8% around, 73.6% over the yard
-  2026-09-28: cloudy cloud 99.5% around, 0.8% over the yard
+  2026-09-11: cloudy cloud 100.0% around, 100.0% over the yard
+  2026-09-16: ok     cloud 0.1% around, 0.0% over the yard
+  2026-09-18: cloudy cloud 48.0% around, 8.9% over the yard
+  2026-09-21: cloudy cloud 13.3% around, 0.0% over the yard
+  2026-09-26: cloudy cloud 90.1% around, 67.8% over the yard
+  2026-09-28: cloudy cloud 99.2% around, 2.6% over the yard
   2026-10-01: ok     cloud 0.3% around, 0.1% over the yard
-tacoma_port: 155 clear scenes (2023-04-25 .. 2026-10-01), persistent 182.73 ha, rejected {'cloudy': 143, 'nodata': 0}
+tacoma_port: 159 clear scenes (2023-04-27 .. 2026-10-01), persistent 0.0 ha, rejected {'cloudy': 139, 'nodata': 0}
