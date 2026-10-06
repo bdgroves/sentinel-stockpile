@@ -65,6 +65,7 @@ footer{border-top:1px solid var(--line);padding:18px 24px;font-size:13px;color:v
 .leaflet-container{background:#0b0f13;font-family:var(--sans)}
 .leaflet-control-attribution{background:rgba(14,20,25,.85)!important;color:var(--dim)!important}
 .leaflet-control-attribution a{color:var(--muted)!important}
+.leaflet-tile.dim,.dim .leaflet-tile{filter:brightness(.7) saturate(.8)}
 .thumb{image-rendering:pixelated}
 @media (max-width:980px){.top{grid-template-columns:1fr}#map{height:420px}.method{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -137,8 +138,14 @@ const D = s => new Date(s + "T12:00:00");
 const nice = s => D(s).toLocaleDateString("en-US", {month: "short", day: "numeric", year: "numeric"});
 
 const map = L.map("map", {zoomSnap: 0.25, attributionControl: true});
-L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png",
-  {attribution: '&copy; OpenStreetMap contributors &copy; CARTO', maxZoom: 19}).addTo(map);
+// Esri basemaps need no API key; aerial imagery by default, so the 10 m
+// Sentinel scene sits inside a sharp photo of its surroundings
+const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services/";
+const aerial = L.tileLayer(ESRI + "World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  {attribution: "Imagery &copy; Esri, Maxar, Earthstar Geographics", maxZoom: 19, className: "dim"}).addTo(map);
+const dark = L.tileLayer(ESRI + "Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+  {attribution: "&copy; Esri, HERE, Garmin, &copy; OpenStreetMap contributors", maxZoom: 16});
+L.control.layers({"Aerial": aerial, "Dark": dark}, null, {position: "topright"}).addTo(map);
 let imgLayer = null, pileLayer = null, steadyLayer = null, aoiLayer = null;
 
 async function main() {
