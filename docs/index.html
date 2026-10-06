@@ -151,7 +151,11 @@ let imgLayer = null, pileLayer = null, steadyLayer = null, aoiLayer = null;
 async function main() {
   const m = await fetch("data/sites.json").then(r => r.json());
   SITES = m.sites;
-  $("tabs").innerHTML = SITES.map(s => `<button role="tab" data-id="${s.id}" aria-current="false">${s.name.split(/ [—-] /)[0]}<span class="c">${COMMODITY[s.commodity] || s.commodity}</span></button>`).join("");
+  // tab label: the place, plus the terminal when two sites share a place
+  const place = s => s.name.split(/ [—-] /)[0];
+  const label = s => SITES.filter(t => place(t) === place(s)).length > 1
+    ? `${place(s).replace(/^Port of /, "")} ${(s.name.split(/ [—-] /)[1] || "").split(/[ ,(]+(?=\()/)[0]}` : place(s);
+  $("tabs").innerHTML = SITES.map(s => `<button role="tab" data-id="${s.id}" aria-current="false">${label(s)}<span class="c">${COMMODITY[s.commodity] || s.commodity}</span></button>`).join("");
   $("tabs").querySelectorAll("button").forEach(b => b.onclick = () => choose(b.dataset.id));
   const want = location.hash.slice(1);
   choose(SITES.find(s => s.id === want) ? want : (SITES.find(s => s.id === "vancouver_wind") || SITES[0]).id);
