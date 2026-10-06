@@ -27,10 +27,16 @@ header{display:flex;align-items:center;gap:24px;padding:16px 24px;border-bottom:
 .mark small{display:block;font-weight:400;font-size:13px;color:var(--muted)}
 nav.out{margin-left:auto;display:flex;gap:18px;font-size:14px}
 nav.out a{color:var(--muted)}
-.tabs{display:flex;gap:6px;padding:14px 24px 0;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.intro{max-width:1320px;margin:0 auto;padding:12px 24px 0;color:var(--muted);font-size:14.5px;line-height:1.5}
+.intro a{color:var(--ink)}
+.tabs{display:flex;gap:4px 22px;padding:12px 24px 0;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.tg{display:flex;align-items:flex-end;gap:2px;flex-wrap:wrap}
+.tgl{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim);padding:0 6px 14px 0;white-space:nowrap}
+@media (max-width:700px){nav.out{gap:14px;font-size:13px;width:100%;margin-left:0}nav.out a{white-space:nowrap}.tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:10px 16px 0}.tg{flex-wrap:nowrap}.tabs button{white-space:nowrap}.intro{padding:10px 16px 0}}
 .tabs button{background:none;border:0;border-bottom:3px solid transparent;color:var(--muted);font:600 15px var(--sans);padding:8px 12px 12px;cursor:pointer}
 .tabs button[aria-current=true]{color:var(--ink);border-bottom-color:var(--pile)}
 .tabs button .c{display:block;font:400 12px var(--mono);color:var(--dim)}
+.tabs button{white-space:nowrap}
 main{max-width:1320px;margin:0 auto;padding:22px 24px 60px}
 .top{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:24px}
 .mapbox{background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden}
@@ -76,10 +82,12 @@ footer{border-top:1px solid var(--line);padding:18px 24px;font-size:13px;color:v
   <div class="mark">Sentinel Stockpile <small>The economy you can see from space</small></div>
   <nav class="out" aria-label="More">
     <a href="https://brooksgroves.com/">&larr; Home</a>
-    <a href="https://brooksgroves.com/blog/">Blog</a>
+    <a href="https://brooksgroves.com/blog/sentinel-stockpile-revisited-post.html">The story</a>
+    <a href="https://brooksgroves.com/geospatial.html">More projects</a>
     <a href="https://github.com/bdgroves/sentinel-stockpile">Code &amp; data</a>
   </nav>
 </header>
+<p class="intro">Eight Pacific Northwest cargo yards, measured from free Sentinel-2 satellite imagery twice a week: logs, wind-turbine blades and container stacks. Pick a yard, then drag the slider to move through time. <a href="https://brooksgroves.com/blog/sentinel-stockpile-revisited-post.html">How it works, and what it found &rarr;</a></p>
 <div class="tabs" id="tabs" role="tablist" aria-label="Sites"></div>
 <main>
   <div class="top">
@@ -155,7 +163,15 @@ async function main() {
   const place = s => s.name.split(/ [—-] /)[0];
   const label = s => SITES.filter(t => place(t) === place(s)).length > 1
     ? `${place(s).replace(/^Port of /, "")} ${(s.name.split(/ [—-] /)[1] || "").split(/[ ,(]+(?=\()/)[0]}` : place(s);
-  $("tabs").innerHTML = SITES.map(s => `<button role="tab" data-id="${s.id}" aria-current="false">${label(s)}<span class="c">${COMMODITY[s.commodity] || s.commodity}</span></button>`).join("");
+  // group the yards by cargo, the story first: wind blades, then logs, then containers
+  const GROUPS = [["wind_components", "Wind blades"], ["lumber", "Logs & lumber"], ["containers", "Containers"]];
+  const where = s => (s.name.split(/ [—-] /)[1] || "").replace(/\(.*\)/, "").trim();
+  const btn = s => { const l = label(s), w = where(s); return `<button role="tab" data-id="${s.id}" aria-current="false">${l}<span class="c">${l.includes(w.split(" ").pop()) ? "&nbsp;" : w}</span></button>`; };
+  const known = new Set(GROUPS.map(g => g[0]));
+  $("tabs").innerHTML = GROUPS.map(([c, t]) => {
+    const ss = SITES.filter(s => s.commodity === c).sort((a, b) => (b.id === "vancouver_wind") - (a.id === "vancouver_wind"));
+    return ss.length ? `<div class="tg"><span class="tgl">${t}</span>${ss.map(btn).join("")}</div>` : "";
+  }).join("") + SITES.filter(s => !known.has(s.commodity)).map(btn).join("");
   $("tabs").querySelectorAll("button").forEach(b => b.onclick = () => choose(b.dataset.id));
   const want = location.hash.slice(1);
   choose(SITES.find(s => s.id === want) ? want : (SITES.find(s => s.id === "vancouver_wind") || SITES[0]).id);
@@ -233,7 +249,7 @@ document.addEventListener("keydown", e => {
 let xTS, yTS;
 function frame(svg, h) {
   const el = d3.select(svg); el.selectAll("*").remove();
-  const w = svg.getBoundingClientRect().width, m = {t: 10, r: 14, b: 26, l: 44};
+  const w = svg.getBoundingClientRect().width, m = {t: 10, r: 30, b: 26, l: 44};
   return {el, w, h, m, g: el.append("g").attr("transform", `translate(${m.l},${m.t})`), iw: w - m.l - m.r, ih: h - m.t - m.b};
 }
 function drawTS() {
