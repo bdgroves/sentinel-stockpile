@@ -18,6 +18,8 @@ def main():
     r = sub.add_parser("rebuild", help="reclassify every cached scene (no downloads)")
     r.add_argument("--site", required=True)
     sub.add_parser("publish", help="manifest + README charts for all sites")
+    v = sub.add_parser("validate", help="NAIP aerial photo over the yard, for checking the classifier")
+    v.add_argument("--site", required=True)
     sub.add_parser("sites", help="site ids as JSON (for the Actions matrix)")
     a = ap.parse_args()
 
@@ -34,6 +36,9 @@ def main():
         series.build(site)
     elif a.cmd == "rebuild":
         series.build(load(a.site))
+    elif a.cmd == "validate":
+        from . import validate
+        validate.run(load(a.site))
     elif a.cmd == "publish":
         m = publish.manifest()
         publish.charts()
