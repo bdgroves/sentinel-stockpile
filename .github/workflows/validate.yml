@@ -4,6 +4,10 @@ name: NAIP validation images
 # the site grid, for checking what the classifier calls a stockpile.
 on:
   workflow_dispatch:
+    inputs:
+      scout:
+        description: "Instead, scout points: name:lat:lon[:half] separated by spaces"
+        default: ""
 
 permissions:
   contents: write
@@ -19,7 +23,14 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
       - run: pip install -q -r requirements.txt
-      - run: for s in $(python -m stockpile sites | tr -d '[]",'); do python -m stockpile validate --site $s; done
+      - if: inputs.scout == ''
+        run: for s in $(python -m stockpile sites | tr -d '[]",'); do python -m stockpile validate --site $s; done
+      - if: inputs.scout != ''
+        run: |
+          for p in ${{ inputs.scout }}; do
+            IFS=: read -r name lat lon half <<< "$p"
+            python -m stockpile scout --name "$name" --lat "$lat" --lon "$lon" --half "${half:-2500}"
+          done
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

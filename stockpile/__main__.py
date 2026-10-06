@@ -20,6 +20,12 @@ def main():
     sub.add_parser("publish", help="manifest + README charts for all sites")
     v = sub.add_parser("validate", help="NAIP aerial photo over the yard, for checking the classifier")
     v.add_argument("--site", required=True)
+    sc = sub.add_parser("scout", help="wide NAIP view + OSM outlines around a point")
+    sc.add_argument("--name", required=True)
+    sc.add_argument("--lat", type=float, required=True)
+    sc.add_argument("--lon", type=float, required=True)
+    sc.add_argument("--half", type=float, default=2500.0)
+    sc.add_argument("--res", type=float, default=2.5)
     sub.add_parser("sites", help="site ids as JSON (for the Actions matrix)")
     a = ap.parse_args()
 
@@ -39,6 +45,9 @@ def main():
     elif a.cmd == "validate":
         from . import validate
         validate.run(load(a.site))
+    elif a.cmd == "scout":
+        from . import validate
+        validate.scout(a.name, a.lat, a.lon, a.half, a.res)
     elif a.cmd == "publish":
         m = publish.manifest()
         publish.charts()

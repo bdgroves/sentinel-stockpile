@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sentinel Stockpile</title>
+<meta name="description" content="Lumber, logs, containers and wind-turbine blades on the Columbia River and Puget Sound, measured from Sentinel-2 every few days.">
+<meta property="og:title" content="Sentinel Stockpile: the economy you can see from space">
+<meta property="og:description" content="Commodity stockpiles at Pacific Northwest ports, measured from Sentinel-2.">
+<meta property="og:image" content="https://brooksgroves.com/sentinel-stockpile/charts/vancouver_wind_yoy.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+:root{
+  --bg:#0e1419; --panel:#141c23; --line:#24303a; --ink:#e7e2d8; --muted:#94a0a8; --dim:#5d6a73;
+  --pile:#e0a93b; --pile-fill:rgba(224,169,59,.35); --steady:#9aa6ae; --blue:#5aa3d6; --rust:#d0703a;
+  --sans:'IBM Plex Sans',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.5}
+a{color:var(--ink);text-decoration-color:var(--pile);text-underline-offset:3px}
+a:hover{color:var(--pile)}
+:focus-visible{outline:2px solid var(--pile);outline-offset:2px}
+header{display:flex;align-items:center;gap:24px;padding:16px 24px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.mark{font-weight:700;font-size:20px;letter-spacing:.01em}
+.mark small{display:block;font-weight:400;font-size:13px;color:var(--muted)}
+nav.out{margin-left:auto;display:flex;gap:18px;font-size:14px}
+nav.out a{color:var(--muted)}
+.tabs{display:flex;gap:6px;padding:14px 24px 0;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.tabs button{background:none;border:0;border-bottom:3px solid transparent;color:var(--muted);font:600 15px var(--sans);padding:8px 12px 12px;cursor:pointer}
+.tabs button[aria-current=true]{color:var(--ink);border-bottom-color:var(--pile)}
+.tabs button .c{display:block;font:400 12px var(--mono);color:var(--dim)}
+main{max-width:1320px;margin:0 auto;padding:22px 24px 60px}
+.top{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:24px}
+.mapbox{background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+#map{height:540px;background:#0b0f13}
+.scrub{display:flex;align-items:center;gap:12px;padding:12px 14px;border-top:1px solid var(--line)}
+.scrub button{background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:4px;width:38px;height:34px;cursor:pointer;font-size:15px}
+.scrub button:hover{border-color:var(--pile)}
+.scrub input[type=range]{flex:1;accent-color:var(--pile)}
+.scrub .d{font:500 14px var(--mono);min-width:96px;text-align:right}
+.legend{display:flex;gap:16px;padding:0 14px 12px;font-size:13px;color:var(--muted);flex-wrap:wrap}
+.legend i{display:inline-block;width:14px;height:10px;margin-right:6px;vertical-align:middle;border-radius:2px}
+h1{font-size:28px;line-height:1.15;margin-bottom:6px}
+.where{color:var(--muted);font-size:14px;margin-bottom:14px}
+.kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0 18px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+.kpi .n{font:600 28px var(--mono);line-height:1.1}
+.kpi .n small{font-size:14px;color:var(--muted);font-weight:400}
+.kpi .l{font-size:13px;color:var(--muted);margin-top:4px}
+.up{color:#79c08a}.down{color:var(--rust)}
+.about{font-size:15px;color:#cfc9bd}
+.about p+p{margin-top:10px}
+.chartbox{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px 8px;margin-top:24px}
+.chartbox h2{font-size:16px;font-weight:600;margin-bottom:2px}
+.chartbox .sub{font-size:13px;color:var(--muted);margin-bottom:6px}
+svg text{fill:var(--muted);font:12px var(--mono)}
+svg .grid line{stroke:var(--line)}
+svg .grid .domain{display:none}
+.tip{position:fixed;pointer-events:none;background:#0b0f13;border:1px solid var(--line);border-radius:4px;padding:6px 9px;font:12px var(--mono);color:var(--ink);display:none;z-index:2000}
+.method{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:30px;font-size:14px;color:#cfc9bd}
+.method h3{font-size:15px;color:var(--ink);margin-bottom:6px}
+footer{border-top:1px solid var(--line);padding:18px 24px;font-size:13px;color:var(--dim);text-align:center}
+.leaflet-container{background:#0b0f13;font-family:var(--sans)}
+.leaflet-control-attribution{background:rgba(14,20,25,.85)!important;color:var(--dim)!important}
+.leaflet-control-attribution a{color:var(--muted)!important}
+.thumb{image-rendering:pixelated}
+@media (max-width:980px){.top{grid-template-columns:1fr}#map{height:420px}.method{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="mark">Sentinel Stockpile <small>The economy you can see from space</small></div>
+  <nav class="out" aria-label="More">
+    <a href="https://brooksgroves.com/">&larr; Home</a>
+    <a href="https://brooksgroves.com/blog/">Blog</a>
+    <a href="https://github.com/bdgroves/sentinel-stockpile">Code &amp; data</a>
+  </nav>
+</header>
+<div class="tabs" id="tabs" role="tablist" aria-label="Sites"></div>
+<main>
+  <div class="top">
+    <div class="mapbox">
+      <div id="map" role="img" aria-label="Map of the yard with that date's satellite image and stockpile outlines"></div>
+      <div class="scrub">
+        <button id="prev" aria-label="Previous scene">&#9664;</button>
+        <button id="play" aria-label="Play">&#9654;</button>
+        <button id="next" aria-label="Next scene">&#9654;&#9654;</button>
+        <input type="range" id="slider" min="0" max="0" value="0" aria-label="Scene date">
+        <span class="d" id="date">&nbsp;</span>
+      </div>
+      <div class="legend">
+        <span><i style="background:var(--pile-fill);border:1.5px solid var(--pile)"></i>stockpile on this date</span>
+        <span><i style="border:1.5px dashed var(--steady)"></i>always-on (roofs, slabs)</span>
+        <span><i style="border:1.5px solid #fff"></i>area measured</span>
+      </div>
+    </div>
+    <div>
+      <h1 id="name">&nbsp;</h1>
+      <div class="where" id="where"></div>
+      <div class="kpis" id="kpis"></div>
+      <div class="about" id="about"></div>
+    </div>
+  </div>
+
+  <div class="chartbox">
+    <h2>Active stockpile area, every clear scene</h2>
+    <div class="sub">Dots are single Sentinel-2 passes; the line is a 3-week running median. Click a dot to see that day.</div>
+    <svg id="ts" width="100%" height="280" role="img" aria-label="Time series of active stockpile area"></svg>
+  </div>
+  <div class="chartbox">
+    <h2>Year over year</h2>
+    <div class="sub">The same running median, each year on one calendar. <span id="yoykey"></span></div>
+    <svg id="yoy" width="100%" height="260" role="img" aria-label="Year-over-year comparison"></svg>
+  </div>
+
+  <div class="method">
+    <div><h3>What's measured</h3>Each Sentinel-2 pass (every 2&ndash;5 days) is warped onto the same 10 m grid. Every pixel is sorted into water, vegetation, ground or stockpile from its colour in six bands, specks under 300 m&sup2; are dropped, and what's left becomes outlined piles. <em>Active</em> area leaves out ground that reads as stockpile on nearly every clear day: roofs, slabs, permanent stacks.</div>
+    <div><h3>Clouds</h3>A scene is kept only if Sentinel's own scene classification finds under 10% cloud and shadow in a 3 km window around the yard, and almost none over it. Bright white piles can fool the cloud mask, so the yard itself is held to high-confidence cloud only. The count of passes lost to cloud is shown for each site; it is highest in winter.</div>
+    <div><h3>Caveats</h3>Ten-metre pixels see piles, not individual logs or blades; a pile under 300 m&sup2; is invisible. Area is not volume, and colour-based rules can confuse a pile with a bright roof or fresh concrete. Treat the numbers as an index of activity, and the year-over-year shape as the story.</div>
+  </div>
+</main>
+<footer>Contains modified Copernicus Sentinel-2 data (ESA), via Microsoft Planetary Computer &middot; built by <a href="https://brooksgroves.com">Brooks Groves</a> &middot; <a href="https://github.com/bdgroves/sentinel-stockpile">code and data</a></footer>
+<div class="tip" id="tip"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+const COMMODITY = {lumber: "Logs & lumber", containers: "Containers", wind_components: "Wind-turbine components"};
+const YEAR = {2023: "#8f8a80", 2024: "#6f9ab9", 2025: "#5aa3d6", 2026: "#e0a93b", 2027: "#c58bd6"};
+let SITES = [], S = null, idx = 0, timer = null;
+const $ = id => document.getElementById(id);
+const fmt = (v, d = 1) => v == null ? "–" : v.toLocaleString("en-US", {maximumFractionDigits: d, minimumFractionDigits: d});
+const D = s => new Date(s + "T12:00:00");
+const nice = s => D(s).toLocaleDateString("en-US", {month: "short", day: "numeric", year: "numeric"});
+
+const map = L.map("map", {zoomSnap: 0.25, attributionControl: true});
+L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png",
+  {attribution: '&copy; OpenStreetMap contributors &copy; CARTO', maxZoom: 19}).addTo(map);
+let imgLayer = null, pileLayer = null, steadyLayer = null, aoiLayer = null;
+
+async function main() {
+  const m = await fetch("data/sites.json").then(r => r.json());
+  SITES = m.sites;
+  $("tabs").innerHTML = SITES.map(s => `<button role="tab" data-id="${s.id}" aria-current="false">${s.name.split(/ [—-] /)[0]}<span class="c">${COMMODITY[s.commodity] || s.commodity}</span></button>`).join("");
+  $("tabs").querySelectorAll("button").forEach(b => b.onclick = () => choose(b.dataset.id));
+  const want = location.hash.slice(1);
+  choose(SITES.find(s => s.id === want) ? want : (SITES.find(s => s.id === "vancouver_wind") || SITES[0]).id);
+}
+
+async function choose(id) {
+  stop();
+  $("tabs").querySelectorAll("button").forEach(b => b.setAttribute("aria-current", b.dataset.id === id));
+  history.replaceState(null, "", "#" + id);
+  S = await fetch(`data/${id}/series.json`).then(r => r.json());
+  S.id = id;
+  const b = S.grid.lonlat_bounds;
+  S.llb = [[b[1], b[0]], [b[3], b[2]]];
+  map.fitBounds(S.llb, {padding: [10, 10]});
+  if (aoiLayer) aoiLayer.remove();
+  aoiLayer = L.geoJSON(S.aoi, {style: {color: "#fff", weight: 1.5, fill: false, opacity: .8}}).addTo(map);
+  if (steadyLayer) steadyLayer.remove();
+  steadyLayer = L.geoJSON(S.persistent, {style: {color: "#9aa6ae", weight: 1.5, dashArray: "4 4", fill: false}}).addTo(map);
+  $("slider").max = S.scenes.length - 1;
+  header();
+  drawTS(); drawYoY();
+  show(S.scenes.length - 1);
+}
+
+function header() {
+  const st = S.site, man = SITES.find(s => s.id === S.id);
+  $("name").textContent = st.name;
+  $("where").textContent = `${COMMODITY[st.commodity] || st.commodity} · ${st.latitude.toFixed(3)}°N ${(-st.longitude).toFixed(3)}°W · ${S.scenes.length} clear scenes of ${S.looked_at} passes since ${nice(S.scenes[0].date)} (${Math.round(100 * (S.looked_at - S.scenes.length) / S.looked_at)}% lost to cloud)`;
+  const last = S.scenes[S.scenes.length - 1];
+  const vs = (a, b) => (a == null || b == null || !b) ? "" : (() => { const p = Math.round((a - b) / b * 100); return p === 0 ? "±0%" : `<span class="${p > 0 ? "up" : "down"}">${p > 0 ? "+" : "−"}${Math.abs(p)}%</span>`; })();
+  $("kpis").innerHTML = `
+    <div class="kpi"><div class="n">${fmt(last.smooth_active_ha)} <small>ha</small></div><div class="l">active stockpile now (${nice(last.date)})</div></div>
+    <div class="kpi"><div class="n">${vs(man.latest_active_ha, man.year_ago_active_ha) || "–"}</div><div class="l">vs the same weeks a year ago (${fmt(man.year_ago_active_ha)} ha)</div></div>
+    <div class="kpi"><div class="n">${vs(man.latest_active_ha, man.norm_active_ha) || "–"}</div><div class="l">vs the usual for this week, earlier years (${fmt(man.norm_active_ha)} ha)</div></div>
+    <div class="kpi"><div class="n">${last.n_objects} <small>piles</small></div><div class="l">largest ${fmt(last.largest_ha, 2)} ha on the latest scene</div></div>`;
+  $("about").innerHTML = `<p>${st.description}</p>`;
+}
+
+function show(i) {
+  idx = Math.max(0, Math.min(S.scenes.length - 1, i));
+  const r = S.scenes[idx], key = r.date.replaceAll("-", "");
+  $("slider").value = idx;
+  $("date").textContent = r.date;
+  if (imgLayer) imgLayer.remove();
+  imgLayer = L.imageOverlay(`data/${S.id}/thumbs/${key}.jpg`, S.llb, {className: "thumb", opacity: 1}).addTo(map);
+  imgLayer.bringToBack();
+  fetch(`data/${S.id}/objects/${key}.geojson`).then(x => x.json()).then(fc => {
+    if (S.scenes[idx].date !== r.date) return;
+    if (pileLayer) pileLayer.remove();
+    pileLayer = L.geoJSON(fc, {
+      filter: f => !f.properties.persistent,
+      style: {color: "#e0a93b", weight: 1.5, fillColor: "#e0a93b", fillOpacity: .35},
+      onEachFeature: (f, l) => l.bindTooltip(`${(f.properties.area_m2 / 1e4).toFixed(2)} ha`, {sticky: true})
+    }).addTo(map);
+  });
+  d3.selectAll(".sel").attr("cx", d => xTS(D(r.date))).attr("cy", d => yTS(r.active_ha));
+}
+
+function stop() { if (timer) { clearInterval(timer); timer = null; $("play").innerHTML = "&#9654;"; $("play").setAttribute("aria-label", "Play"); } }
+$("play").onclick = () => {
+  if (timer) return stop();
+  $("play").innerHTML = "&#10074;&#10074;"; $("play").setAttribute("aria-label", "Pause");
+  if (idx >= S.scenes.length - 1) show(0);
+  timer = setInterval(() => { if (idx >= S.scenes.length - 1) return stop(); show(idx + 1); }, 450);
+};
+$("prev").onclick = () => { stop(); show(idx - 1); };
+$("next").onclick = () => { stop(); show(idx + 1); };
+$("slider").oninput = e => { stop(); show(+e.target.value); };
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "INPUT") return;
+  if (e.key === "ArrowLeft") { stop(); show(idx - 1); }
+  if (e.key === "ArrowRight") { stop(); show(idx + 1); }
+});
+
+let xTS, yTS;
+function frame(svg, h) {
+  const el = d3.select(svg); el.selectAll("*").remove();
+  const w = svg.getBoundingClientRect().width, m = {t: 10, r: 14, b: 26, l: 44};
+  return {el, w, h, m, g: el.append("g").attr("transform", `translate(${m.l},${m.t})`), iw: w - m.l - m.r, ih: h - m.t - m.b};
+}
+function drawTS() {
+  const F = frame($("ts"), 280), rows = S.scenes;
+  xTS = d3.scaleTime().domain(d3.extent(rows, r => D(r.date))).range([0, F.iw]).nice();
+  yTS = d3.scaleLinear().domain([0, d3.max(rows, r => Math.max(r.active_ha, r.smooth_active_ha)) * 1.08]).range([F.ih, 0]).nice();
+  F.g.append("g").attr("class", "grid").call(d3.axisLeft(yTS).ticks(5).tickSize(-F.iw).tickFormat(v => v + " ha"));
+  F.g.append("g").attr("transform", `translate(0,${F.ih})`).call(d3.axisBottom(xTS).ticks(8)).select(".domain").attr("stroke", "#24303a");
+  F.g.append("g").selectAll("circle").data(rows).join("circle")
+    .attr("cx", r => xTS(D(r.date))).attr("cy", r => yTS(r.active_ha)).attr("r", 3)
+    .attr("fill", "#5d6a73").style("cursor", "pointer")
+    .on("click", (e, r) => { stop(); show(rows.indexOf(r)); })
+    .on("mousemove", (e, r) => tip(e, `${r.date}<br>${fmt(r.active_ha, 2)} ha active · ${r.n_objects} piles`))
+    .on("mouseleave", () => tip());
+  F.g.append("path").datum(rows).attr("fill", "none").attr("stroke", "#5aa3d6").attr("stroke-width", 2.2)
+    .attr("d", d3.line().x(r => xTS(D(r.date))).y(r => yTS(r.smooth_active_ha)));
+  F.g.append("circle").attr("class", "sel").attr("r", 6).attr("fill", "none").attr("stroke", "#e0a93b").attr("stroke-width", 2);
+}
+function drawYoY() {
+  const F = frame($("yoy"), 260), rows = S.scenes;
+  const cal = r => { const d = D(r.date); return new Date(2000, d.getMonth(), Math.min(d.getDate(), 28)); };
+  const x = d3.scaleTime().domain([new Date(2000, 0, 1), new Date(2000, 11, 31)]).range([0, F.iw]);
+  const y = d3.scaleLinear().domain([0, d3.max(rows, r => r.smooth_active_ha) * 1.1]).range([F.ih, 0]).nice();
+  F.g.append("g").attr("class", "grid").call(d3.axisLeft(y).ticks(5).tickSize(-F.iw).tickFormat(v => v + " ha"));
+  F.g.append("g").attr("transform", `translate(0,${F.ih})`).call(d3.axisBottom(x).ticks(d3.timeMonth.every(1)).tickFormat(d3.timeFormat("%b"))).select(".domain").attr("stroke", "#24303a");
+  const years = d3.groups(rows, r => D(r.date).getFullYear());
+  years.forEach(([yr, rs]) => {
+    F.g.append("path").datum(rs).attr("fill", "none").attr("stroke", YEAR[yr] || "#94a0a8").attr("stroke-width", yr === years[years.length - 1][0] ? 3 : 1.8)
+      .attr("d", d3.line().x(r => x(cal(r))).y(r => y(r.smooth_active_ha)));
+  });
+  $("yoykey").innerHTML = years.map(([yr]) => `<span style="margin-left:12px;white-space:nowrap"><i style="display:inline-block;width:14px;height:3px;vertical-align:middle;margin-right:5px;background:${YEAR[yr] || "#94a0a8"}"></i>${yr}</span>`).join("");
+}
+function tip(e, html) {
+  const t = $("tip");
+  if (!e) { t.style.display = "none"; return; }
+  t.innerHTML = html; t.style.display = "block";
+  t.style.left = (e.clientX + 12) + "px"; t.style.top = (e.clientY - 10) + "px";
+}
+addEventListener("resize", () => { if (S) { drawTS(); drawYoY(); show(idx); } });
+main();
+</script>
+</body>
+</html>
