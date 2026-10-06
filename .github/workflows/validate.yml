@@ -27,9 +27,10 @@ jobs:
         run: for s in $(python -m stockpile sites | tr -d '[]",'); do python -m stockpile validate --site $s; done
       - if: inputs.scout != ''
         run: |
+          mkdir -p docs/validation/scout
           for p in ${{ inputs.scout }}; do
             IFS=: read -r name lat lon half <<< "$p"
-            python -m stockpile scout --name "$name" --lat "$lat" --lon "$lon" --half "${half:-2500}"
+            python -m stockpile scout --name "$name" --lat "$lat" --lon "$lon" --half "${half:-2500}" 2>&1 | tee -a docs/validation/scout/log.txt || true
           done
       - run: |
           git config user.name "github-actions[bot]"

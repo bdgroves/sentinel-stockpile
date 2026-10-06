@@ -112,7 +112,11 @@ def scout(name: str, lat: float, lon: float, half: float = 2500.0, res: float = 
     out.mkdir(parents=True, exist_ok=True)
     Image.fromarray(np.moveaxis(img, 0, -1)).save(out / f"{name}.jpg", quality=85)
     lon0, lat0, lon1, lat1 = g.lonlat_bounds()
-    fc = osm(lon0, lat0, lon1, lat1)
+    try:
+        fc = osm(lon0, lat0, lon1, lat1)
+    except Exception as e:  # noqa: BLE001 - the photo is still useful without outlines
+        print(f"scout {name}: OSM failed ({e})")
+        fc = {"type": "FeatureCollection", "features": [], "error": str(e)}
     (out / f"{name}.geojson").write_text(json.dumps(fc))
     (out / f"{name}.json").write_text(json.dumps({"lat": lat, "lon": lon, "half": half, "res": res,
                                                   "crs": g.crs, "bounds": g.bounds, "naip": dates}))
