@@ -2,261 +2,130 @@
 
 ### The economy you can see from space.
 
-Every year, the Pacific Northwest lumber supply chain does the same thing. Mills cut timber all summer. Logs pile up at export terminals along the Columbia River. Ships carry them to Asia. Then winter comes, logging roads close, and the yards go quiet.
+Logs stack up at a Columbia River mill. Wind-turbine blades wait on the docks for their trucks to the Gorge. Containers pile up behind the cranes in Tacoma. All of it is visible from 786 km up, every few days, for free.
 
-Sixty miles downstream, a different kind of cargo tells a different kind of story. Wind turbine blades — 250 feet long, nearly as tall as the Statue of Liberty — arrive on ships from China and Europe, stage on the docks, and truck out through the Columbia River Gorge at 3 a.m. to wind farms across the interior West. How busy those docks are tells you something about the future of American energy.
+Sentinel Stockpile watches four Pacific Northwest yards with the European Space Agency's Sentinel-2 satellites, measures how much of each yard is covered in cargo on every clear day since April 2023, and keeps doing it twice a week on its own.
 
-We know all this because we watched it happen — from 500 miles up.
+**→ [Live dashboard](https://brooksgroves.com/sentinel-stockpile/)** · map with every clear scene and its outlined piles, time series, year-over-year chart, the numbers as CSV.
 
----
+![Port of Vancouver Terminal 5, four summers](docs/charts/vancouver_wind_summers.jpg)
 
-## Site 1: Port of Longview — Lumber
-
-![Stockpile area over time at Port of Longview](docs/time_series.png)
-
-That's 12 months of lumber stockpile area at the **Port of Longview, Washington**, the largest log export terminal on the Columbia River. Every dot is a measurement taken from a European Space Agency satellite called Sentinel-2, which photographs every point on Earth every five days at 10-meter resolution.
-
-<table>
-<tr>
-<td width="50%">
-
-**July 13, 2025 — Peak season**
-![True color satellite image, July 2025](docs/rgb_20250713.png)
-
-</td>
-<td width="50%">
-
-**January 16, 2026 — Winter low**
-![True color satellite image, January 2026](docs/rgb_20260116.png)
-
-</td>
-</tr>
-</table>
-
-The reddish-brown rectangles in the upper left are log stacks. The bright white patches in the center are dimensional lumber or tarped material. In July, they're everywhere. In January, the yard is mostly empty pavement.
-
-<table>
-<tr>
-<td width="50%">
-
-**July — classified (32% stockpile)**
-![Classification map, July 2025](docs/map_20250713.png)
-
-</td>
-<td width="50%">
-
-**January — classified (3.4% stockpile)**
-![Classification map, January 2026](docs/map_20260116.png)
-
-</td>
-</tr>
-</table>
-
-Amber = stockpile. Blue = water. Brown = ground. Green = vegetation.
-
-### The seasonal story
-
-The signal is textbook commodity economics:
-
-- **Spring (April–May):** ~20–23 hectares. Mills ramping up, logging roads drying out.
-- **Summer (June–July):** Climbs to 47 hectares. Peak harvest, mills running full production, lumber accumulating faster than ships can carry it out.
-- **Fall (August–September):** Drops back to 22 hectares. Export vessels loading for Asian construction markets.
-- **Winter (January):** Down to 5 hectares. Rain shuts logging roads, mills cut shifts, the Columbia River lumber supply chain exhales.
-
-This is the seasonal pulse of a $40 billion industry, measured with free tools.
+*Terminal 5 at the Port of Vancouver USA, the region's wind-energy laydown yard, on a clear late-July or early-August day in each of the last four summers. Orange outlines are what the classifier calls blades; the white line is the yard.*
 
 ---
 
-## Site 2: Port of Vancouver WA — Wind Energy
+## What four summers show
 
-![Stockpile area over time at Port of Vancouver](docs/vancouver_time_series.png)
+Median active stockpile area over June–September, from every clear Sentinel-2 pass:
 
-The Port of Vancouver is the West Coast's main entry point for wind turbine components. Blades, nacelles, tower sections — they arrive by ship, stage on the terminal laydown pads, and truck out through the Columbia River Gorge to wind farms in Eastern Oregon, Eastern Washington, and as far as Saskatchewan.
+| Site | Cargo measured | 2023 | 2024 | 2025 | 2026 |
+|---|---|---:|---:|---:|---:|
+| [Port of Vancouver USA, Terminal 5](docs/charts/vancouver_wind_yoy.png) | wind-turbine blades | 3.6 ha | 1.2 ha | 0.3 ha | 0.1 ha |
+| [Port of Longview](docs/charts/longview_port_yoy.png) | wind-turbine blades | 5.9 ha | 4.3 ha | 3.2 ha | 2.7 ha |
+| [Weyerhaeuser Longview](docs/charts/weyerhaeuser_longview_yoy.png) | logs, lumber, chips | 33.1 ha | 34.1 ha | 31.7 ha | 25.0 ha |
+| [Port of Tacoma, Husky + East Sitcum](docs/charts/tacoma_port_yoy.png) | container stacks | 7.4 ha | 12.8 ha | 11.4 ha | 9.1 ha |
 
-The pattern here is completely different from lumber. No smooth seasonal curve — instead, a **sawtooth**: spikes when ships arrive and unload hundreds of components onto the yard, drops as trucks haul them out one by one over the following days. You're literally watching individual vessel deliveries resolve in the satellite data.
+(15–31 clear scenes per summer per site; 2026 runs to the end of September.)
 
-### Three summers, one question
+- **The wind yards have emptied.** Terminal 5 went from rows of blades across the yard in 2023 to bare pavement in 2025 and 2026. Longview's blade racks have shrunk every summer too, by more than half since 2023. The data shows the decline, not its cause: project pipelines, interest rates, supply chains and federal wind policy all moved over these years.
+- **The log yard's summer is smaller this year.** Weyerhaeuser's decks and chip piles fill every summer (and read lower every winter, partly because wet wood is darker); summer 2026 is about a quarter below the three before it.
+- **Tacoma's stacks jumped in 2024** and have eased since, while staying above 2023.
 
-We pulled three years of data: summer 2023, summer 2024, and summer 2025. The question was whether President Trump's January 20, 2025 executive order — which halted all new federal permits, approvals, and loans for wind projects — would show up in the yard.
-
-| | Summer 2023 | Summer 2024 | Summer 2025 |
-|---|---|---|---|
-| **Peak (ha)** | ~73 | ~53 | ~57 |
-| **Typical range** | 45–61 | 36–53 | 39–57 |
-| **Context** | Biden admin, IRA incentives | Biden admin, rising rates | Post-EO, permit freeze |
-
-**The answer is more interesting than we expected.** The decline started *before* the executive order. Summer 2024 — still fully under Biden, Inflation Reduction Act incentives in place — was already significantly below 2023. Interest rates, supply chain friction, and general industry headwinds were doing the work, not policy.
-
-Summer 2025 actually recovered slightly from 2024. The pipeline of already-permitted projects kept flowing — blades on the dock today were contracted 2–3 years ago.
-
-**The EO's real impact — frozen permits preventing new projects from being greenlit — won't show up in yard utilization for years.** There's a long lag between permitting and component delivery. The blades that *would have* been ordered for 2027–2028 wind farms are the ones that won't arrive. We're watching the lag built into industrial supply chains, and we'll keep monitoring.
-
-The port itself has noted that wind energy throughput has always been cyclical, tied to tax credit renewals and permitting cycles. This data gives that observation a number.
+These are areas, not volumes or counts, and they are an index of activity. The [dashboard](https://brooksgroves.com/sentinel-stockpile/) lets you click any scene and check the outlines against the picture.
 
 ---
 
 ## How it works
 
-The data is free. The algorithms aren't secret. This project is proof that you can build meaningful commodity intelligence with open tools and open data — the same kind of analysis that hedge funds pay six figures a year for.
+1. **Find the passes.** For each site, every Sentinel-2 L2A scene since the start date is found on [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/dataset/sentinel-2-l2a), keeping one per day whose footprint covers the whole yard.
+2. **Screen for weather.** Sentinel's own scene classification (SCL) has to show under 10% cloud and shadow in a 3 km window and almost none over the yard. About half of all passes fail, mostly in winter. Later, scenes whose yard is much brighter than usual in blue (cloud the mask missed, wildfire smoke) and scenes with a fifth of the yard under snow are set aside too.
+3. **Put every scene on one grid.** Six bands (blue, green, red, NIR, SWIR1, SWIR2) are warped onto a fixed 10 m UTM grid per site, with Sentinel-2's +1000 reflectance offset removed. These band stacks are cached on the `stacks` branch, so reclassifying never re-downloads anything.
+4. **Classify each pixel by colour,** with one rule per kind of cargo, on true surface reflectance:
+   - *Logs, lumber and chips* are warm: red well above blue, (R−B)/(R+B) > 0.25, above a brightness floor that leaves out the dark bark mud between the decks.
+   - *Wind-turbine blades* are bright, neutral white: brightness > 0.2 with no warm tint.
+   - *Container stacks* are mostly red, orange and brown paint, warmer than the grey pavement around them. Blue and white boxes are missed, so this is an index of fullness, not a count.
+   - Water must be both greener than NIR and dark in the NIR (white blades have a slightly positive NDWI). Snow is bright in the visible and dark in SWIR.
+   - Ground whose NDVI is high on a good share of dates is never counted: in August, dry grass is the same colour as a log deck, but in spring it turns green.
+5. **Clean into piles.** Specks under three pixels (300 m²) are dropped, pinholes filled, and each connected pile becomes a polygon with its outline smoothed.
+6. **Measure.** Total area; *active* area, which leaves out pixels that read as cargo on 90% or more of clear scenes (white roofs, slabs); number and size of piles; a 21-day running median; and a norm for each week of the year from earlier years.
+7. **Publish.** One commit with the site data, charts and the dashboard's JSON.
 
-**The trick is that different materials reflect light differently.** Lumber is brighter than pavement. Wind turbine blades — white fiberglass — are brighter still. Vegetation is greener than everything. Water absorbs most light. The satellite captures six spectral bands, and we compute indices that quantify these differences:
+The rules live in [`sites/commodities.json`](sites/commodities.json), each with a sentence on why it works. They were set from index values sampled on the 2023 USDA NAIP aerial photo (0.6 m) of each yard and checked by outlining the result on that photo. The checks are in [`docs/validation/`](docs/validation/).
 
-- **NDVI** (vegetation index) — identifies trees and grass so we can exclude them
-- **BSI** (bare soil index) — separates textured surfaces like lumber stacks from smooth pavement
-- **Brightness** — catches the actual stockpile material
+![Weyerhaeuser Longview, check against NAIP](docs/validation/weyerhaeuser_longview_check.jpg)
 
-Each pixel gets classified. Count the stockpile pixels, multiply by pixel area (100 m²), and you have a measurement. Do it 106 times over three years, and you have a time series that tells economic stories.
+*Left: the NAIP photo of 1 August 2023 with every 10 m pixel the lumber rule picks on 31 July outlined. Right: that Sentinel-2 scene.*
 
-The classification thresholds were tuned empirically — looking at satellite imagery with human eyes, comparing it to classifier output, adjusting until the math matched reality. It's part science, part craft. Every site and commodity needs its own tuning, which is why the project includes an interactive Jupyter notebook for the process.
+### Running on its own
+
+[`.github/workflows/monitor.yml`](.github/workflows/monitor.yml) runs every Monday and Thursday. Each site gets its own job (fetch new passes, rebuild the series), then a single publish job merges them and commits once. Run it by hand to backfill (`start`), reclassify cached scenes after changing a rule (`rebuild = true`), or run some sites only (`sites`).
+
+[`validate.yml`](.github/workflows/validate.yml) refreshes the NAIP photos, and can scout a new location (a wide NAIP view plus the OpenStreetMap outlines around a point) when you're drawing a new yard.
+
+---
+
+## v3: what changed, and what v1 got wrong
+
+The first version of this project ran from a notebook and a monthly workflow. Rebuilding it turned up three problems that changed its numbers, so they're worth saying plainly:
+
+- **Two sites were in the wrong place.** The "Port of Vancouver" box sat on downtown Vancouver, about 5 km southeast of Terminal 5, and the Weyerhaeuser box sat on downtown Longview. v1's Vancouver wind figures (summer peaks of 53–73 ha) were measuring bright downtown roofs, not blades. Every yard is now an OpenStreetMap outline of the actual terminal.
+- **The reflectance offset was never removed.** Since processing baseline 04.00 (January 2022), Sentinel-2 L2A values carry a +1000 offset. v1's thresholds were tuned on the offset values, which made ordinary pavement look like cargo; on the correct outlines its rules called 50–100% of each yard stockpile.
+- **The pipeline had been failing since April**: three jobs raced to push their results, and GitHub had switched the schedule off for inactivity.
+
+v3 adds the per-cargo colour rules above, the seasonal-green, snow and haze screens, per-site grids, cached band stacks, one-commit publishing, the validation tools and the dashboard. The Port of Longview, which v1 tracked as lumber, is now measured for blades: inside its outline, the 2023 photo shows blade racks and steel, and the log decks are next door at Weyerhaeuser. (Steel pipe and rail are as dark as the pavement and aren't measured.)
 
 ---
 
 ## Try it yourself
 
 ```bash
-# Install pixi
-curl -fsSL https://pixi.sh/install.sh | bash
-
-# Clone and set up
-git clone https://github.com/bdgroves/sentinel-stockpile.git
-cd sentinel-stockpile
-pixi install
-
-# Run the full pipeline for a site
-pixi run pipeline --site longview_port --months 6
+git clone https://github.com/bdgroves/sentinel-stockpile && cd sentinel-stockpile
+pixi install            # or: pip install -r requirements.txt
+pixi run stacks         # fetch the cached band stacks (about 230 MB)
+pixi run rebuild --site vancouver_wind
+pixi run publish
+pixi run serve          # dashboard at http://localhost:8000
 ```
 
-No API keys. No paid accounts. Everything runs on free data from [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/).
+Tune a rule and see it on the aerial photo before committing it:
 
-### Add your own site
-
-Drop a JSON file in `config/sites/`:
-
-```json
-{
-    "site_id": "my_site",
-    "name": "Port of Somewhere",
-    "commodity": "lumber",
-    "latitude": 46.1065,
-    "longitude": -122.9543,
-    "buffer_meters": 600,
-    "description": "What this site is and why you're watching it"
-}
+```bash
+python tools/calibrate.py --site tacoma_port --rules '{"warmth_min": 0.18}'
+# prints the yard's index percentiles; writes docs/validation/tacoma_port_check.jpg
+python tools/summers.py --site tacoma_port     # one midsummer scene per year
 ```
 
-Run `pixi run pipeline --site my_site` and you're in business.
+### Add a site
 
-### Tune your thresholds
+Drop a JSON file in [`sites/`](sites/): `id`, `name`, `commodity` (a key in `commodities.json`), `latitude`, `longitude`, `start`, a `description`, and an `aoi` polygon (the scout workflow will show you the OpenStreetMap outlines to copy). Then run the monitor workflow with `start` set, and the new site shows up on the dashboard. A new kind of cargo needs a new entry in `commodities.json`; start from `calibrate.py`.
 
-The included notebook (`notebooks/explore.ipynb`) walks you through true-color and false-color composites, spectral index distributions, and side-by-side classification validation. This is where the craft happens.
-
----
-
-## What else can you watch from space?
-
-This same approach works for anything that accumulates or depletes at a fixed location:
-
-- **Container terminals** — trade disruptions show up as area changes weeks before they hit economic reports
-- **Oil tank farms** — floating-roof tank shadows tell you fill levels; multiply across a farm and you estimate regional petroleum reserves
-- **Grain elevators** — seasonal agricultural commodity flows, harvest timing, export patterns
-- **Mining stockpiles** — coal, ore, aggregate; anything stored outdoors in bulk
-- **Auto import lots** — vehicle inventory staging; tariff impacts visible as accumulation
-
-The project is designed to be extensible. Each site is a JSON config. Each commodity has its own thresholds. Add a site, run the pipeline, get a time series.
-
----
-
-## Project structure
+## Files
 
 ```
-sentinel-stockpile/
-├── pixi.toml                 # Reproducible environment
-├── config/sites/             # One JSON per monitoring site
-│   ├── longview_port.json    # Port of Longview — lumber
-│   ├── vancouver_wind.json   # Port of Vancouver — wind components
-│   ├── tacoma_port.json      # Port of Tacoma — containers
-│   └── weyerhaeuser_longview.json
-├── src/
-│   ├── fetch_imagery.py      # Sentinel-2 download via STAC API
-│   ├── preprocess.py         # Band alignment and resampling
-│   ├── classify.py           # Spectral classification
-│   ├── measure.py            # Area computation and time series
-│   ├── report.py             # Maps and charts
-│   └── pipeline.py           # Orchestrator
-├── notebooks/
-│   └── explore.ipynb         # Interactive threshold tuning
-├── output/                   # Generated results per site
-├── docs/                     # Images for README
-└── .github/workflows/
-    └── monthly.yml           # Automated monitoring via GitHub Actions
+sites/                 one JSON per yard, plus commodities.json (the rules)
+stockpile/             the package: sites, fetch, classify, series, publish, validate
+tools/                 calibrate.py (rule checks on NAIP), summers.py (year panels)
+docs/                  the dashboard (GitHub Pages), its data, charts, validation images
+data/<site>/           scene catalog, time_series.csv, last run log
+stacks branch          cached 10 m band stacks, one .npz per clear scene
 ```
 
-## Current sites
+Each site's `docs/data/<site>/series.json` holds every scene's numbers, the rules used, the persistent area and what was set aside; `objects/<date>.geojson` has that day's piles as polygons; `data/<site>/time_series.csv` is the flat version.
 
-| Site | Commodity | Scenes | Signal |
-|------|-----------|--------|--------|
-| Port of Longview | Lumber/Logs | 32 (12 months) | Clear seasonal cycle: summer peak 47 ha, winter low 5 ha |
-| Port of Vancouver WA | Wind components | 106 (3 years) | Ship delivery sawtooth, year-over-year decline since 2023 |
-| Port of Tacoma | Containers | Configured | Needs threshold tuning |
-| Weyerhaeuser Longview | Lumber | Configured | Needs first run |
+## Honest limitations
 
-## Roadmap
+- **Ten-metre pixels** see piles, not individual logs, boxes or blades. A pile smaller than 300 m² is invisible, and a lone blade often is too.
+- **Area is not volume.** A deck twice as high looks the same from above.
+- **Colour rules have blind spots:** blue and white containers, dark steel, wet wood. Compare like seasons, which is what the norm and the year-over-year chart are for.
+- **Optical satellites can't see through cloud.** Winter has gaps of weeks. Sentinel-1 radar would fill them and is the obvious next step.
+- **This is a proxy, not inventory data**, and it doesn't isolate causes.
 
-- [x] Sentinel-2 imagery pipeline via Planetary Computer
-- [x] Spectral index classification (NDVI, NDMI, BSI)
-- [x] Time series measurement and reporting
-- [x] Site configuration system
-- [x] 12-month proof of concept — Port of Longview lumber
-- [x] 3-year multi-administration comparison — Port of Vancouver wind energy
-- [ ] Outlier detection for bad scenes (tile boundary, cloud shadow artifacts)
-- [ ] Additional PNW sites (Tacoma containers, Weyerhaeuser, Kalama grain)
-- [ ] Sentinel-1 SAR integration (sees through clouds — fills the PNW winter gap)
-- [ ] Static dashboard on GitHub Pages
-- [ ] Multi-year trend overlays (same months, different years)
-- [ ] Oil tank shadow analysis
-- [ ] Export to GeoJSON for QGIS overlay
+## Tech
 
----
-
-## The honest limitations
-
-**Resolution.** 10 meters per pixel. A single lumber stack is often smaller than a pixel. We're measuring "area dominated by stockpile material," not counting individual stacks or blades.
-
-**Clouds.** Sentinel-2 is optical — it can't see through overcast. The PNW has a four-month cloud gap from October through January. Radar (Sentinel-1) would fix this.
-
-**Thresholds are site-specific.** The brightness and BSI values that work for lumber at Longview don't work for wind components at Vancouver. Each commodity and site needs tuning.
-
-**Outliers exist.** Some scenes have different tile footprints, cloud shadow contamination, or other artifacts that produce wild readings. Three scenes in the Vancouver dataset had to be manually identified and excluded. An automated outlier filter is on the roadmap.
-
-**This is a proxy, not ground truth.** We're not counting board-feet of lumber or individual turbine blades. We're measuring how much of a terminal's surface area looks like stockpiled material from space. It's a useful signal, but it's not inventory data.
-
-**Correlation is not causation.** The wind energy decline predated the executive order. Multiple factors — interest rates, supply chains, project pipeline timing — all contribute. We present the data; we don't claim to isolate causes.
-
----
-
-## Tech stack
-
-| Tool | Role |
-|------|------|
-| [pixi](https://pixi.sh) | Reproducible environment management |
-| [pystac-client](https://github.com/stac-utils/pystac-client) | Search Planetary Computer's STAC catalog |
-| [planetary-computer](https://github.com/microsoft/planetary-computer-sdk-for-python) | Sign asset URLs for download |
-| [rasterio](https://rasterio.readthedocs.io/) | Read/write geospatial rasters |
-| [numpy](https://numpy.org/) | Array math for spectral indices |
-| [matplotlib](https://matplotlib.org/) | Charts and map visualization |
-| [Sentinel-2 L2A](https://sentinel.esa.int/web/sentinel/missions/sentinel-2) | Free 10m multispectral imagery, every 5 days |
-
-## Further reading
-
-- **The Planet Money Book** — the economics-is-everywhere lens that inspired this project's approach
-- **Planetary Computer [data catalog](https://planetarycomputer.microsoft.com/catalog)** — browse what's available for free
-- **Port of Vancouver USA [wind energy news](https://www.portvanusa.com/)** — press releases on component shipments
-- **Harvard EELP [offshore wind tracker](https://eelp.law.harvard.edu/tracker/federal-offshore-wind-deployment/)** — legal status of the federal wind permitting freeze
-
----
+[Sentinel-2 L2A](https://sentinel.esa.int/web/sentinel/missions/sentinel-2) via [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/) · [USDA NAIP](https://naip-usdaonline.hub.arcgis.com/) for validation · [OpenStreetMap](https://www.openstreetmap.org/) yard outlines · pystac-client, rasterio, numpy, scipy, shapely, matplotlib · Leaflet and d3 for the dashboard · GitHub Actions as the computer · [pixi](https://pixi.sh).
 
 ## License
 
-MIT — use it, fork it, extend it, point it at something interesting.
+MIT. Contains modified Copernicus Sentinel-2 data (ESA). Yard outlines © OpenStreetMap contributors (ODbL).
 
-*Built by [Brooks Groves](https://brooksgroves.com) in Lakewood, WA. Powered by free data from the European Space Agency and Microsoft Planetary Computer.*
+*Built by [Brooks Groves](https://brooksgroves.com) in Lakewood, WA.*

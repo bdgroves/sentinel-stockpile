@@ -1,6 +1,6 @@
 [workspace]
 name = "sentinel-stockpile"
-version = "2.0.0"
+version = "3.0.0"
 description = "Commodity stockpiles measured from Sentinel-2: the economy you can see from space"
 channels = ["conda-forge"]
 platforms = ["win-64", "linux-64", "osx-arm64"]
@@ -24,3 +24,5 @@ publish = "python -m stockpile publish"
 sites   = "python -m stockpile sites"
 stacks  = "git fetch origin stacks && mkdir -p stacks && git archive FETCH_HEAD -o stacks.tar && tar -xf stacks.tar -C stacks && rm stacks.tar"
 serve   = "python -m http.server 8000 -d docs"
+calibrate = "python tools/calibrate.py"   # pixi run calibrate --site tacoma_port
+summers = "python tools/summers.py"
