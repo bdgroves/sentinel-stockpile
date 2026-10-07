@@ -7,7 +7,7 @@
 - Blog: brooksgroves.com/blog/sentinel-stockpile-revisited-post.html (fact-checked by a separate agent). The April post carries an update note.
 
 ## To do
-- **GitHub Pages**: Brooks needs to enable Settings → Pages → Deploy from branch → `main` / `/docs`, so the dashboard serves at brooksgroves.com/sentinel-stockpile/ (the Pages API is blocked from the cloud session).
+- **GitHub Pages** is on (main /docs); the dashboard serves at brooksgroves.com/sentinel-stockpile/ with an Esri World Imagery basemap.
 - Confirm the first *scheduled* run (Thursday 2026-10-08) commits.
 - Ideas: Kalama grain, Tacoma auto lots, Sentinel-1 radar for winter, shipping data to explain the Terminal 5 decline.
 
