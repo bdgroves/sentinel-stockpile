@@ -1,3 +1,3 @@
-grays_harbor: 6 days with imagery 2026-09-11..2026-10-08, 1 new
-  2026-10-06: cloudy cloud 100.0% around, 100.0% over the yard
-grays_harbor: 73 clear scenes (2023-05-10 .. 2026-09-16), persistent 0.04 ha, rejected {'cloudy': 82, 'nodata': 0, 'snow': 0, 'haze': 0}
+grays_harbor: 7 days with imagery 2026-09-16..2026-10-12, 1 new
+  2026-10-08: cloudy cloud 100.0% around, 81.8% over the yard
+grays_harbor: 73 clear scenes (2023-05-10 .. 2026-09-16), persistent 0.04 ha, rejected {'cloudy': 83, 'nodata': 0, 'snow': 0, 'haze': 0}
