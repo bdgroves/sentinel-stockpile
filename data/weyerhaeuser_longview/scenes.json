@@ -3663,6 +3663,17 @@
   "status": "cloudy"
  },
  {
+  "date": "2026-10-11",
+  "id": "S2B_MSIL2A_20261011T191329_R056_T10TDS_20261011T211608",
+  "tile_cloud": 0.002266,
+  "baseline": "05.13",
+  "offset": 1000,
+  "cloud_context": 0.0,
+  "cloud_aoi": 0.0,
+  "nodata_aoi": 0.0,
+  "status": "ok"
+ },
+ {
   "date": "2026-10-13",
   "id": "S2C_MSIL2A_20261013T190341_R013_T10TES_20261013T214103",
   "tile_cloud": 35.493788,
@@ -3670,6 +3681,39 @@
   "offset": 1000,
   "cloud_context": 0.8068,
   "cloud_aoi": 0.6075,
+  "nodata_aoi": 0.0,
+  "status": "cloudy"
+ },
+ {
+  "date": "2026-10-15",
+  "id": "S2A_MSIL2A_20261015T190821_R013_T10TES_20261015T233603",
+  "tile_cloud": 11.365838,
+  "baseline": "05.13",
+  "offset": 1000,
+  "cloud_context": 0.0004,
+  "cloud_aoi": 0.0,
+  "nodata_aoi": 0.0,
+  "status": "ok"
+ },
+ {
+  "date": "2026-10-16",
+  "id": "S2C_MSIL2A_20261016T191401_R056_T10TES_20261016T214701",
+  "tile_cloud": 47.170186,
+  "baseline": "05.13",
+  "offset": 1000,
+  "cloud_context": 0.0002,
+  "cloud_aoi": 0.0,
+  "nodata_aoi": 0.0,
+  "status": "ok"
+ },
+ {
+  "date": "2026-10-18",
+  "id": "S2B_MSIL2A_20261018T190409_R013_T10TES_20261018T225248",
+  "tile_cloud": 16.22998,
+  "baseline": "05.13",
+  "offset": 1000,
+  "cloud_context": 0.5417,
+  "cloud_aoi": 0.5329,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  }
