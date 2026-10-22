@@ -1,6 +1,3 @@
-weyerhaeuser_longview: 11 days with imagery 2026-09-23..2026-10-19, 4 new
-  2026-10-11: ok     cloud 0.0% around, 0.0% over the yard
-  2026-10-15: ok     cloud 0.0% around, 0.0% over the yard
-  2026-10-16: ok     cloud 0.0% around, 0.0% over the yard
-  2026-10-18: cloudy cloud 54.2% around, 53.3% over the yard
-weyerhaeuser_longview: 139 clear scenes (2023-04-27 .. 2026-10-16), persistent 3.52 ha, rejected {'cloudy': 196, 'nodata': 0, 'snow': 1, 'haze': 2}
+weyerhaeuser_longview: 11 days with imagery 2026-09-28..2026-10-22, 1 new
+  2026-10-21: ok     cloud 0.0% around, 0.0% over the yard
+weyerhaeuser_longview: 140 clear scenes (2023-04-27 .. 2026-10-21), persistent 3.53 ha, rejected {'cloudy': 196, 'nodata': 0, 'snow': 1, 'haze': 2}
