@@ -1,3 +1,3 @@
-vancouver_wind: 11 days with imagery 2026-09-28..2026-10-22, 1 new
-  2026-10-21: ok     cloud 0.0% around, 0.0% over the yard
-vancouver_wind: 184 clear scenes (2023-04-25 .. 2026-10-21), persistent 0.03 ha, rejected {'cloudy': 122, 'nodata': 0, 'snow': 1, 'haze': 1}
+vancouver_wind: 11 days with imagery 2026-10-01..2026-10-26, 1 new
+  2026-10-23: ok     cloud 0.4% around, 0.0% over the yard
+vancouver_wind: 185 clear scenes (2023-04-25 .. 2026-10-23), persistent 0.03 ha, rejected {'cloudy': 122, 'nodata': 0, 'snow': 1, 'haze': 1}

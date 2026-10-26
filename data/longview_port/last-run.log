@@ -1,3 +1,3 @@
-longview_port: 11 days with imagery 2026-09-28..2026-10-22, 1 new
-  2026-10-21: ok     cloud 0.0% around, 0.0% over the yard
-longview_port: 158 clear scenes (2023-04-27 .. 2026-10-21), persistent 5.58 ha, rejected {'cloudy': 175, 'nodata': 0, 'snow': 1, 'haze': 5}
+longview_port: 11 days with imagery 2026-10-01..2026-10-26, 1 new
+  2026-10-23: ok     cloud 2.6% around, 0.0% over the yard
+longview_port: 159 clear scenes (2023-04-27 .. 2026-10-23), persistent 5.58 ha, rejected {'cloudy': 175, 'nodata': 0, 'snow': 1, 'haze': 5}
