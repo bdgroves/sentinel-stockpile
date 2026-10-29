@@ -3738,5 +3738,27 @@
   "cloud_aoi": 0.0497,
   "nodata_aoi": 0.0,
   "status": "cloudy"
+ },
+ {
+  "date": "2026-10-26",
+  "id": "S2C_MSIL2A_20261026T191501_R056_T10TDS_20261026T234305",
+  "tile_cloud": 76.211107,
+  "baseline": "05.13",
+  "offset": 1000,
+  "cloud_context": 1.0,
+  "cloud_aoi": 0.8526,
+  "nodata_aoi": 0.0,
+  "status": "cloudy"
+ },
+ {
+  "date": "2026-10-28",
+  "id": "S2A_MSIL2A_20261028T191821_R056_T10TDS_20261028T232905",
+  "tile_cloud": 39.393684,
+  "baseline": "05.13",
+  "offset": 1000,
+  "cloud_context": 0.8387,
+  "cloud_aoi": 0.7046,
+  "nodata_aoi": 0.0,
+  "status": "cloudy"
  }
 ]
