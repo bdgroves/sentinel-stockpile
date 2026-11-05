@@ -1,2 +1,4 @@
-weyerhaeuser_longview: 10 days with imagery 2026-10-08..2026-11-02, 0 new
-weyerhaeuser_longview: 140 clear scenes (2023-04-27 .. 2026-10-21), persistent 3.53 ha, rejected {'cloudy': 199, 'nodata': 0, 'snow': 1, 'haze': 2}
+weyerhaeuser_longview: 12 days with imagery 2026-10-08..2026-11-05, 2 new
+  2026-11-02: ok     cloud 0.0% around, 0.0% over the yard
+  2026-11-04: cloudy cloud 99.7% around, 91.8% over the yard
+weyerhaeuser_longview: 141 clear scenes (2023-04-27 .. 2026-11-02), persistent 3.32 ha, rejected {'cloudy': 200, 'nodata': 0, 'snow': 1, 'haze': 2}
