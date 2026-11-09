@@ -3399,6 +3399,17 @@
   "status": "cloudy"
  },
  {
+  "date": "2026-10-31",
+  "id": "S2B_MSIL2A_20261031T191529_R056_T10TET_20261031T210555",
+  "tile_cloud": 64.703107,
+  "baseline": "05.13",
+  "offset": 1000,
+  "cloud_context": 1.0,
+  "cloud_aoi": 0.1921,
+  "nodata_aoi": 0.0,
+  "status": "cloudy"
+ },
+ {
   "date": "2026-11-02",
   "id": "S2C_MSIL2A_20261102T190541_R013_T10TET_20261102T214902",
   "tile_cloud": 54.139549,
@@ -3406,6 +3417,17 @@
   "offset": 1000,
   "cloud_context": 1.0,
   "cloud_aoi": 0.323,
+  "nodata_aoi": 0.0,
+  "status": "cloudy"
+ },
+ {
+  "date": "2026-11-05",
+  "id": "S2C_MSIL2A_20261105T191601_R056_T10TET_20261105T221509",
+  "tile_cloud": 53.437781,
+  "baseline": "05.13",
+  "offset": 1000,
+  "cloud_context": 0.145,
+  "cloud_aoi": 0.0494,
   "nodata_aoi": 0.0,
   "status": "cloudy"
  }

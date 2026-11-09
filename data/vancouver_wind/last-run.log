@@ -1,4 +1,3 @@
-vancouver_wind: 10 days with imagery 2026-10-11..2026-11-05, 2 new
-  2026-11-02: cloudy cloud 48.3% around, 33.6% over the yard
-  2026-11-04: cloudy cloud 99.8% around, 94.1% over the yard
-vancouver_wind: 185 clear scenes (2023-04-25 .. 2026-10-23), persistent 0.03 ha, rejected {'cloudy': 125, 'nodata': 0, 'snow': 1, 'haze': 1}
+vancouver_wind: 9 days with imagery 2026-10-15..2026-11-09, 1 new
+  2026-11-05: cloudy cloud 86.2% around, 71.3% over the yard
+vancouver_wind: 185 clear scenes (2023-04-25 .. 2026-10-23), persistent 0.03 ha, rejected {'cloudy': 126, 'nodata': 0, 'snow': 1, 'haze': 1}

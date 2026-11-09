@@ -1,3 +1,4 @@
-tacoma_port: 10 days with imagery 2026-10-08..2026-11-05, 1 new
-  2026-11-02: cloudy cloud 68.3% around, 40.3% over the yard
-tacoma_port: 160 clear scenes (2023-04-27 .. 2026-10-21), persistent 0.0 ha, rejected {'cloudy': 146, 'nodata': 0, 'snow': 0, 'haze': 4}
+tacoma_port: 10 days with imagery 2026-10-13..2026-11-09, 2 new
+  2026-10-31: cloudy cloud 100.0% around, 18.3% over the yard
+  2026-11-05: cloudy cloud 97.7% around, 93.8% over the yard
+tacoma_port: 160 clear scenes (2023-04-27 .. 2026-10-21), persistent 0.0 ha, rejected {'cloudy': 148, 'nodata': 0, 'snow': 0, 'haze': 4}

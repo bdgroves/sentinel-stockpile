@@ -1,4 +1,3 @@
-portland_t6: 10 days with imagery 2026-10-11..2026-11-05, 2 new
-  2026-11-02: cloudy cloud 89.3% around, 90.6% over the yard
-  2026-11-04: cloudy cloud 99.8% around, 52.8% over the yard
-portland_t6: 181 clear scenes (2023-04-25 .. 2026-10-21), persistent 0.0 ha, rejected {'cloudy': 127, 'nodata': 0, 'snow': 1, 'haze': 3}
+portland_t6: 9 days with imagery 2026-10-15..2026-11-09, 1 new
+  2026-11-05: cloudy cloud 86.0% around, 65.3% over the yard
+portland_t6: 181 clear scenes (2023-04-25 .. 2026-10-21), persistent 0.0 ha, rejected {'cloudy': 128, 'nodata': 0, 'snow': 1, 'haze': 3}
