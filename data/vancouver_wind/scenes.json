@@ -3452,5 +3452,16 @@
   "cloud_aoi": 0.9423,
   "nodata_aoi": 0.0,
   "status": "cloudy"
+ },
+ {
+  "date": "2026-11-22",
+  "id": "S2C_MSIL2A_20261122T190711_R013_T10TER_20261122T214902",
+  "tile_cloud": 79.971969,
+  "baseline": "05.13",
+  "offset": 1000,
+  "cloud_context": 0.999,
+  "cloud_aoi": 0.2867,
+  "nodata_aoi": 0.0,
+  "status": "cloudy"
  }
 ]
